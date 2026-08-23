@@ -133,6 +133,8 @@ def build_codex_command(
         "read-only",
         "-o",
         str(message_path),
+        "-c",
+        'service_tier="priority"',
     ]
     if kind == "agent":
         agent_path = (AGENTS_DIR / f"{name}.toml").resolve()
@@ -501,7 +503,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", default=None, help="Optional model override for skill probes.")
     parser.add_argument(
         "--reasoning-effort",
-        default="low",
+        default="xhigh",
         help="Optional reasoning-effort override for the top-level Codex exec run.",
     )
     parser.add_argument(

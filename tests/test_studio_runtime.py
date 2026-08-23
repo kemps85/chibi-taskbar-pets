@@ -22,6 +22,8 @@ LEADS = {
     "release-manager",
 }
 
+SPECIALISTS = 39
+
 
 def _load_toml(path: Path) -> dict:
     with path.open("rb") as handle:
@@ -38,8 +40,9 @@ def test_studio_config_primary_receiver_uses_sol_max_and_modern_keys() -> None:
     # Assert
     assert config["model"] == "gpt-5.6-sol"
     assert config["model_reasoning_effort"] == "max"
+    assert config["service_tier"] == "priority"
     assert config["agents"]["default_subagent_model"] == "gpt-5.6-luna"
-    assert config["agents"]["default_subagent_reasoning_effort"] == "max"
+    assert config["agents"]["default_subagent_reasoning_effort"] == "xhigh"
     assert config["agents"]["max_concurrent_threads_per_session"] == 6
     assert config["features"]["hooks"] is True
     assert config["features"]["multi_agent"] is True
@@ -67,9 +70,10 @@ def test_agent_models_roster_assigns_sol_directors_terra_leads_luna_specialists(
         if name in DIRECTORS:
             assert assignment == ("gpt-5.6-sol", "max")
         elif name in LEADS:
-            assert assignment == ("gpt-5.6-terra", "high")
+            assert assignment == ("gpt-5.6-terra", "max")
         else:
-            assert assignment == ("gpt-5.6-luna", "max")
+            assert assignment == ("gpt-5.6-luna", "xhigh")
+    assert sum(assignment == ("gpt-5.6-luna", "xhigh") for assignment in assignments.values()) == SPECIALISTS
 
 
 def test_hooks_windows_commands_use_cross_platform_runner() -> None:
@@ -113,6 +117,7 @@ def test_dispatcher_known_role_builds_direct_role_codex_command(tmp_path: Path) 
     assert "gpt-5.6-sol" in command
     assert 'model_reasoning_effort="max"' in command
     assert command[-1] == "-"
+    assert 'service_tier="priority"' in command
     assert "agents.technical-director.config_file" not in rendered
     assert "fork_context=false" not in rendered
 
@@ -187,6 +192,7 @@ def test_live_runner_agent_probe_registers_role_and_disables_full_history(tmp_pa
     # Assert
     assert command[0].lower().endswith(("codex.exe", "codex.cmd", "codex"))
     assert "--enable hooks" in rendered
+    assert 'service_tier="priority"' in rendered
     assert "agents.technical-director.config_file" in rendered
     assert "fork_context=false" in rendered
 

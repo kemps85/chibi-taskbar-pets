@@ -354,13 +354,15 @@ def validate_project_config(errors: list[str]) -> None:
         fail(errors, f"{CONFIG_PATH}: expected [agents].max_concurrent_threads_per_session = 6")
     if agents_cfg.get("default_subagent_model") != "gpt-5.6-luna":
         fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_model = 'gpt-5.6-luna'")
-    if agents_cfg.get("default_subagent_reasoning_effort") != "max":
-        fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_reasoning_effort = 'max'")
+    if agents_cfg.get("default_subagent_reasoning_effort") != "xhigh":
+        fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_reasoning_effort = 'xhigh'")
 
     if config.get("model") != "gpt-5.6-sol":
         fail(errors, f"{CONFIG_PATH}: expected primary model gpt-5.6-sol")
     if config.get("model_reasoning_effort") != "max":
         fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'max'")
+    if config.get("service_tier") != "priority":
+        fail(errors, f"{CONFIG_PATH}: expected service_tier = 'priority'")
 
     features_cfg = config.get("features", {})
     if HOOKS_CONFIG_PATH.exists() and features_cfg.get("hooks") is not True:

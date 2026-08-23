@@ -127,6 +127,8 @@ def build_codex_exec_command(
         role.model,
         "-c",
         f'model_reasoning_effort="{role.model_reasoning_effort}"',
+        "-c",
+        'service_tier="priority"',
         "-s",
         role.sandbox_mode,
         "-o",
@@ -230,6 +232,8 @@ def doctor() -> int:
         issues.append("Primary model is not gpt-5.6-sol")
     if config.get("model_reasoning_effort") != "max":
         issues.append("Primary reasoning effort is not max")
+    if config.get("service_tier") != "priority":
+        issues.append("Studio service tier is not priority/Fast")
 
     result = {
         "status": "success" if not issues else "error",

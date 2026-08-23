@@ -5,7 +5,7 @@
 ## Agent Summary
 **Domain owned:** Visual identity, art bible authorship and enforcement, asset quality standards, UI/UX visual design, visual phase gate, concept art evaluation.
 **Does NOT own:** UX interaction flows and information architecture (ux-designer's domain), audio direction (audio-director), code implementation.
-**Model tier:** Lead (`gpt-5.6-terra`, high reasoning) despite the "director" title.
+**Model tier:** Lead (`gpt-5.6-terra`, max reasoning) despite the "director" title.
 **Gate IDs handled:** AD-CONCEPT-VISUAL, AD-ART-BIBLE, AD-PHASE-GATE.
 
 ---
@@ -16,7 +16,7 @@ Verified by reading the agent's `.codex/agents/art-director.toml` definition:
 
 - [ ] `description:` field is present and domain-specific (references visual identity, art bible, asset standards — not generic)
 - [ ] Optional runtime fields (`model`, `model_reasoning_effort`, `sandbox_mode`) fit the role, and `developer_instructions` keep work inside the agent's domain
-- [ ] Model tier is `gpt-5.6-terra` with `high` reasoning per `docs/studio/model-routing.md`
+- [ ] Model tier is `gpt-5.6-terra` with `max` reasoning per `docs/studio/model-routing.md`
 - [ ] Agent definition does not claim authority over UX interaction flows or audio direction
 
 ---

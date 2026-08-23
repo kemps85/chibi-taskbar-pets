@@ -200,7 +200,7 @@ game-designer, art-director, release-manager, localization-lead
 |---|---|
 | **L1 — Domain verdict** | Returns a domain-specific verdict (e.g., FEASIBLE/INFEASIBLE for lead-programmer, PASS/FAIL for qa-lead) |
 | **L2 — Escalates to shared parent** | Out-of-domain conflicts escalate to creative-director (design) or technical-director (tech) |
-| **L3 — Lead model profile** | Agent uses `gpt-5.6-terra` with `high` reasoning per `docs/studio/model-routing.md` |
+| **L3 — Lead model profile** | Agent uses `gpt-5.6-terra` with `max` reasoning per `docs/studio/model-routing.md` |
 
 ### `specialist`
 
@@ -213,7 +213,7 @@ qa-tester, writer, world-builder
 |---|---|
 | **S1 — Stays in domain** | Explicitly scopes itself to its declared domain; defers out-of-domain requests |
 | **S2 — No binding cross-domain decisions** | Does not unilaterally decide matters owned by another specialist |
-| **S3 — Specialist model profile** | Agent uses `gpt-5.6-luna` with `max` reasoning per `docs/studio/model-routing.md` |
+| **S3 — Specialist model profile** | Agent uses `gpt-5.6-luna` with `xhigh` reasoning and priority service tier per `docs/studio/model-routing.md` |
 | **S3 — Defers correctly** | Out-of-domain requests are redirected to the correct agent, not refused silently |
 
 ### `engine`

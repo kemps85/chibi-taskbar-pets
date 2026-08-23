@@ -59,7 +59,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--reasoning-effort",
-        default="low",
+        default="xhigh",
         help="Reasoning effort for live runs triggered via --refresh-live.",
     )
     parser.add_argument(

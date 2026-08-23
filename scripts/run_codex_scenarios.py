@@ -80,7 +80,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--reasoning-effort",
-        default="max",
+        default="xhigh",
         help="Reasoning effort to pass to Codex.",
     )
     parser.add_argument(
@@ -248,6 +248,8 @@ def run_turn(
             "--ignore-user-config",
             "-c",
             'sandbox_mode="workspace-write"',
+            "-c",
+            'service_tier="priority"',
             "-m",
             model,
             "-c",
@@ -270,6 +272,8 @@ def run_turn(
             "workspace-write",
             "--color",
             "never",
+            "-c",
+            'service_tier="priority"',
             "-m",
             model,
             "-c",

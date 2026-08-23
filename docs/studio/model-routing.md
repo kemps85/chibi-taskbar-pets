@@ -28,7 +28,7 @@ phase gates.
 
 ## Lead Layer
 
-The following configured agents use `gpt-5.6-terra` with `high` reasoning:
+The following configured agents use `gpt-5.6-terra` with `max` reasoning:
 
 - `game-designer`
 - `lead-programmer`
@@ -44,12 +44,14 @@ output before it returns to Sol.
 
 ## Specialist Layer
 
-All other project agents use `gpt-5.6-luna` with `max` reasoning. This includes
+All other project agents use `gpt-5.6-luna` with `xhigh` reasoning and priority
+service tier. This includes
 programmers, engine specialists, QA execution, design specialists, operations,
 analytics, accessibility, security, publishing, and content roles.
 
 Luna is the default spawned-agent model in `.codex/config.toml`, so generic
-workers also stay on the specialist tier unless a named role overrides it.
+workers also stay on the specialist tier unless a named role overrides it. The
+repo config sets `service_tier = "priority"`, which is Codex's Fast mode.
 
 ## Escalation Rules
 

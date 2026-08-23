@@ -16,7 +16,7 @@ Verified by reading the agent's `.codex/agents/level-designer.toml` definition:
 
 - [ ] `description:` field is present and domain-specific (references level layout, encounter design, pacing, environmental storytelling — not generic)
 - [ ] Optional runtime fields (`model`, `model_reasoning_effort`, `sandbox_mode`) fit the role, and `developer_instructions` keep work inside the agent's domain
-- [ ] Model tier is `gpt-5.6-luna` with `max` reasoning per `docs/studio/model-routing.md`
+- [ ] Model tier is `gpt-5.6-luna` with `xhigh` reasoning per `docs/studio/model-routing.md`
 - [ ] Agent definition does not claim authority over narrative dialogue, AI behavior code, or visual art style
 
 ---

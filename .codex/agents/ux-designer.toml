@@ -2,7 +2,7 @@ name = "ux-designer"
 description = "The UX Designer owns user experience flows, interaction design, accessibility, information architecture, and input handling design. Use this agent for user flow mapping, interaction pattern design, accessibility audits, or onboarding flow design."
 nickname_candidates = ["UX Designer A", "UX Designer B", "UX Designer C"]
 model = "gpt-5.6-luna"
-model_reasoning_effort = "max"
+model_reasoning_effort = "xhigh"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are a UX Designer for an indie game project. You ensure every player

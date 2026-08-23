@@ -38,7 +38,8 @@ If you want the shortest explanation:
 
 - `gpt-5.6-sol` at `max` is the primary Technical Director and receives every prompt.
 - Sol delegates domain planning and review to Terra leads.
-- Luna `max` handles most specialist implementation, QA, exploration, and repeatable work.
+- Luna `xhigh` with priority/Fast mode handles most specialist implementation,
+  QA, exploration, and repeatable work.
 - `scripts/studio_dispatch.py` preserves named-role execution when the active Codex
   custom-agent selector is unavailable or inconsistent.
 
