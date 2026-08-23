@@ -6,14 +6,17 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass
 import json
-import os
 from pathlib import Path
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 import time
+
+try:
+    from scripts.codex_runtime import resolve_codex_executable as _resolve_codex_executable
+except ModuleNotFoundError:  # Direct execution: python scripts/run_codex_e2e.py
+    from codex_runtime import resolve_codex_executable as _resolve_codex_executable
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +32,7 @@ KNOWN_RUNTIME_WARNINGS = (
     "codex_core::file_watcher",
     "stream disconnected - retrying sampling request",
     "codex_analytics::client",
+    "failed to resolve parent transcript path for subagent hook",
 )
 
 
@@ -92,17 +96,21 @@ def agent_prompt(name: str) -> str:
 
 def resolve_codex_executable(
     *,
-    platform: str = os.name,
-    which=shutil.which,
+    platform: str | None = None,
+    environ=None,
+    local_app_data: Path | None = None,
+    which=None,
 ) -> str:
-    # Prefer the Windows npm shim over a Store app resource that can resolve
-    # on PATH but reject direct CreateProcess calls with WinError 5.
-    candidates = ("codex.cmd", "codex.exe") if platform == "nt" else ("codex",)
-    for candidate in candidates:
-        resolved = which(candidate)
-        if resolved:
-            return resolved
-    raise FileNotFoundError("Could not locate an executable Codex CLI")
+    kwargs = {}
+    if platform is not None:
+        kwargs["platform"] = platform
+    if environ is not None:
+        kwargs["environ"] = environ
+    if local_app_data is not None:
+        kwargs["local_app_data"] = local_app_data
+    if which is not None:
+        kwargs["which"] = which
+    return str(_resolve_codex_executable(**kwargs))
 
 
 def service_tier_for_model(model: str | None) -> str:
@@ -366,6 +374,17 @@ def parse_events(json_path: Path) -> tuple[list[str], list[str], bool]:
     return failed_commands, issues, saw_spawn_agent
 
 
+def has_subagent_runtime_evidence(stderr_text: str) -> bool:
+    """Recognize current CLI evidence when JSON omits the spawn event.
+
+    Codex 0.149 can emit only the later ``wait`` event in ``--json`` output,
+    while its hook runtime still records that a subagent started. Restrict the
+    fallback to this exact subagent-hook marker so an empty wait is not accepted
+    on its own.
+    """
+    return "failed to resolve parent transcript path for subagent hook" in stderr_text
+
+
 def is_benign_project_gap_command(command_record: str) -> bool:
     command = command_record.lower().replace("\\", "/")
     project_path_signals = (
@@ -441,13 +460,15 @@ def run_probe(
             reasoning_effort=reasoning_effort,
             timeout=timeout,
         )
+        saw_spawn_agent = has_subagent_runtime_evidence(stderr_text)
         stderr_lines = filter_stderr(stderr_text)
         if exit_code != 0:
             issues.append(f"codex exec exited with code {exit_code}")
         if message_path.exists():
             final_message = message_path.read_text(encoding="utf-8").strip()
         if json_path.exists():
-            failed_commands, parse_issues, saw_spawn_agent = parse_events(json_path)
+            failed_commands, parse_issues, event_saw_spawn_agent = parse_events(json_path)
+            saw_spawn_agent = saw_spawn_agent or event_saw_spawn_agent
             issues.extend(parse_issues)
         else:
             issues.append("missing JSON event log")

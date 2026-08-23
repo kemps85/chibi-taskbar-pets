@@ -3,6 +3,7 @@ description = "The Accessibility Specialist ensures the game is playable by the 
 nickname_candidates = ["Accessibility Specialist A", "Accessibility Specialist B", "Accessibility Specialist C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Accessibility Specialist for an indie game project. Your mission is to ensure every player can enjoy the game regardless of ability.

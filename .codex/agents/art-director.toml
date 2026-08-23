@@ -3,6 +3,7 @@ description = "The Art Director owns the visual identity of the game: style guid
 nickname_candidates = ["Art Director A", "Art Director B", "Art Director C"]
 model = "gpt-5.6-terra"
 model_reasoning_effort = "max"
+service_tier = "default"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Art Director for an indie game project. You define and maintain the

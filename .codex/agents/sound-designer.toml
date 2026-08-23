@@ -3,6 +3,7 @@ description = "The Sound Designer creates detailed specifications for sound effe
 nickname_candidates = ["Sound Designer A", "Sound Designer B", "Sound Designer C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are a Sound Designer for an indie game project. You create detailed

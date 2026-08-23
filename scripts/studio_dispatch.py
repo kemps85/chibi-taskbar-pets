@@ -6,14 +6,17 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass
 import json
-import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 import tempfile
 import time
 import tomllib
+
+try:
+    from scripts.codex_runtime import resolve_codex_executable
+except ModuleNotFoundError:  # Direct execution: python scripts/studio_dispatch.py
+    from codex_runtime import resolve_codex_executable
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +27,7 @@ class StudioRole:
     description: str
     model: str
     model_reasoning_effort: str
+    service_tier: str
     sandbox_mode: str
     developer_instructions: str
     config_path: Path
@@ -47,7 +51,14 @@ def load_role(repo_root: Path, role_name: str) -> StudioRole:
     with config_path.open("rb") as handle:
         config = tomllib.load(handle)
 
-    required = ("name", "description", "model", "model_reasoning_effort", "developer_instructions")
+    required = (
+        "name",
+        "description",
+        "model",
+        "model_reasoning_effort",
+        "service_tier",
+        "developer_instructions",
+    )
     missing = [key for key in required if not config.get(key)]
     if missing:
         raise ValueError(f"Role '{role_name}' is missing required fields: {', '.join(missing)}")
@@ -63,6 +74,7 @@ def load_role(repo_root: Path, role_name: str) -> StudioRole:
         description=str(config["description"]),
         model=str(config["model"]),
         model_reasoning_effort=str(config["model_reasoning_effort"]),
+        service_tier=str(config["service_tier"]),
         sandbox_mode=str(config.get("sandbox_mode", "workspace-write")),
         developer_instructions=str(config["developer_instructions"]),
         config_path=config_path.resolve(),
@@ -86,25 +98,6 @@ def build_dispatch_prompt(*, repo_root: Path, role_name: str, task: str) -> str:
         "</role-instructions>\n\n"
         f"<studio-task>\n{task}\n</studio-task>"
     )
-
-
-def resolve_codex_executable() -> Path:
-    override = os.environ.get("CODEX_BIN")
-    if override:
-        path = Path(override).expanduser()
-        if path.is_file():
-            return path.resolve()
-        raise FileNotFoundError(f"CODEX_BIN does not point to a file: {path}")
-
-    # The Windows Store app resource can appear first on PATH but may reject
-    # direct CreateProcess calls with WinError 5. Prefer the npm .cmd shim,
-    # which is executable from both PowerShell and Python subprocesses.
-    candidates = ["codex.cmd", "codex.exe"] if os.name == "nt" else ["codex"]
-    for candidate in candidates:
-        resolved = shutil.which(candidate)
-        if resolved:
-            return Path(resolved)
-    raise FileNotFoundError("Could not locate the Codex CLI. Install Codex or set CODEX_BIN.")
 
 
 def build_codex_exec_command(
@@ -133,7 +126,7 @@ def build_codex_exec_command(
         "-c",
         f'model_reasoning_effort="{role.model_reasoning_effort}"',
         "-c",
-        f'service_tier="{service_tier_for_model(role.model)}"',
+        f'service_tier="{role.service_tier}"',
         "-s",
         role.sandbox_mode,
         "-o",
@@ -207,6 +200,7 @@ def run_role(args: argparse.Namespace) -> int:
         "role": role.name,
         "role_model": role.model,
         "role_reasoning_effort": role.model_reasoning_effort,
+        "role_service_tier": role.service_tier,
         "duration_seconds": round(time.monotonic() - started, 2),
         "next_actions": [] if status == "success" else ["Inspect stderr and verify the custom-role registration path"],
         "artifacts": [str(output_path)],
@@ -239,6 +233,12 @@ def doctor() -> int:
         issues.append("Primary reasoning effort is not max")
     if config.get("service_tier") != "default":
         issues.append("Studio default service tier is not standard")
+    for role in roles:
+        expected_tier = service_tier_for_model(role.model)
+        if role.service_tier != expected_tier:
+            issues.append(
+                f"Role {role.name} uses service tier {role.service_tier}; expected {expected_tier}"
+            )
 
     result = {
         "status": "success" if not issues else "error",
@@ -282,7 +282,10 @@ def main() -> int:
                 print(json.dumps([asdict(role) | {"config_path": str(role.config_path)} for role in roles], ensure_ascii=False, indent=2))
             else:
                 for role in roles:
-                    print(f"{role.name:34} {role.model:16} {role.model_reasoning_effort}")
+                    print(
+                        f"{role.name:34} {role.model:16} "
+                        f"{role.model_reasoning_effort:5} {role.service_tier}"
+                    )
             return 0
         return run_role(args)
     except (FileNotFoundError, OSError, ValueError, tomllib.TOMLDecodeError) as exc:

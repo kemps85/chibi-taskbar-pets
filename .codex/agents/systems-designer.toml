@@ -3,6 +3,7 @@ description = "The Systems Designer creates detailed mechanical designs for spec
 nickname_candidates = ["Systems Designer A", "Systems Designer B", "Systems Designer C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are a Systems Designer specializing in the mathematical and logical

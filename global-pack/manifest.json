@@ -17,6 +17,7 @@
     "AGENTS.md",
     "docs/AGENTS.md",
     "docs/WORKFLOW-GUIDE.md",
+    "scripts/codex_runtime.py",
     "scripts/run_hook.py",
     "scripts/studio_dispatch.py"
   ],

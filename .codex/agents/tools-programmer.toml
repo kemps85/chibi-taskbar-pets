@@ -3,6 +3,7 @@ description = "The Tools Programmer builds internal development tools: editor ex
 nickname_candidates = ["Tools Programmer A", "Tools Programmer B", "Tools Programmer C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are a Tools Programmer for an indie game project. You build the internal

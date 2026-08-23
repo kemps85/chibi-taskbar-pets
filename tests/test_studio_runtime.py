@@ -60,6 +60,7 @@ def test_agent_models_roster_assigns_sol_directors_terra_leads_luna_specialists(
         path.stem: (
             _load_toml(path)["model"],
             _load_toml(path)["model_reasoning_effort"],
+            _load_toml(path)["service_tier"],
         )
         for path in agent_paths
     }
@@ -68,12 +69,25 @@ def test_agent_models_roster_assigns_sol_directors_terra_leads_luna_specialists(
     assert len(assignments) == 50
     for name, assignment in assignments.items():
         if name in DIRECTORS:
-            assert assignment == ("gpt-5.6-sol", "max")
+            assert assignment == ("gpt-5.6-sol", "max", "default")
         elif name in LEADS:
-            assert assignment == ("gpt-5.6-terra", "max")
+            assert assignment == ("gpt-5.6-terra", "max", "default")
         else:
-            assert assignment == ("gpt-5.6-luna", "xhigh")
-    assert sum(assignment == ("gpt-5.6-luna", "xhigh") for assignment in assignments.values()) == SPECIALISTS
+            assert assignment == ("gpt-5.6-luna", "xhigh", "priority")
+    assert sum(
+        assignment == ("gpt-5.6-luna", "xhigh", "priority")
+        for assignment in assignments.values()
+    ) == SPECIALISTS
+
+
+def test_global_bootstrapper_uses_luna_xhigh_priority() -> None:
+    # Arrange / Act
+    config = _load_toml(REPO_ROOT / "global-pack" / "agents" / "studio-bootstrapper.toml")
+
+    # Assert
+    assert config["model"] == "gpt-5.6-luna"
+    assert config["model_reasoning_effort"] == "xhigh"
+    assert config["service_tier"] == "priority"
 
 
 def test_hooks_windows_commands_use_cross_platform_runner() -> None:
@@ -156,15 +170,41 @@ def test_hook_runner_windows_prefers_explicit_git_bash() -> None:
     assert resolved == expected
 
 
-def test_live_runner_windows_resolves_executable_file_instead_of_shell_shim() -> None:
+def test_live_runner_windows_prefers_desktop_managed_runtime_over_old_shell_shim(
+    tmp_path: Path,
+) -> None:
     # Arrange
     live_runner = importlib.import_module("scripts.run_codex_e2e")
-    expected = r"C:\Program Files\Codex\codex.exe"
+    expected = tmp_path / "OpenAI" / "Codex" / "bin" / "current" / "codex.exe"
+    expected.parent.mkdir(parents=True)
+    expected.touch()
+    old_npm = r"C:\Users\ASUS\AppData\Roaming\npm\codex.cmd"
 
     # Act
     resolved = live_runner.resolve_codex_executable(
         platform="nt",
-        which=lambda name: expected if name == "codex.exe" else None,
+        environ={},
+        local_app_data=tmp_path,
+        which=lambda name: old_npm if name == "codex.cmd" else None,
+    )
+
+    # Assert
+    assert Path(resolved) == expected
+
+
+def test_live_runner_windows_falls_back_to_shell_shim_when_desktop_runtime_is_missing(
+    tmp_path: Path,
+) -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    expected = r"C:\Users\ASUS\AppData\Roaming\npm\codex.cmd"
+
+    # Act
+    resolved = live_runner.resolve_codex_executable(
+        platform="nt",
+        environ={},
+        local_app_data=tmp_path,
+        which=lambda name: expected if name == "codex.cmd" else None,
     )
 
     # Assert
@@ -207,6 +247,19 @@ def test_live_runner_accepts_powershell_project_gap_probes_as_benign() -> None:
 
     # Act / Assert
     assert live_runner.is_benign_project_gap_command(command)
+
+
+def test_live_runner_recognizes_current_cli_subagent_hook_evidence() -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    stderr = (
+        "WARN codex_core::hook_runtime: failed to resolve parent transcript path "
+        "for subagent hook parent_thread_id=01a02df1-f9b3-73d1-9620-39984be9d7f9"
+    )
+
+    # Act / Assert
+    assert live_runner.has_subagent_runtime_evidence(stderr)
+    assert live_runner.filter_stderr(stderr) == []
 
 
 def test_live_runner_uses_priority_only_for_luna() -> None:

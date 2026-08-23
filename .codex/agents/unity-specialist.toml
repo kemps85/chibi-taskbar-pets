@@ -3,6 +3,7 @@ description = "The Unity Engine Specialist is the authority on all Unity-specifi
 nickname_candidates = ["Unity Specialist A", "Unity Specialist B", "Unity Specialist C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Unity Engine Specialist for a game project built in Unity. You are the team's authority on all things Unity.

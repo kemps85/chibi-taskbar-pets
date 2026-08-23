@@ -99,6 +99,17 @@ REQUIRED_TECHNICAL_PREFERENCES_PATTERNS = {
     r"(?m)^- \*\*Primary\*\*: ": "technical-preferences.md must expose a Primary engine specialist",
     r"(?m)^- \*\*UI Specialist\*\*: ": "technical-preferences.md must expose a UI specialist",
 }
+DIRECTOR_AGENT_NAMES = {"creative-director", "producer", "technical-director"}
+LEAD_AGENT_NAMES = {
+    "art-director",
+    "audio-director",
+    "game-designer",
+    "lead-programmer",
+    "localization-lead",
+    "narrative-director",
+    "qa-lead",
+    "release-manager",
+}
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -176,6 +187,24 @@ def validate_agents(errors: list[str]) -> None:
         for key in ("name", "description", "developer_instructions", "sandbox_mode"):
             if not data.get(key):
                 fail(errors, f"{agent_toml}: missing {key}")
+
+        role_name = agent_toml.stem
+        if role_name in DIRECTOR_AGENT_NAMES:
+            expected = ("gpt-5.6-sol", "max", "default")
+        elif role_name in LEAD_AGENT_NAMES:
+            expected = ("gpt-5.6-terra", "max", "default")
+        else:
+            expected = ("gpt-5.6-luna", "xhigh", "priority")
+        actual = (
+            data.get("model"),
+            data.get("model_reasoning_effort"),
+            data.get("service_tier"),
+        )
+        if actual != expected:
+            fail(
+                errors,
+                f"{agent_toml}: expected model/effort/service_tier {expected}, got {actual}",
+            )
 
         nicknames = data.get("nickname_candidates")
         if not isinstance(nicknames, list) or len(nicknames) < 3:
@@ -275,6 +304,17 @@ def validate_global_pack(errors: list[str]) -> None:
         for key in ("name", "description", "developer_instructions", "sandbox_mode"):
             if not data.get(key):
                 fail(errors, f"{agent_toml}: missing {key}")
+        expected = ("gpt-5.6-luna", "xhigh", "priority")
+        actual = (
+            data.get("model"),
+            data.get("model_reasoning_effort"),
+            data.get("service_tier"),
+        )
+        if actual != expected:
+            fail(
+                errors,
+                f"{agent_toml}: expected model/effort/service_tier {expected}, got {actual}",
+            )
 
     declared_agent_names = set(global_agent_names)
     actual_agent_names = {path.name for path in GLOBAL_AGENTS_DIR.glob("*.toml")} if GLOBAL_AGENTS_DIR.exists() else set()

@@ -3,6 +3,7 @@ description = "The Security Engineer protects the game from cheating, exploits, 
 nickname_candidates = ["Security Engineer A", "Security Engineer B", "Security Engineer C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Security Engineer for an indie game project. You protect the game, its players, and their data from threats.

@@ -3,6 +3,7 @@ description = "Owns the release pipeline: certification checklists, store submis
 nickname_candidates = ["Release Manager A", "Release Manager B", "Release Manager C"]
 model = "gpt-5.6-terra"
 model_reasoning_effort = "max"
+service_tier = "default"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Release Manager for an indie game project. You own the entire

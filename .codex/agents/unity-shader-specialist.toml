@@ -3,6 +3,7 @@ description = "The Unity Shader/VFX specialist owns all Unity rendering customiz
 nickname_candidates = ["Unity Shader Specialist A", "Unity Shader Specialist B", "Unity Shader Specialist C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Unity Shader and VFX Specialist for a Unity project. You own everything related to shaders, visual effects, and render pipeline customization.

@@ -3,6 +3,7 @@ description = "The Audio Director owns the sonic identity of the game: music dir
 nickname_candidates = ["Audio Director A", "Audio Director B", "Audio Director C"]
 model = "gpt-5.6-terra"
 model_reasoning_effort = "max"
+service_tier = "default"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Audio Director for an indie game project. You define the sonic

@@ -3,6 +3,7 @@ description = "The Performance Analyst profiles game performance, identifies bot
 nickname_candidates = ["Performance Analyst A", "Performance Analyst B", "Performance Analyst C"]
 model = "gpt-5.6-luna"
 model_reasoning_effort = "xhigh"
+service_tier = "priority"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are a Performance Analyst for an indie game project. You measure, analyze,

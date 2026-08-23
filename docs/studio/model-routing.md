@@ -50,9 +50,10 @@ programmers, engine specialists, QA execution, design specialists, operations,
 analytics, accessibility, security, publishing, and content roles.
 
 Luna is the default spawned-agent model in `.codex/config.toml`, so generic
-workers also stay on the specialist tier unless a named role overrides it. Sol
-and Terra roles use the standard service tier; the compatibility dispatcher and
-live runners select Priority only when the requested model is Luna.
+workers also stay on the specialist tier unless a named role overrides it. Every
+named role pins `service_tier` in its own `.codex/agents/*.toml` file: Luna uses
+`priority`, while Sol and Terra use `default`. The compatibility dispatcher and
+live runners enforce the same rule.
 
 ## Escalation Rules
 
@@ -73,4 +74,6 @@ tool variants. `scripts/studio_dispatch.py` is the compatibility path: it runs
 exactly one requested role as an isolated delegated Codex process, loads that
 role's model/reasoning tier and developer instructions, and sends the bounded
 task through stdin. Native multi-agent delegation remains preferred when it is
-working.
+working. On Windows, studio automation prefers the executable managed by Codex
+Desktop under `%LOCALAPPDATA%\OpenAI\Codex\bin` before an older npm shim on
+`PATH`; `CODEX_BIN` or `CODEX_CLI_PATH` can explicitly override that choice.

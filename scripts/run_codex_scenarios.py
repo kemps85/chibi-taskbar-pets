@@ -6,15 +6,18 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass
 import json
-import os
 from pathlib import Path
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
 import time
 from typing import Any
+
+try:
+    from scripts.codex_runtime import resolve_codex_executable as _resolve_codex_executable
+except ModuleNotFoundError:  # Direct execution: python scripts/run_codex_scenarios.py
+    from codex_runtime import resolve_codex_executable as _resolve_codex_executable
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -25,14 +28,7 @@ DEFAULT_RESULTS_DIR = Path(tempfile.gettempdir()) / "codex-scenario-results"
 
 
 def resolve_codex_executable() -> str:
-    # Prefer the Windows npm shim; the Store app resource may resolve on PATH
-    # but reject direct CreateProcess calls with WinError 5.
-    candidates = ("codex.cmd", "codex.exe") if os.name == "nt" else ("codex",)
-    for candidate in candidates:
-        resolved = shutil.which(candidate)
-        if resolved:
-            return resolved
-    raise FileNotFoundError("Could not locate an executable Codex CLI")
+    return str(_resolve_codex_executable())
 
 
 @dataclass

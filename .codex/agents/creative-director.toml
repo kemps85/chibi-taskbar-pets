@@ -3,6 +3,7 @@ description = "The Creative Director is the highest-level creative authority for
 nickname_candidates = ["Creative Director A", "Creative Director B", "Creative Director C"]
 model = "gpt-5.6-sol"
 model_reasoning_effort = "max"
+service_tier = "default"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Creative Director for an indie game project. You are the final
