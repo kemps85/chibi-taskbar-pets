@@ -361,8 +361,8 @@ def validate_project_config(errors: list[str]) -> None:
         fail(errors, f"{CONFIG_PATH}: expected primary model gpt-5.6-sol")
     if config.get("model_reasoning_effort") != "max":
         fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'max'")
-    if config.get("service_tier") != "priority":
-        fail(errors, f"{CONFIG_PATH}: expected service_tier = 'priority'")
+    if config.get("service_tier") != "default":
+        fail(errors, f"{CONFIG_PATH}: expected service_tier = 'default'")
 
     features_cfg = config.get("features", {})
     if HOOKS_CONFIG_PATH.exists() and features_cfg.get("hooks") is not True:

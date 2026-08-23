@@ -105,6 +105,11 @@ def resolve_codex_executable(
     raise FileNotFoundError("Could not locate an executable Codex CLI")
 
 
+def service_tier_for_model(model: str | None) -> str:
+    """Use Fast/Priority only when a probe explicitly targets Luna."""
+    return "priority" if model == "gpt-5.6-luna" else "default"
+
+
 def build_codex_command(
     *,
     kind: str,
@@ -134,7 +139,7 @@ def build_codex_command(
         "-o",
         str(message_path),
         "-c",
-        'service_tier="priority"',
+        f'service_tier="{service_tier_for_model(model)}"',
     ]
     if kind == "agent":
         agent_path = (AGENTS_DIR / f"{name}.toml").resolve()

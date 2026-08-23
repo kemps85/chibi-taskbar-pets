@@ -45,13 +45,14 @@ output before it returns to Sol.
 ## Specialist Layer
 
 All other project agents use `gpt-5.6-luna` with `xhigh` reasoning and priority
-service tier. This includes
+service tier. This is the only layer that uses Fast/Priority speed. It includes
 programmers, engine specialists, QA execution, design specialists, operations,
 analytics, accessibility, security, publishing, and content roles.
 
 Luna is the default spawned-agent model in `.codex/config.toml`, so generic
-workers also stay on the specialist tier unless a named role overrides it. The
-repo config sets `service_tier = "priority"`, which is Codex's Fast mode.
+workers also stay on the specialist tier unless a named role overrides it. Sol
+and Terra roles use the standard service tier; the compatibility dispatcher and
+live runners select Priority only when the requested model is Luna.
 
 ## Escalation Rules
 

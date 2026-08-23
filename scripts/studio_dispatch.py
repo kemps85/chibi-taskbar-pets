@@ -33,6 +33,11 @@ def _toml_string(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+def service_tier_for_model(model: str) -> str:
+    """Use Fast/Priority only for Luna specialist work."""
+    return "priority" if model == "gpt-5.6-luna" else "default"
+
+
 def load_role(repo_root: Path, role_name: str) -> StudioRole:
     config_path = repo_root / ".codex" / "agents" / f"{role_name}.toml"
     if not config_path.is_file():
@@ -128,7 +133,7 @@ def build_codex_exec_command(
         "-c",
         f'model_reasoning_effort="{role.model_reasoning_effort}"',
         "-c",
-        'service_tier="priority"',
+        f'service_tier="{service_tier_for_model(role.model)}"',
         "-s",
         role.sandbox_mode,
         "-o",
@@ -232,8 +237,8 @@ def doctor() -> int:
         issues.append("Primary model is not gpt-5.6-sol")
     if config.get("model_reasoning_effort") != "max":
         issues.append("Primary reasoning effort is not max")
-    if config.get("service_tier") != "priority":
-        issues.append("Studio service tier is not priority/Fast")
+    if config.get("service_tier") != "default":
+        issues.append("Studio default service tier is not standard")
 
     result = {
         "status": "success" if not issues else "error",

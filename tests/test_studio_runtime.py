@@ -40,7 +40,7 @@ def test_studio_config_primary_receiver_uses_sol_max_and_modern_keys() -> None:
     # Assert
     assert config["model"] == "gpt-5.6-sol"
     assert config["model_reasoning_effort"] == "max"
-    assert config["service_tier"] == "priority"
+    assert config["service_tier"] == "default"
     assert config["agents"]["default_subagent_model"] == "gpt-5.6-luna"
     assert config["agents"]["default_subagent_reasoning_effort"] == "xhigh"
     assert config["agents"]["max_concurrent_threads_per_session"] == 6
@@ -117,7 +117,7 @@ def test_dispatcher_known_role_builds_direct_role_codex_command(tmp_path: Path) 
     assert "gpt-5.6-sol" in command
     assert 'model_reasoning_effort="max"' in command
     assert command[-1] == "-"
-    assert 'service_tier="priority"' in command
+    assert 'service_tier="default"' in command
     assert "agents.technical-director.config_file" not in rendered
     assert "fork_context=false" not in rendered
 
@@ -192,7 +192,7 @@ def test_live_runner_agent_probe_registers_role_and_disables_full_history(tmp_pa
     # Assert
     assert command[0].lower().endswith(("codex.exe", "codex.cmd", "codex"))
     assert "--enable hooks" in rendered
-    assert 'service_tier="priority"' in rendered
+    assert 'service_tier="default"' in rendered
     assert "agents.technical-director.config_file" in rendered
     assert "fork_context=false" in rendered
 
@@ -207,3 +207,34 @@ def test_live_runner_accepts_powershell_project_gap_probes_as_benign() -> None:
 
     # Act / Assert
     assert live_runner.is_benign_project_gap_command(command)
+
+
+def test_live_runner_uses_priority_only_for_luna() -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    json_path = REPO_ROOT / "tmp-agent.jsonl"
+    message_path = REPO_ROOT / "tmp-agent.txt"
+
+    # Act
+    sol_command = live_runner.build_codex_command(
+        kind="agent",
+        name="technical-director",
+        prompt="Reply exactly READY.",
+        json_path=json_path,
+        message_path=message_path,
+        model="gpt-5.6-sol",
+        reasoning_effort="max",
+    )
+    luna_command = live_runner.build_codex_command(
+        kind="agent",
+        name="accessibility-specialist",
+        prompt="Reply exactly READY.",
+        json_path=json_path,
+        message_path=message_path,
+        model="gpt-5.6-luna",
+        reasoning_effort="xhigh",
+    )
+
+    # Assert
+    assert 'service_tier="default"' in " ".join(sol_command)
+    assert 'service_tier="priority"' in " ".join(luna_command)

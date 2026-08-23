@@ -222,6 +222,11 @@ def filter_stderr(stderr_text: str) -> list[str]:
     return kept
 
 
+def service_tier_for_model(model: str) -> str:
+    """Use Fast/Priority only for Luna specialist scenarios."""
+    return "priority" if model == "gpt-5.6-luna" else "default"
+
+
 def run_turn(
     *,
     workdir: Path,
@@ -249,7 +254,7 @@ def run_turn(
             "-c",
             'sandbox_mode="workspace-write"',
             "-c",
-            'service_tier="priority"',
+            f'service_tier="{service_tier_for_model(model)}"',
             "-m",
             model,
             "-c",
@@ -273,7 +278,7 @@ def run_turn(
             "--color",
             "never",
             "-c",
-            'service_tier="priority"',
+            f'service_tier="{service_tier_for_model(model)}"',
             "-m",
             model,
             "-c",

@@ -8,7 +8,7 @@ It is a personal reference, not a shared repo file.
 ```toml
 model = "gpt-5.6-sol"
 model_reasoning_effort = "max"
-service_tier = "priority"
+service_tier = "default"
 web_search = "live"
 
 [profiles.fast]
@@ -19,7 +19,7 @@ service_tier = "priority"
 [profiles.deep]
 model = "gpt-5.6-sol"
 model_reasoning_effort = "max"
-service_tier = "priority"
+service_tier = "default"
 ```
 
 ## Use Personal Config For
