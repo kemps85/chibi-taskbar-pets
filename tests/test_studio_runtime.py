@@ -93,7 +93,7 @@ def test_hooks_windows_commands_use_cross_platform_runner() -> None:
         assert "run_hook.py" in handler["commandWindows"]
 
 
-def test_dispatcher_known_role_builds_registered_nonforking_codex_command(tmp_path: Path) -> None:
+def test_dispatcher_known_role_builds_direct_role_codex_command(tmp_path: Path) -> None:
     # Arrange
     dispatcher = importlib.import_module("scripts.studio_dispatch")
     output_path = tmp_path / "technical-director.txt"
@@ -110,9 +110,19 @@ def test_dispatcher_known_role_builds_registered_nonforking_codex_command(tmp_pa
 
     # Assert
     assert command[0] == "codex.exe"
-    assert "gpt-5.6-luna" in command
-    assert "agents.technical-director.config_file" in rendered
-    assert "fork_context=false" in rendered
+    assert "gpt-5.6-sol" in command
+    assert 'model_reasoning_effort="max"' in command
+    assert command[-1] == "-"
+    assert "agents.technical-director.config_file" not in rendered
+    assert "fork_context=false" not in rendered
+
+    prompt = dispatcher.build_dispatch_prompt(
+        role_name="technical-director",
+        task="Review the architecture.",
+        repo_root=REPO_ROOT,
+    )
+    assert "Technical Director" in prompt
+    assert "Do not spawn other agents" in prompt
     assert str(output_path) in command
 
 
@@ -179,3 +189,15 @@ def test_live_runner_agent_probe_registers_role_and_disables_full_history(tmp_pa
     assert "--enable hooks" in rendered
     assert "agents.technical-director.config_file" in rendered
     assert "fork_context=false" in rendered
+
+
+def test_live_runner_accepts_powershell_project_gap_probes_as_benign() -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    command = (
+        "Get-ChildItem -LiteralPath 'production\\sprints','production\\milestones' "
+        "-File -Recurse (exit=-1)"
+    )
+
+    # Act / Assert
+    assert live_runner.is_benign_project_gap_command(command)

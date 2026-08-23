@@ -1,17 +1,19 @@
 # Shared Codex defaults for this studio template.
 # Personal overrides belong in ~/.codex/config.toml.
 
-model = "gpt-5.4"
-model_reasoning_effort = "high"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "max"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 tool_output_token_limit = 20000
 web_search = "live"
 
 [agents]
-max_threads = 6
-max_depth = 1
+enabled = true
+max_concurrent_threads_per_session = 6
+default_subagent_model = "gpt-5.6-luna"
+default_subagent_reasoning_effort = "max"
 
 [features]
-apply_patch_freeform = true
-codex_hooks = true
+hooks = true
+multi_agent = true

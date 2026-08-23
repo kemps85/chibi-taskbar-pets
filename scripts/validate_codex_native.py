@@ -12,6 +12,7 @@ import sys
 import tomllib
 
 from build_workflow_matrix import WORKFLOW_CATALOG_PATH, build_matrix, load_yaml
+from run_hook import resolve_bash
 
 try:
     import yaml
@@ -311,7 +312,10 @@ def validate_global_pack(errors: list[str]) -> None:
     if not ROOT_BOOTSTRAP_PS1.exists():
         fail(errors, f"{ROOT_BOOTSTRAP_PS1}: missing")
 
-    bash_path = shutil.which("bash")
+    try:
+        bash_path = resolve_bash()
+    except FileNotFoundError:
+        bash_path = None
     if bash_path and ROOT_BOOTSTRAP_SH.exists():
         result = subprocess.run(
             [bash_path, "-n", str(ROOT_BOOTSTRAP_SH)],
@@ -346,14 +350,23 @@ def validate_project_config(errors: list[str]) -> None:
         return
 
     agents_cfg = config.get("agents", {})
-    if agents_cfg.get("max_threads") != 6:
-        fail(errors, f"{CONFIG_PATH}: expected [agents].max_threads = 6")
-    if agents_cfg.get("max_depth") != 1:
-        fail(errors, f"{CONFIG_PATH}: expected [agents].max_depth = 1")
+    if agents_cfg.get("max_concurrent_threads_per_session") != 6:
+        fail(errors, f"{CONFIG_PATH}: expected [agents].max_concurrent_threads_per_session = 6")
+    if agents_cfg.get("default_subagent_model") != "gpt-5.6-luna":
+        fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_model = 'gpt-5.6-luna'")
+    if agents_cfg.get("default_subagent_reasoning_effort") != "max":
+        fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_reasoning_effort = 'max'")
+
+    if config.get("model") != "gpt-5.6-sol":
+        fail(errors, f"{CONFIG_PATH}: expected primary model gpt-5.6-sol")
+    if config.get("model_reasoning_effort") != "max":
+        fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'max'")
 
     features_cfg = config.get("features", {})
-    if HOOKS_CONFIG_PATH.exists() and features_cfg.get("codex_hooks") is not True:
-        fail(errors, f"{CONFIG_PATH}: expected [features].codex_hooks = true")
+    if HOOKS_CONFIG_PATH.exists() and features_cfg.get("hooks") is not True:
+        fail(errors, f"{CONFIG_PATH}: expected [features].hooks = true")
+    if features_cfg.get("multi_agent") is not True:
+        fail(errors, f"{CONFIG_PATH}: expected [features].multi_agent = true")
 
 
 def validate_hooks(errors: list[str]) -> None:
@@ -470,6 +483,13 @@ def validate_hooks(errors: list[str]) -> None:
                         f"{HOOKS_CONFIG_PATH}: {event_name} group {group_index} handler {handler_index} should resolve repo-local hooks from the git root",
                     )
 
+                command_windows = handler.get("commandWindows")
+                if not isinstance(command_windows, str) or "scripts/run_hook.py" not in command_windows:
+                    fail(
+                        errors,
+                        f"{HOOKS_CONFIG_PATH}: {event_name} group {group_index} handler {handler_index} must use scripts/run_hook.py via commandWindows",
+                    )
+
                 match = re.search(r"\.codex/hooks/([A-Za-z0-9._-]+\.sh)", command)
                 if match:
                     hook_script = HOOKS_DIR / match.group(1)
@@ -479,7 +499,10 @@ def validate_hooks(errors: list[str]) -> None:
                             f"{HOOKS_CONFIG_PATH}: {event_name} group {group_index} handler {handler_index} references missing script {hook_script}",
                         )
 
-    bash_path = shutil.which("bash")
+    try:
+        bash_path = resolve_bash()
+    except FileNotFoundError:
+        bash_path = None
     if bash_path:
         for hook_script in sorted(HOOKS_DIR.glob("*.sh")):
             result = subprocess.run(

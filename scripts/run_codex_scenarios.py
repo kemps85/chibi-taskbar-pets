@@ -24,6 +24,17 @@ STATES_DIR = FIXTURES_ROOT / "states"
 DEFAULT_RESULTS_DIR = Path(tempfile.gettempdir()) / "codex-scenario-results"
 
 
+def resolve_codex_executable() -> str:
+    # Prefer the Windows npm shim; the Store app resource may resolve on PATH
+    # but reject direct CreateProcess calls with WinError 5.
+    candidates = ("codex.cmd", "codex.exe") if os.name == "nt" else ("codex",)
+    for candidate in candidates:
+        resolved = shutil.which(candidate)
+        if resolved:
+            return resolved
+    raise FileNotFoundError("Could not locate an executable Codex CLI")
+
+
 @dataclass
 class TurnResult:
     index: int
@@ -64,12 +75,12 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="gpt-5.4-mini",
+        default="gpt-5.6-luna",
         help="Model to use for scenario runs.",
     )
     parser.add_argument(
         "--reasoning-effort",
-        default="low",
+        default="max",
         help="Reasoning effort to pass to Codex.",
     )
     parser.add_argument(
@@ -227,14 +238,16 @@ def run_turn(
 
     if session_id:
         command = [
-            "codex",
+            resolve_codex_executable(),
             "exec",
             "resume",
             "--json",
             "--enable",
-            "codex_hooks",
+            "hooks",
             "--skip-git-repo-check",
-            "--full-auto",
+            "--ignore-user-config",
+            "-c",
+            'sandbox_mode="workspace-write"',
             "-m",
             model,
             "-c",
@@ -246,12 +259,13 @@ def run_turn(
         ]
     else:
         command = [
-            "codex",
+            resolve_codex_executable(),
             "exec",
             "--json",
             "--enable",
-            "codex_hooks",
+            "hooks",
             "--skip-git-repo-check",
+            "--ignore-user-config",
             "-s",
             "workspace-write",
             "--color",

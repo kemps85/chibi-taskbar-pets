@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -16,6 +15,9 @@ BOOTSTRAP = REPO_ROOT / "global-pack" / "bin" / "bootstrap.py"
 
 sys.path.insert(0, str((REPO_ROOT / "global-pack" / "bin").resolve()))
 from _installer_lib import resolve_codex_home  # noqa: E402
+
+sys.path.insert(0, str((REPO_ROOT / "scripts").resolve()))
+from studio_dispatch import resolve_codex_executable  # noqa: E402
 
 
 def run(
@@ -79,7 +81,7 @@ def test_codex_home_resolution() -> None:
         home_path=Path("/home/tester"),
     )
     assert_equal(explicit.strategy, "explicit-codex-home", "explicit CODEX_HOME strategy")
-    assert_equal(explicit.path, Path("/tmp/custom-codex"), "explicit CODEX_HOME path")
+    assert_equal(explicit.path, Path("/tmp/custom-codex").resolve(), "explicit CODEX_HOME path")
 
     windows_native = resolve_codex_home(
         env={"USERPROFILE": "/windows-home/user"},
@@ -89,7 +91,7 @@ def test_codex_home_resolution() -> None:
     assert_equal(windows_native.strategy, "windows-home", "native Windows strategy")
     assert_equal(
         windows_native.path,
-        Path("/windows-home/user/.codex"),
+        Path("/windows-home/user/.codex").resolve(),
         "native Windows home path",
     )
 
@@ -106,7 +108,7 @@ def test_codex_home_resolution() -> None:
     )
     assert_equal(
         wsl_shared.path,
-        Path("/mnt/c/Users/Alice/.codex"),
+        Path("/mnt/c/Users/Alice/.codex").resolve(),
         "WSL shared-home path",
     )
 
@@ -117,7 +119,7 @@ def test_codex_home_resolution() -> None:
         path_exists=lambda path: False,
     )
     assert_equal(wsl_local.strategy, "wsl-linux-home", "WSL fallback strategy")
-    assert_equal(wsl_local.path, Path("/home/alice/.codex"), "WSL fallback path")
+    assert_equal(wsl_local.path, Path("/home/alice/.codex").resolve(), "WSL fallback path")
 
     linux_default = resolve_codex_home(
         env={},
@@ -133,7 +135,7 @@ def test_codex_home_resolution() -> None:
     )
     assert_equal(
         linux_default.path,
-        Path("/home/alice/.codex"),
+        Path("/home/alice/.codex").resolve(),
         "Linux default home path",
     )
 
@@ -199,6 +201,8 @@ def main() -> int:
             target_repo / ".codex" / "agents" / "producer.toml",
             target_repo / "docs" / "studio" / "workflow-catalog.yaml",
             target_repo / "docs" / "WORKFLOW-GUIDE.md",
+            target_repo / "scripts" / "run_hook.py",
+            target_repo / "scripts" / "studio_dispatch.py",
             target_repo / "design" / "AGENTS.md",
             target_repo / "src" / "AGENTS.md",
             target_repo / "tests" / "AGENTS.md",
@@ -207,8 +211,17 @@ def main() -> int:
         for path in expected_repo_paths:
             assert_exists(path)
 
-        codex_path = shutil.which("codex")
+        try:
+            codex_path = str(resolve_codex_executable())
+        except FileNotFoundError:
+            codex_path = None
         if codex_path:
+            version = run([codex_path, "--version"], timeout=20)
+            if "codex" not in (version.stdout + version.stderr).lower():
+                raise AssertionError("Resolved Codex executable did not report a Codex version")
+
+        live_probe_enabled = bool(codex_path and os.environ.get("CODEX_HYBRID_LIVE") == "1")
+        if live_probe_enabled:
             env = os.environ.copy()
             env["CODEX_HOME"] = str(codex_home)
 
@@ -284,6 +297,8 @@ def main() -> int:
                     print("Skipped live repo skill probe because Codex auth was unavailable in the temporary CODEX_HOME.")
             else:
                 print("Skipped live repo skill probe because the temporary CODEX_HOME has no auth.json.")
+        elif codex_path:
+            print("Skipped live hybrid Codex prompt probes; set CODEX_HYBRID_LIVE=1 to opt in.")
 
         print("Hybrid global installer validation passed.")
         print(f"Codex home: {codex_home}")

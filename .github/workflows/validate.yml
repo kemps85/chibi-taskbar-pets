@@ -1,0 +1,35 @@
+name: Validate Codex Game Studio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Run runtime unit tests
+        run: python -m pytest tests/test_studio_runtime.py -q
+
+      - name: Validate Codex-native contracts
+        run: python scripts/validate_codex_native.py
+
+      - name: Validate hybrid installer
+        run: python scripts/test_hybrid_global_install.py

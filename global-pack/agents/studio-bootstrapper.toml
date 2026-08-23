@@ -1,8 +1,8 @@
 name = "studio-bootstrapper"
 description = "Global helper for installing or syncing the Codex Code Game Studios layer into repositories without breaking existing local files."
 nickname_candidates = ["Studio Bootstrapper A", "Studio Bootstrapper B", "Studio Bootstrapper C"]
-model = "gpt-5.4-mini"
-model_reasoning_effort = "medium"
+model = "gpt-5.6-luna"
+model_reasoning_effort = "max"
 sandbox_mode = "workspace-write"
 developer_instructions = """
 You are the Studio Bootstrapper. You help users install the Codex Code Game

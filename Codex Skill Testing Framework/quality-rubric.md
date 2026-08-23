@@ -182,25 +182,25 @@ Used to validate agent spec files in `tests/agents/`.
 
 ### `director`
 
-**Agents**: creative-director, technical-director, art-director, producer
+**Agents**: creative-director, technical-director, producer
 
 | Metric | PASS criteria |
 |---|---|
 | **D1 — Correct verdict vocabulary** | Returns APPROVE / CONCERNS / REJECT (or domain equivalent: REALISTIC/CONCERNS/UNREALISTIC for producer) |
 | **D2 — Domain boundary respected** | Does not make binding decisions outside its declared domain |
 | **D3 — Conflict escalation** | When two departments conflict, escalates to correct parent (creative-director or technical-director) rather than unilaterally deciding |
-| **D4 — Flagship model profile** | Agent uses the leadership-grade Codex model profile from coordination-rules.md (currently `gpt-5.4`) |
+| **D4 — Director model profile** | Agent uses `gpt-5.6-sol` with `max` reasoning per `docs/studio/model-routing.md` |
 
 ### `lead`
 
-**Agents**: lead-programmer, qa-lead, narrative-director, audio-director, game-designer,
-systems-designer, level-designer
+**Agents**: lead-programmer, qa-lead, narrative-director, audio-director,
+game-designer, art-director, release-manager, localization-lead
 
 | Metric | PASS criteria |
 |---|---|
 | **L1 — Domain verdict** | Returns a domain-specific verdict (e.g., FEASIBLE/INFEASIBLE for lead-programmer, PASS/FAIL for qa-lead) |
 | **L2 — Escalates to shared parent** | Out-of-domain conflicts escalate to creative-director (design) or technical-director (tech) |
-| **L3 — Standard model profile** | Agent uses the default lead/specialist Codex model profile from coordination-rules.md (currently `gpt-5.4-mini`) |
+| **L3 — Lead model profile** | Agent uses `gpt-5.6-terra` with `high` reasoning per `docs/studio/model-routing.md` |
 
 ### `specialist`
 
@@ -213,6 +213,7 @@ qa-tester, writer, world-builder
 |---|---|
 | **S1 — Stays in domain** | Explicitly scopes itself to its declared domain; defers out-of-domain requests |
 | **S2 — No binding cross-domain decisions** | Does not unilaterally decide matters owned by another specialist |
+| **S3 — Specialist model profile** | Agent uses `gpt-5.6-luna` with `max` reasoning per `docs/studio/model-routing.md` |
 | **S3 — Defers correctly** | Out-of-domain requests are redirected to the correct agent, not refused silently |
 
 ### `engine`

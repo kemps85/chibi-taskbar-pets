@@ -16,7 +16,9 @@
   "repo_files": [
     "AGENTS.md",
     "docs/AGENTS.md",
-    "docs/WORKFLOW-GUIDE.md"
+    "docs/WORKFLOW-GUIDE.md",
+    "scripts/run_hook.py",
+    "scripts/studio_dispatch.py"
   ],
   "repo_dirs": [
     ".agents",

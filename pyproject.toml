@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-code-game-studios-runtime"
+version = "0.1.0"
+description = "Cross-platform validation and dispatch runtime for Codex Code Game Studios."
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0,<7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["scripts"]
+omit = ["scripts/run_codex_e2e.py", "scripts/run_codex_scenarios.py"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

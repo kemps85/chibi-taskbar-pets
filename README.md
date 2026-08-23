@@ -33,6 +33,16 @@ If you want the shortest explanation:
 | Repo skills | 84 | Game design, engineering, QA, production, release, Steamworks, and adoption workflows |
 | Custom agents | 50 | Directors, leads, specialists, engine experts, release, and Steam publishing roles |
 | Global pack | 3 skills + 1 agent | Lightweight install and discovery layer for `~/.codex` |
+
+### GPT-5.6 Studio Hierarchy
+
+- `gpt-5.6-sol` at `max` is the primary Technical Director and receives every prompt.
+- Sol delegates domain planning and review to Terra leads.
+- Luna `max` handles most specialist implementation, QA, exploration, and repeatable work.
+- `scripts/studio_dispatch.py` preserves named-role execution when the active Codex
+  custom-agent selector is unavailable or inconsistent.
+
+See [docs/studio/model-routing.md](docs/studio/model-routing.md) for the complete policy.
 | Hook events | 5 | `SessionStart`, `PreToolUse`, `PostToolUse`, `UserPromptSubmit`, `Stop` |
 | Templates | 35+ | Design, architecture, test, production, release, and Steam artifacts |
 | Engine references | 3 engines | Godot, Unity, and Unreal |
@@ -240,6 +250,15 @@ $project-stage-detect
 $setup-engine godot 4.6
 ```
 
+The primary Sol session normally delegates roles itself. To verify or invoke a
+specific role through the compatibility dispatcher:
+
+```powershell
+py -3 scripts/studio_dispatch.py doctor
+py -3 scripts/studio_dispatch.py list
+py -3 scripts/studio_dispatch.py run technical-director --task "Review the current architecture."
+```
+
 ## Recommended Workflow
 
 The studio follows the phase model in [docs/WORKFLOW-GUIDE.md](docs/WORKFLOW-GUIDE.md):
@@ -319,6 +338,8 @@ Reference guide:
 If you change shared skills, agents, install flows, or docs, run:
 
 ```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest tests/test_studio_runtime.py -q
 python3 scripts/sync_codex_metadata.py
 python3 scripts/validate_codex_native.py
 python3 scripts/test_hybrid_global_install.py

@@ -76,7 +76,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--scenario-model",
-        default="gpt-5.4-mini",
+        default="gpt-5.6-luna",
         help="Model passed to scripts/run_codex_scenarios.py when --refresh-live is used.",
     )
     return parser.parse_args()

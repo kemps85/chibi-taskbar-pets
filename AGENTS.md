@@ -2,6 +2,21 @@
 
 Use this repository as a structured game-development studio for Codex CLI.
 
+## Primary Reception And Routing
+
+- The primary Codex session runs on `gpt-5.6-sol` at `max` reasoning and acts as
+  the **Technical Director / Studio Lead** for every incoming user prompt.
+- The primary session owns intake, requirement clarification, decomposition,
+  delegation, cross-department conflict resolution, and final synthesis. It
+  should not absorb specialist implementation work merely because it can.
+- Delegate department-level review to Terra leads and focused execution to Luna
+  specialists according to `docs/studio/model-routing.md`.
+- Prefer native custom-agent delegation when the active Codex runtime exposes a
+  working custom-role selector. If it does not, use
+  `py -3 scripts/studio_dispatch.py run <role> --task "<bounded task>"`.
+- Keep each delegated task bounded, provide only the artifacts it needs, wait
+  for the result, and let Sol make the final project-level decision.
+
 ## First Moves
 
 - If the project is new or ambiguous, route through `$start`.
@@ -65,6 +80,7 @@ Use this repository as a structured game-development studio for Codex CLI.
 
 ## Delegation Model
 
+- The Sol Technical Director receives work first and owns final synthesis.
 - Directors define direction and resolve cross-discipline conflicts.
 - Leads own quality and coherence inside their domain.
 - Specialists execute focused work and escalate when a task crosses boundaries.

@@ -2,6 +2,11 @@
 
 This roster explains the role of each custom agent family. The TOML files in `.codex/agents/` remain the source of truth for runtime configuration.
 
+The primary session is a Sol-max Technical Director. Model assignment and
+escalation rules are defined in `docs/studio/model-routing.md`. When native
+custom-role selection is unavailable, invoke the same TOML role through
+`scripts/studio_dispatch.py`.
+
 ## How to Choose an Agent
 
 - use a director for cross-discipline conflicts or strategic decisions
@@ -96,3 +101,4 @@ This roster explains the role of each custom agent family. The TOML files in `.c
 - `docs/studio/skills-reference.md`
 - `docs/studio/agent-coordination-map.md`
 - `docs/studio/coordination-rules.md`
+- `docs/studio/model-routing.md`

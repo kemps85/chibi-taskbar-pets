@@ -7,12 +7,14 @@
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/session-start.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"session-start.sh\"",
             "timeout": 10,
             "statusMessage": "Loading studio session context"
           },
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/detect-gaps.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"detect-gaps.sh\"",
             "timeout": 10,
             "statusMessage": "Checking project gaps"
           }
@@ -26,12 +28,14 @@
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/validate-commit.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"validate-commit.sh\"",
             "timeout": 10,
             "statusMessage": "Checking staged commit"
           },
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/validate-push.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"validate-push.sh\"",
             "timeout": 10,
             "statusMessage": "Reviewing push target"
           }
@@ -44,18 +48,21 @@
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/validate-assets.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"validate-assets.sh\"",
             "timeout": 10,
             "statusMessage": "Reviewing changed assets"
           },
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/validate-skill-change.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"validate-skill-change.sh\"",
             "timeout": 10,
             "statusMessage": "Validating Codex contracts"
           },
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/session-stop.sh\"",
+            "commandWindows": "py -3 \"$(git rev-parse --show-toplevel)/scripts/run_hook.py\" \"session-stop.sh\"",
             "timeout": 10,
             "statusMessage": "Writing session audit trail"
           }

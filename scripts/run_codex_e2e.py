@@ -6,8 +6,10 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass
 import json
+import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -79,6 +81,8 @@ def skill_prompt(name: str) -> str:
 def agent_prompt(name: str) -> str:
     return (
         f"Use the `{name}` subagent exactly once for this repository. "
+        "Spawn the named custom agent without a full-history fork "
+        "(`fork_context=false`). "
         'Pass it this exact task: "Reply with exactly READY and nothing else. '
         'Do not write files." If the subagent completes successfully, return '
         "exactly `AGENT_OK`. If subagent invocation or completion fails, return "
@@ -86,24 +90,42 @@ def agent_prompt(name: str) -> str:
     )
 
 
-def run_codex_exec(
+def resolve_codex_executable(
     *,
+    platform: str = os.name,
+    which=shutil.which,
+) -> str:
+    # Prefer the Windows npm shim over a Store app resource that can resolve
+    # on PATH but reject direct CreateProcess calls with WinError 5.
+    candidates = ("codex.cmd", "codex.exe") if platform == "nt" else ("codex",)
+    for candidate in candidates:
+        resolved = which(candidate)
+        if resolved:
+            return resolved
+    raise FileNotFoundError("Could not locate an executable Codex CLI")
+
+
+def build_codex_command(
+    *,
+    kind: str,
+    name: str,
     prompt: str,
     json_path: Path,
     message_path: Path,
     model: str | None,
     reasoning_effort: str | None,
-    timeout: int,
-) -> tuple[int, str]:
+) -> list[str]:
+    del json_path  # stdout is redirected to this path by run_codex_exec.
     command = [
-        "codex",
+        resolve_codex_executable(),
         "exec",
         "-C",
         str(REPO_ROOT),
         "--enable",
-        "codex_hooks",
+        "hooks",
         "--skip-git-repo-check",
         "--ephemeral",
+        "--ignore-user-config",
         "--color",
         "never",
         "--json",
@@ -112,11 +134,49 @@ def run_codex_exec(
         "-o",
         str(message_path),
     ]
+    if kind == "agent":
+        agent_path = (AGENTS_DIR / f"{name}.toml").resolve()
+        if not agent_path.is_file():
+            raise FileNotFoundError(f"Missing custom agent file: {agent_path}")
+        text = agent_path.read_text(encoding="utf-8")
+        description_match = re.search(r'^description\s*=\s*"([^"]+)"', text, re.MULTILINE)
+        description = description_match.group(1) if description_match else f"Studio role {name}"
+        command.extend(
+            [
+                "-c",
+                f"agents.{name}.description={json.dumps(description)}",
+                "-c",
+                f"agents.{name}.config_file={json.dumps(agent_path.as_posix())}",
+            ]
+        )
     if model:
         command.extend(["-m", model])
     if reasoning_effort:
         command.extend(["-c", f'model_reasoning_effort="{reasoning_effort}"'])
     command.append(prompt)
+    return command
+
+
+def run_codex_exec(
+    *,
+    kind: str,
+    name: str,
+    prompt: str,
+    json_path: Path,
+    message_path: Path,
+    model: str | None,
+    reasoning_effort: str | None,
+    timeout: int,
+) -> tuple[int, str]:
+    command = build_codex_command(
+        kind=kind,
+        name=name,
+        prompt=prompt,
+        json_path=json_path,
+        message_path=message_path,
+        model=model,
+        reasoning_effort=reasoning_effort,
+    )
 
     with json_path.open("w", encoding="utf-8") as stdout_handle:
         completed = subprocess.run(
@@ -300,7 +360,7 @@ def parse_events(json_path: Path) -> tuple[list[str], list[str], bool]:
 
 
 def is_benign_project_gap_command(command_record: str) -> bool:
-    command = command_record.lower()
+    command = command_record.lower().replace("\\", "/")
     project_path_signals = (
         "design/",
         "production/",
@@ -314,6 +374,7 @@ def is_benign_project_gap_command(command_record: str) -> bool:
         "cat ",
         "rg --files",
         "find ",
+        "get-childitem ",
         "[ -f ",
         "[ -e ",
         "test -f ",
@@ -364,6 +425,8 @@ def run_probe(
 
     try:
         exit_code, stderr_text = run_codex_exec(
+            kind=kind,
+            name=name,
             prompt=prompt,
             json_path=json_path,
             message_path=message_path,
@@ -485,7 +548,7 @@ def main() -> int:
         result = run_probe(
             kind=kind,
             name=name,
-            model=args.model if kind == "skill" else None,
+            model=args.model,
             reasoning_effort=args.reasoning_effort,
             timeout=args.timeout,
             results_dir=results_dir,

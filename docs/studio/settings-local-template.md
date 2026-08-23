@@ -6,17 +6,17 @@ It is a personal reference, not a shared repo file.
 ## Suggested Pattern
 
 ```toml
-model = "gpt-5.4"
-reasoning_effort = "medium"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "max"
 web_search = "live"
 
 [profiles.fast]
-model = "gpt-5.4-mini"
-reasoning_effort = "low"
+model = "gpt-5.6-luna"
+model_reasoning_effort = "max"
 
 [profiles.deep]
-model = "gpt-5.4"
-reasoning_effort = "high"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "max"
 ```
 
 ## Use Personal Config For
