@@ -190,9 +190,9 @@ def validate_agents(errors: list[str]) -> None:
 
         role_name = agent_toml.stem
         if role_name in DIRECTOR_AGENT_NAMES:
-            expected = ("gpt-5.6-sol", "max", "default")
+            expected = ("gpt-5.6-sol", "high", "default")
         elif role_name in LEAD_AGENT_NAMES:
-            expected = ("gpt-5.6-terra", "max", "default")
+            expected = ("gpt-5.6-terra", "high", "default")
         else:
             expected = ("gpt-5.6-luna", "xhigh", "priority")
         actual = (
@@ -399,8 +399,8 @@ def validate_project_config(errors: list[str]) -> None:
 
     if config.get("model") != "gpt-5.6-sol":
         fail(errors, f"{CONFIG_PATH}: expected primary model gpt-5.6-sol")
-    if config.get("model_reasoning_effort") != "max":
-        fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'max'")
+    if config.get("model_reasoning_effort") != "high":
+        fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'high'")
     if config.get("service_tier") != "default":
         fail(errors, f"{CONFIG_PATH}: expected service_tier = 'default'")
 

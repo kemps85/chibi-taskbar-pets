@@ -4,7 +4,7 @@ Use this repository as a structured game-development studio for Codex CLI.
 
 ## Primary Reception And Routing
 
-- The primary Codex session runs on `gpt-5.6-sol` at `max` reasoning and acts as
+- The primary Codex session runs on `gpt-5.6-sol` at `high` reasoning and acts as
   the **Technical Director / Studio Lead** for every incoming user prompt.
 - The primary session owns intake, requirement clarification, decomposition,
   delegation, cross-department conflict resolution, and final synthesis. It

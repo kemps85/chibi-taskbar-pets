@@ -30,7 +30,7 @@ def _load_toml(path: Path) -> dict:
         return tomllib.load(handle)
 
 
-def test_studio_config_primary_receiver_uses_sol_max_and_modern_keys() -> None:
+def test_studio_config_primary_receiver_uses_sol_high_and_modern_keys() -> None:
     # Arrange
     config_path = REPO_ROOT / ".codex" / "config.toml"
 
@@ -39,7 +39,7 @@ def test_studio_config_primary_receiver_uses_sol_max_and_modern_keys() -> None:
 
     # Assert
     assert config["model"] == "gpt-5.6-sol"
-    assert config["model_reasoning_effort"] == "max"
+    assert config["model_reasoning_effort"] == "high"
     assert config["service_tier"] == "default"
     assert config["agents"]["default_subagent_model"] == "gpt-5.6-luna"
     assert config["agents"]["default_subagent_reasoning_effort"] == "xhigh"
@@ -69,9 +69,9 @@ def test_agent_models_roster_assigns_sol_directors_terra_leads_luna_specialists(
     assert len(assignments) == 50
     for name, assignment in assignments.items():
         if name in DIRECTORS:
-            assert assignment == ("gpt-5.6-sol", "max", "default")
+            assert assignment == ("gpt-5.6-sol", "high", "default")
         elif name in LEADS:
-            assert assignment == ("gpt-5.6-terra", "max", "default")
+            assert assignment == ("gpt-5.6-terra", "high", "default")
         else:
             assert assignment == ("gpt-5.6-luna", "xhigh", "priority")
     assert sum(
@@ -129,7 +129,7 @@ def test_dispatcher_known_role_builds_direct_role_codex_command(tmp_path: Path) 
     # Assert
     assert command[0] == "codex.exe"
     assert "gpt-5.6-sol" in command
-    assert 'model_reasoning_effort="max"' in command
+    assert 'model_reasoning_effort="high"' in command
     assert command[-1] == "-"
     assert 'service_tier="default"' in command
     assert "agents.technical-director.config_file" not in rendered
@@ -225,7 +225,7 @@ def test_live_runner_agent_probe_registers_role_and_disables_full_history(tmp_pa
         json_path=json_path,
         message_path=message_path,
         model="gpt-5.6-sol",
-        reasoning_effort="max",
+        reasoning_effort="high",
     )
     rendered = " ".join(command)
 
@@ -276,7 +276,7 @@ def test_live_runner_uses_priority_only_for_luna() -> None:
         json_path=json_path,
         message_path=message_path,
         model="gpt-5.6-sol",
-        reasoning_effort="max",
+        reasoning_effort="high",
     )
     luna_command = live_runner.build_codex_command(
         kind="agent",

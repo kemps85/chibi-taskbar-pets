@@ -8,7 +8,7 @@ cost-efficient specialist tier.
 
 | Responsibility | Model | Effort |
 |---|---|---|
-| Primary Technical Director / Studio Lead | `gpt-5.6-sol` | `max` |
+| Primary Technical Director / Studio Lead | `gpt-5.6-sol` | `high` |
 
 The primary Sol session receives every user prompt. It clarifies requirements,
 selects the workflow, chooses roles, resolves conflicts, and synthesizes the
@@ -17,7 +17,7 @@ department at once.
 
 ## Director Layer
 
-The following configured agents use `gpt-5.6-sol` with `max` reasoning:
+The following configured agents use `gpt-5.6-sol` with `high` reasoning:
 
 - `technical-director`
 - `creative-director`
@@ -28,7 +28,7 @@ phase gates.
 
 ## Lead Layer
 
-The following configured agents use `gpt-5.6-terra` with `max` reasoning:
+The following configured agents use `gpt-5.6-terra` with `high` reasoning:
 
 - `game-designer`
 - `lead-programmer`

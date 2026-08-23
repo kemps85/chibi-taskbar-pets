@@ -36,7 +36,7 @@ If you want the shortest explanation:
 
 ### GPT-5.6 Studio Hierarchy
 
-- `gpt-5.6-sol` at `max` is the primary Technical Director and receives every prompt.
+- `gpt-5.6-sol` at `high` is the primary Technical Director and receives every prompt.
 - Sol delegates domain planning and review to Terra leads.
 - Luna `xhigh` with priority/Fast mode handles most specialist implementation,
   QA, exploration, and repeatable work; Sol and Terra stay on standard speed.

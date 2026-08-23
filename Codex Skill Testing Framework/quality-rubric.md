@@ -189,7 +189,7 @@ Used to validate agent spec files in `tests/agents/`.
 | **D1 — Correct verdict vocabulary** | Returns APPROVE / CONCERNS / REJECT (or domain equivalent: REALISTIC/CONCERNS/UNREALISTIC for producer) |
 | **D2 — Domain boundary respected** | Does not make binding decisions outside its declared domain |
 | **D3 — Conflict escalation** | When two departments conflict, escalates to correct parent (creative-director or technical-director) rather than unilaterally deciding |
-| **D4 — Director model profile** | Agent uses `gpt-5.6-sol` with `max` reasoning per `docs/studio/model-routing.md` |
+| **D4 — Director model profile** | Agent uses `gpt-5.6-sol` with `high` reasoning per `docs/studio/model-routing.md` |
 
 ### `lead`
 
@@ -200,7 +200,7 @@ game-designer, art-director, release-manager, localization-lead
 |---|---|
 | **L1 — Domain verdict** | Returns a domain-specific verdict (e.g., FEASIBLE/INFEASIBLE for lead-programmer, PASS/FAIL for qa-lead) |
 | **L2 — Escalates to shared parent** | Out-of-domain conflicts escalate to creative-director (design) or technical-director (tech) |
-| **L3 — Lead model profile** | Agent uses `gpt-5.6-terra` with `max` reasoning per `docs/studio/model-routing.md` |
+| **L3 — Lead model profile** | Agent uses `gpt-5.6-terra` with `high` reasoning per `docs/studio/model-routing.md` |
 
 ### `specialist`
 

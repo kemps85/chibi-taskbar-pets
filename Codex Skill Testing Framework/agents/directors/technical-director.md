@@ -16,7 +16,7 @@ Verified by reading the agent's `.codex/agents/technical-director.toml` definiti
 
 - [ ] `description:` field is present and domain-specific (references architecture, feasibility, ADR — not generic)
 - [ ] Optional runtime fields (`model`, `model_reasoning_effort`, `sandbox_mode`) fit the role, and `developer_instructions` keep work inside the agent's domain
-- [ ] Model tier is `gpt-5.6-sol` with `max` reasoning per `docs/studio/model-routing.md`
+- [ ] Model tier is `gpt-5.6-sol` with `high` reasoning per `docs/studio/model-routing.md`
 - [ ] Agent definition does not claim authority over game design decisions or creative direction
 
 ---

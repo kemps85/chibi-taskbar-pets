@@ -16,7 +16,7 @@ Verified by reading the agent's `.codex/agents/narrative-director.toml` definiti
 
 - [ ] `description:` field is present and domain-specific (references story, character, world-building, consistency — not generic)
 - [ ] Optional runtime fields (`model`, `model_reasoning_effort`, `sandbox_mode`) fit the role, and `developer_instructions` keep work inside the agent's domain
-- [ ] Model tier is `gpt-5.6-terra` with `max` reasoning per `docs/studio/model-routing.md`
+- [ ] Model tier is `gpt-5.6-terra` with `high` reasoning per `docs/studio/model-routing.md`
 - [ ] Agent definition does not claim authority over visual style, technical systems, or production scheduling
 
 ---

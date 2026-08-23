@@ -7,7 +7,7 @@ It is a personal reference, not a shared repo file.
 
 ```toml
 model = "gpt-5.6-sol"
-model_reasoning_effort = "max"
+model_reasoning_effort = "high"
 service_tier = "default"
 web_search = "live"
 
@@ -18,7 +18,7 @@ service_tier = "priority"
 
 [profiles.deep]
 model = "gpt-5.6-sol"
-model_reasoning_effort = "max"
+model_reasoning_effort = "high"
 service_tier = "default"
 ```
 

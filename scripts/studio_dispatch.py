@@ -229,8 +229,8 @@ def doctor() -> int:
         config = tomllib.load(handle)
     if config.get("model") != "gpt-5.6-sol":
         issues.append("Primary model is not gpt-5.6-sol")
-    if config.get("model_reasoning_effort") != "max":
-        issues.append("Primary reasoning effort is not max")
+    if config.get("model_reasoning_effort") != "high":
+        issues.append("Primary reasoning effort is not high")
     if config.get("service_tier") != "default":
         issues.append("Studio default service tier is not standard")
     for role in roles:
