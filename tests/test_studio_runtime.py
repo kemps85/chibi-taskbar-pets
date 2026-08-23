@@ -139,3 +139,43 @@ def test_hook_runner_windows_prefers_explicit_git_bash() -> None:
 
     # Assert
     assert resolved == expected
+
+
+def test_live_runner_windows_resolves_executable_file_instead_of_shell_shim() -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    expected = r"C:\Program Files\Codex\codex.exe"
+
+    # Act
+    resolved = live_runner.resolve_codex_executable(
+        platform="nt",
+        which=lambda name: expected if name == "codex.exe" else None,
+    )
+
+    # Assert
+    assert resolved == expected
+
+
+def test_live_runner_agent_probe_registers_role_and_disables_full_history(tmp_path: Path) -> None:
+    # Arrange
+    live_runner = importlib.import_module("scripts.run_codex_e2e")
+    json_path = tmp_path / "agent.jsonl"
+    message_path = tmp_path / "agent.txt"
+
+    # Act
+    command = live_runner.build_codex_command(
+        kind="agent",
+        name="technical-director",
+        prompt=live_runner.agent_prompt("technical-director"),
+        json_path=json_path,
+        message_path=message_path,
+        model="gpt-5.6-sol",
+        reasoning_effort="max",
+    )
+    rendered = " ".join(command)
+
+    # Assert
+    assert command[0].lower().endswith(("codex.exe", "codex.cmd", "codex"))
+    assert "--enable hooks" in rendered
+    assert "agents.technical-director.config_file" in rendered
+    assert "fork_context=false" in rendered
