@@ -4,8 +4,10 @@ Use this repository as a structured game-development studio for Codex CLI.
 
 ## Primary Reception And Routing
 
-- The primary Codex session runs on `gpt-5.6-sol` at `high` reasoning and acts as
-  the **Technical Director / Studio Lead** for every incoming user prompt.
+- The primary Codex session uses the model selected by the user in Codex and acts
+  as the **Technical Director / Studio Lead** for every incoming user prompt.
+- Never replace the user's primary model selection, reasoning effort, or speed
+  tier. The repo-local `.codex/config.toml` intentionally leaves those keys unset.
 - The primary session owns intake, requirement clarification, decomposition,
   delegation, cross-department conflict resolution, and final synthesis. It
   should not absorb specialist implementation work merely because it can.
@@ -80,7 +82,7 @@ Use this repository as a structured game-development studio for Codex CLI.
 
 ## Delegation Model
 
-- The Sol Technical Director receives work first and owns final synthesis.
+- The user-selected primary model receives work first and owns final synthesis.
 - Directors define direction and resolve cross-discipline conflicts.
 - Leads own quality and coherence inside their domain.
 - Specialists execute focused work and escalate when a task crosses boundaries.

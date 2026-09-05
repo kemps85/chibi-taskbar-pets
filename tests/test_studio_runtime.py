@@ -30,7 +30,7 @@ def _load_toml(path: Path) -> dict:
         return tomllib.load(handle)
 
 
-def test_studio_config_primary_receiver_uses_sol_high_and_modern_keys() -> None:
+def test_studio_config_respects_user_selected_primary_model_and_modern_keys() -> None:
     # Arrange
     config_path = REPO_ROOT / ".codex" / "config.toml"
 
@@ -38,9 +38,9 @@ def test_studio_config_primary_receiver_uses_sol_high_and_modern_keys() -> None:
     config = _load_toml(config_path)
 
     # Assert
-    assert config["model"] == "gpt-5.6-sol"
-    assert config["model_reasoning_effort"] == "high"
-    assert config["service_tier"] == "default"
+    assert "model" not in config
+    assert "model_reasoning_effort" not in config
+    assert "service_tier" not in config
     assert config["agents"]["default_subagent_model"] == "gpt-5.6-luna"
     assert config["agents"]["default_subagent_reasoning_effort"] == "xhigh"
     assert config["agents"]["max_concurrent_threads_per_session"] == 6
@@ -49,6 +49,15 @@ def test_studio_config_primary_receiver_uses_sol_high_and_modern_keys() -> None:
     assert "codex_hooks" not in config["features"]
     assert "apply_patch_freeform" not in config["features"]
     assert "max_depth" not in config["agents"]
+
+
+def test_primary_routing_contract_preserves_the_users_active_model() -> None:
+    # Arrange / Act
+    guidance = (REPO_ROOT / "AGENTS.md").read_text(encoding="utf-8")
+
+    # Assert
+    assert "model selected by the user" in guidance
+    assert "Never replace the user's primary model selection" in guidance
 
 
 def test_agent_models_roster_assigns_sol_directors_terra_leads_luna_specialists() -> None:

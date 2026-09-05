@@ -3,7 +3,10 @@
 Use this document as a starting point when creating your own `~/.codex/config.toml`.
 It is a personal reference, not a shared repo file.
 
-## Suggested Pattern
+## Optional Personal Pattern
+
+These are examples only. Pick any model available in your Codex installation;
+the Game repo will not override that choice.
 
 ```toml
 model = "gpt-5.6-sol"

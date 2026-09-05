@@ -397,12 +397,12 @@ def validate_project_config(errors: list[str]) -> None:
     if agents_cfg.get("default_subagent_reasoning_effort") != "xhigh":
         fail(errors, f"{CONFIG_PATH}: expected [agents].default_subagent_reasoning_effort = 'xhigh'")
 
-    if config.get("model") != "gpt-5.6-sol":
-        fail(errors, f"{CONFIG_PATH}: expected primary model gpt-5.6-sol")
-    if config.get("model_reasoning_effort") != "high":
-        fail(errors, f"{CONFIG_PATH}: expected primary model_reasoning_effort = 'high'")
-    if config.get("service_tier") != "default":
-        fail(errors, f"{CONFIG_PATH}: expected service_tier = 'default'")
+    for key in ("model", "model_reasoning_effort", "service_tier"):
+        if key in config:
+            fail(
+                errors,
+                f"{CONFIG_PATH}: primary {key} must remain unset so Codex preserves the user's selection",
+            )
 
     features_cfg = config.get("features", {})
     if HOOKS_CONFIG_PATH.exists() and features_cfg.get("hooks") is not True:

@@ -227,12 +227,14 @@ def doctor() -> int:
     config_path = REPO_ROOT / ".codex" / "config.toml"
     with config_path.open("rb") as handle:
         config = tomllib.load(handle)
-    if config.get("model") != "gpt-5.6-sol":
-        issues.append("Primary model is not gpt-5.6-sol")
-    if config.get("model_reasoning_effort") != "high":
-        issues.append("Primary reasoning effort is not high")
-    if config.get("service_tier") != "default":
-        issues.append("Studio default service tier is not standard")
+    pinned_primary_keys = {
+        key for key in ("model", "model_reasoning_effort", "service_tier") if key in config
+    }
+    if pinned_primary_keys:
+        issues.append(
+            "Project config pins the primary Codex selection: "
+            + ", ".join(sorted(pinned_primary_keys))
+        )
     for role in roles:
         expected_tier = service_tier_for_model(role.model)
         if role.service_tier != expected_tier:

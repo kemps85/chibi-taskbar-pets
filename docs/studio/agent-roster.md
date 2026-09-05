@@ -2,10 +2,10 @@
 
 This roster explains the role of each custom agent family. The TOML files in `.codex/agents/` remain the source of truth for runtime configuration.
 
-The primary session is a Sol-high Technical Director. Model assignment and
-escalation rules are defined in `docs/studio/model-routing.md`. When native
-custom-role selection is unavailable, invoke the same TOML role through
-`scripts/studio_dispatch.py`.
+The primary session uses the model, reasoning effort, and speed selected by the
+user in Codex. Delegated named-role assignment and escalation rules are defined
+in `docs/studio/model-routing.md`. When native custom-role selection is
+unavailable, invoke the same TOML role through `scripts/studio_dispatch.py`.
 
 ## How to Choose an Agent
 

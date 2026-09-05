@@ -1,9 +1,7 @@
-# Shared Codex defaults for this studio template.
-# Personal overrides belong in ~/.codex/config.toml.
+# Shared Codex behavior for this studio template.
+# The primary model, reasoning effort, and speed are deliberately not set here.
+# Codex must preserve the user's active UI/profile selection.
 
-model = "gpt-5.6-sol"
-model_reasoning_effort = "high"
-service_tier = "default"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 tool_output_token_limit = 20000

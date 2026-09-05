@@ -1,19 +1,21 @@
-# GPT-5.6 Model Routing
+# Model Routing
 
-This studio uses a tiered GPT-5.6 hierarchy. The goal is to keep one strong
-technical authority at the front door while assigning most execution to the
-cost-efficient specialist tier.
+This studio preserves the model selected by the user for the primary session,
+then uses a tiered GPT-5.6 hierarchy for delegated named roles. This keeps model
+choice flexible while assigning most execution to cost-efficient specialists.
 
 ## Reception Layer
 
-| Responsibility | Model | Effort |
+| Responsibility | Model | Effort and speed |
 |---|---|---|
-| Primary Technical Director / Studio Lead | `gpt-5.6-sol` | `high` |
+| Primary Technical Director / Studio Lead | User-selected in Codex | User-selected in Codex |
 
-The primary Sol session receives every user prompt. It clarifies requirements,
+The primary session receives every user prompt. It clarifies requirements,
 selects the workflow, chooses roles, resolves conflicts, and synthesizes the
 final response. It delegates implementation instead of acting as every
-department at once.
+department at once. The repo must not set top-level `model`,
+`model_reasoning_effort`, or `service_tier` keys in `.codex/config.toml`, because
+those keys would override the user's active UI or profile selection.
 
 ## Director Layer
 

@@ -34,10 +34,11 @@ If you want the shortest explanation:
 | Custom agents | 50 | Directors, leads, specialists, engine experts, release, and Steam publishing roles |
 | Global pack | 3 skills + 1 agent | Lightweight install and discovery layer for `~/.codex` |
 
-### GPT-5.6 Studio Hierarchy
+### User-Selected Primary Model
 
-- `gpt-5.6-sol` at `high` is the primary Technical Director and receives every prompt.
-- Sol delegates domain planning and review to Terra leads.
+- The model selected in Codex is the primary Technical Director and receives every prompt.
+- The repo does not override the selected primary model, reasoning effort, or speed tier.
+- The primary session delegates domain planning and review to Terra leads.
 - Luna `xhigh` with priority/Fast mode handles most specialist implementation,
   QA, exploration, and repeatable work; Sol and Terra stay on standard speed.
 - `scripts/studio_dispatch.py` preserves named-role execution when the active Codex
@@ -251,7 +252,7 @@ $project-stage-detect
 $setup-engine godot 4.6
 ```
 
-The primary Sol session normally delegates roles itself. To verify or invoke a
+The user-selected primary session normally delegates roles itself. To verify or invoke a
 specific role through the compatibility dispatcher:
 
 ```powershell
