@@ -1,0 +1,347 @@
+{
+  "status": "CANDIDATE_USER_APPROVAL_PENDING",
+  "pack": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1",
+  "clips": {
+    "idle": {
+      "frame_count": 8,
+      "durations_ms": [
+        450,
+        450,
+        450,
+        450,
+        450,
+        450,
+        450,
+        450
+      ],
+      "total_duration_ms": 3600,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\idle-preview-1x.apng",
+      "preview_sha256": "b83fb203177b3903d034e7693e8934c8ef95035fd5c7c5f608d42cf0fcc2efca",
+      "frames_sha256": [
+        "2a022b1903be98f34716e29074b9e981ab43ca68a1ddb930b81dd949ba9330e5",
+        "d061163e92ccaa277c19ecd6dd9bacf3d259080384c2531c6ceb1d2d18b35634",
+        "7c8aa529101cd5d7b32db7c40e04b5bb3952219f52ba14bdfe96d4133e171882",
+        "76cbacb33adf2316d3d97160e37ed157e2ddfc52f14d9477b343a679610714fa",
+        "2a022b1903be98f34716e29074b9e981ab43ca68a1ddb930b81dd949ba9330e5",
+        "fbd0c37f8c576b133f103fe3e224b95c27097285451b8caeafb49a6e984489f6",
+        "1046b79bd2da592182876a7ac8c0af1d69295f8b0843af3da4a5540588698cea",
+        "a97431df8896a62412672f41223ff43560569ee3a122f9df3ef451b938db706e"
+      ]
+    },
+    "walk": {
+      "frame_count": 8,
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "total_duration_ms": 800,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\walk-preview-1x.apng",
+      "preview_sha256": "45227d5039cf2adbd11b1d81c3e094f77f31d7face45ae643fa22ab8c0bc317a",
+      "frames_sha256": [
+        "32eed8191d0d92e462bc8a50d6112e733887a9a92b42680cb5dbc53da76bacbf",
+        "d33e5d2c0236eecd10d43225dad06923f72f2f967aa7391d71769b4975c23846",
+        "bb48f298a76070563b8d1fc5e25e7a6030b5389293efe12bf62b25fad061aab8",
+        "7afceea5346ae897ad79ed30cf16ab7365ab5521a769f1a954f2bbf29f326cbb",
+        "8200de7c5af9d22fe4e2f389393bdfdc371de50481a78cf4db005627fbd3e01c",
+        "bb48f298a76070563b8d1fc5e25e7a6030b5389293efe12bf62b25fad061aab8",
+        "d33e5d2c0236eecd10d43225dad06923f72f2f967aa7391d71769b4975c23846",
+        "8b7403a260398adb8f2f292aa291928ea84fadfd4d914b2054d266e5ee8d5821"
+      ]
+    },
+    "hunger_cue": {
+      "frame_count": 8,
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "total_duration_ms": 1200,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\hunger_cue-preview-1x.apng",
+      "preview_sha256": "8351538453d0451d5ef5f4a6e2eccc599c7e7fd394222f35a2b75c3ff01d5249",
+      "frames_sha256": [
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40",
+        "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+      ]
+    },
+    "eat": {
+      "frame_count": 12,
+      "durations_ms": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "total_duration_ms": 1920,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\eat-preview-1x.apng",
+      "preview_sha256": "18c0040056fe18696fd1823c2c50b7d8e5e6ef7d92091dbbf1d8fea2dda278a6",
+      "frames_sha256": [
+        "ea2de370b922e6a29a7afa5eaa64d8cda500b5531d035551f83da4506fb883e5",
+        "ea2de370b922e6a29a7afa5eaa64d8cda500b5531d035551f83da4506fb883e5",
+        "bf890258e8ef512a970766dd8c526262eed59177407e27667ea2d53bafad0287",
+        "bf890258e8ef512a970766dd8c526262eed59177407e27667ea2d53bafad0287",
+        "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "c433a9f3833df0a1295b5e51e5cdaae9495c407324f5f7dc0dceaa950eaf4e46",
+        "c433a9f3833df0a1295b5e51e5cdaae9495c407324f5f7dc0dceaa950eaf4e46",
+        "c433a9f3833df0a1295b5e51e5cdaae9495c407324f5f7dc0dceaa950eaf4e46",
+        "ea2de370b922e6a29a7afa5eaa64d8cda500b5531d035551f83da4506fb883e5"
+      ]
+    },
+    "sleep_cue": {
+      "frame_count": 8,
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "total_duration_ms": 1200,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\sleep_cue-preview-1x.apng",
+      "preview_sha256": "c02330d25f12248405a878e1c810a7e3c77dc9aa9b2a76487a9ce92102756d23",
+      "frames_sha256": [
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "23c65290be47927c33f510ca09d17aad8ff001b811531a0e17d3f6a97530a3e5",
+        "2b3849858fb8e4e235525050cf3dc3dd47287c79837381b3dd257e6207c2d0d8",
+        "2b3849858fb8e4e235525050cf3dc3dd47287c79837381b3dd257e6207c2d0d8",
+        "23c65290be47927c33f510ca09d17aad8ff001b811531a0e17d3f6a97530a3e5",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      ]
+    },
+    "sleep_enter": {
+      "frame_count": 10,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "total_duration_ms": 1200,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\sleep_enter-preview-1x.apng",
+      "preview_sha256": "ffb5e6914532d1d63043f5703bbb6165c34deb4ba88805c4ed2e27f541dd73c3",
+      "frames_sha256": [
+        "2a022b1903be98f34716e29074b9e981ab43ca68a1ddb930b81dd949ba9330e5",
+        "8fe21c415bec5367ad8061f9a9cedd0f36b1606dc0b209a08b0abe695da82b7d",
+        "9ad85dea4f105a4e20d864e85c0c0abf424d1472c6d595357f52e986ba8652fb",
+        "6ed2371a1c214d2f7dc5504b334ad5129d94660e39273db2f39c52d28e461e6b",
+        "be61b6925257fe405dbdda0c7b3336019bb109bf338abad9591bca5d270fb69b",
+        "ec3e2d95326130c4c1ca6906e92750272e4431f1958ba61b41edddfec92f173b",
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00"
+      ]
+    },
+    "sleep_loop": {
+      "frame_count": 12,
+      "durations_ms": [
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "total_duration_ms": 3000,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\sleep_loop-preview-1x.apng",
+      "preview_sha256": "d350e1c55fec1e5b5c285d2793fbaa382653525a4e13c94e03c41319bea39df0",
+      "frames_sha256": [
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "199ac18df61ac12ffbf03ede1327ae13d94b12e8e75d2c8a0ac997b3aa57a1ed",
+        "199ac18df61ac12ffbf03ede1327ae13d94b12e8e75d2c8a0ac997b3aa57a1ed",
+        "199ac18df61ac12ffbf03ede1327ae13d94b12e8e75d2c8a0ac997b3aa57a1ed",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329",
+        "935ad4459ca774830a790b89906acf868f319c255c92a9dc277f46ace95da329"
+      ]
+    },
+    "wake": {
+      "frame_count": 8,
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "total_duration_ms": 800,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\wake-preview-1x.apng",
+      "preview_sha256": "b534c2dd4e41772831af5235b44137fef2749a8a6249a41eb7192a380f1a5e9c",
+      "frames_sha256": [
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+        "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+        "e368906e815a4926b9c32058b9be8ef76787e89669b7c7842f8754c58d06a4b8",
+        "2e47518e8bc73421a3da2007602d62059718136205e981a893b7437c5d6db0bd",
+        "698b390cbcc05f986be7eb597e8159072ce1afcc61ad35cd0d860435d05a1ac6",
+        "1ade6cd5731caa47c6114c4e53e2303c7671ed1645359af915dafce89cdddb53",
+        "2a022b1903be98f34716e29074b9e981ab43ca68a1ddb930b81dd949ba9330e5",
+        "2a022b1903be98f34716e29074b9e981ab43ca68a1ddb930b81dd949ba9330e5"
+      ]
+    },
+    "spirit_tail": {
+      "frame_count": 32,
+      "durations_ms": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "total_duration_ms": 2880,
+      "preview_1x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\full-pack\\clip-packs\\miyabi\\v1\\previews\\spirit_tail-preview-1x.apng",
+      "preview_sha256": "6a0ca038295fd0b41b29ae8efe43338da6a16b0cfd1d48a06ed0f271eddd2359",
+      "frames_sha256": [
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "ae01bee0793149836675f0fe2ff0eff936059fd5775ffd25a726dfa35b07f628",
+        "ddc933688501a1eab3db391fcb9aca8f660c09b89a55b891c38d152f4bceb191",
+        "566d4a0b0c0f41e1b9f77e7cabf1f97c69be799fdbc14411ce659fab4e61a5b5",
+        "c546b36c58419b513743bc7a498358e54d40cd79304cc7dd2c2e10ba595cb8f3",
+        "5464608841f615098d2dacc62d308f666a9505718243f38709860970f50b4a21",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "2df29e7e22430cacc50044102645234b4b25caf8c0bda135e8673a368912b84d",
+        "0a7eb6bcaa54fb7fe585ecc1ee4d87987dbe9592b1e3c0190b1d635b39d858b1",
+        "70970e6e67dcf6fb8cfb918687a6c981bb2eadb9a0569aeb4d375eacbf0443f4",
+        "2f0d6deb22fd97303b49b49a223cb551083ca6643887adeb2101993fd09f599b",
+        "878e5d584f92ae2c6f6ed7b754010b93bff2a59b0f249df7b77ede7c7de8d858",
+        "6cf81da2aee4778a721d769f1cab14f129e6ac96361415c194b8643a1f529967",
+        "1e75076438e2727052472759e02d9391dfc9de7ba048e1062edfd85f99885a3c",
+        "d6dec5675cbc7968f3b288b6a1a5d18b0db331b903a87b7b1434ff34adefbdd9",
+        "de9e3fe9aa504002c5379c7d01cb26f150461fee3a21c8da021da2efa1743907",
+        "8ab63b22984c1ee05e4a2bf3775cd26115e543b668720e8bc54dbac542e37a7f",
+        "5d5f636279051b52be1448efb404446ded4a1d1523fd677ac39767a412f0fc08",
+        "fdce7eac1681622765a36b2b6cb3a6f889eac1b8c52c0df93c8dc2eab27e5bb2",
+        "bf9ca5a852a1d861d43972023605c1b645ac75237b63a7606c9bcc90473cf34e",
+        "5c32c3f75b7943e28064c870bdb63817a8fb9149c561902b5f61ea5abab8ec7f",
+        "9534f53d44d06e9305fba65834017a39c3d6074a6d440ba5767245fee6d624ae",
+        "e399e1c4475d0596db8e74a75b200dbb3beacb6dd5ffb7758586bf6cb5b521ca",
+        "33184b28f494fc4bbfe47840d4d57e4c1173fb28924195c22f6565d416ae8c1d",
+        "33184b28f494fc4bbfe47840d4d57e4c1173fb28924195c22f6565d416ae8c1d",
+        "db7d7e4fd9d928c0e052d9a1cdefd4702c0e0c09696ce5fdaf3a5ed3b940bbde",
+        "418678564c59e4fdf5e98f96e092505a0b9f3a3e133c584f94e6dd657125a869",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279",
+        "eab73012dd90589052e7f40aa05c80fbdaac2b2a4596770db2d5862499276b78",
+        "66942f2c589e940ef6cbec01877e16bacf5687a343ee1dfceb239abd7b76b1b5",
+        "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      ]
+    }
+  },
+  "key_contact_4x": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\06-continuity\\full-candidate-key-contact-4x.png",
+  "key_contact_sha256": "fcf0e592ddf86bec24b2d085b013e5776e82de29b817e4df636fc788b87b0a78",
+  "sleep-loop-triplet-000-003-006-4x.png": {
+    "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\06-continuity\\sleep-loop-triplet-000-003-006-4x.png",
+    "sha256": "3ea4088000c51cffb6364da49ff29b7d0328fdb12dbbf0423b44bc378f581927",
+    "frames": [
+      0,
+      3,
+      6
+    ]
+  },
+  "sleep-enter-triplet-004-005-006-4x.png": {
+    "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\06-continuity\\sleep-enter-triplet-004-005-006-4x.png",
+    "sha256": "43964ef2be1ca47b59abe3265814ba91c020da5a5cc262121921cfa0edb7c4ce",
+    "frames": [
+      4,
+      5,
+      6
+    ]
+  },
+  "wake-triplet-002-003-004-4x.png": {
+    "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\06-continuity\\wake-triplet-002-003-004-4x.png",
+    "sha256": "54b3a878aa873cc24e2018ebc0b454a35bf96fd201b0250027c45156d706ca4e",
+    "frames": [
+      2,
+      3,
+      4
+    ]
+  },
+  "eat-triplet-000-004-008-011-4x-current.png": {
+    "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\06-continuity\\eat-triplet-000-004-008-011-4x-current.png",
+    "sha256": "f6cba122dd21bc8cb2cb5c0a5ecc45f31f5f00ff4f389808c4de9902676c3962",
+    "frames": [
+      0,
+      4,
+      8,
+      11
+    ]
+  }
+}

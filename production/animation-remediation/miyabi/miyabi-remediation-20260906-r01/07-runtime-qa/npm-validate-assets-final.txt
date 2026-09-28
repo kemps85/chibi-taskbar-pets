@@ -1,0 +1,15 @@
+
+> taskbar-pet@0.1.0 validate:assets
+> node --test ../../tests/taskbar-pet/asset-contract.test.mjs
+
+✔ test_asset_contract_approved_firefly_human_right_animation_is_complete (3.081ms)
+✔ test_asset_contract_rejects_missing_right_facing_frame (1.031ms)
+✔ test_runtime_config_rejects_path_traversal_and_scale_drift (0.8342ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 182.9799

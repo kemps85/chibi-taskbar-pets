@@ -1,0 +1,42 @@
+{
+  "specificationRevision": "miyabi-remediation-20260906-r01-eat-candidate-1",
+  "character": "hoshimi-miyabi",
+  "clip": "eat",
+  "canvas": "160x144",
+  "durationMs": 1920,
+  "frameDurationMs": 160,
+  "frameCount": 12,
+  "loopPolicy": "once",
+  "authoredDirection": "right",
+  "mirrorRule": "runtime mirrors right-authored frame for left",
+  "placementAnchorXY": [64, 120],
+  "groundLineY": 143,
+  "directionApproval": "USER_APPROVED_2026-09-06_FOOD_KEEP",
+  "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+  "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+  "foodSemantics": {
+    "source": "assets/runtime/taskbar-pet/clip-packs/miyabi/v1/clips/eat/right/frames/frame-000.png",
+    "approvedMeaning": "existing empty pale plate/food-area cue only",
+    "anchorXY": [112, 113],
+    "extentXY": [127, 117],
+    "mustNotInvent": ["named food", "spoon", "chopsticks", "bowl", "crumbs", "new effect"]
+  },
+  "rows": [
+    {"frameId":"frame-000","timestampMs":0,"durationMs":160,"role":"keyframe","phase":"pre-bite","purpose":"standing destination with empty plate cue"},
+    {"frameId":"frame-001","timestampMs":160,"durationMs":160,"role":"hold","phase":"pre-bite","purpose":"brief read of plate cue"},
+    {"frameId":"frame-002","timestampMs":320,"durationMs":160,"role":"breakdown","phase":"approach","purpose":"hand begins travel; body remains grounded"},
+    {"frameId":"frame-003","timestampMs":480,"durationMs":160,"role":"breakdown","phase":"approach","purpose":"hand rises toward mouth; no utensil"},
+    {"frameId":"frame-004","timestampMs":640,"durationMs":160,"role":"keyframe","phase":"bite","purpose":"compact bite-like pause"},
+    {"frameId":"frame-005","timestampMs":800,"durationMs":160,"role":"hold","phase":"bite","purpose":"hold bite gesture"},
+    {"frameId":"frame-006","timestampMs":960,"durationMs":160,"role":"hold","phase":"bite","purpose":"hold bite gesture"},
+    {"frameId":"frame-007","timestampMs":1120,"durationMs":160,"role":"recovery","phase":"bite","purpose":"begin hand release"},
+    {"frameId":"frame-008","timestampMs":1280,"durationMs":160,"role":"breakdown","phase":"recovery","purpose":"lower hand toward destination"},
+    {"frameId":"frame-009","timestampMs":1440,"durationMs":160,"role":"keyframe","phase":"recovery","purpose":"near standing destination"},
+    {"frameId":"frame-010","timestampMs":1600,"durationMs":160,"role":"settle","phase":"recovery","purpose":"settle with weapon attached"},
+    {"frameId":"frame-011","timestampMs":1760,"durationMs":160,"role":"recovery","phase":"recovery","purpose":"exact standing destination"}
+  ],
+  "mustRemainUnchanged": ["behavior random selection","hunger/sleep semantics","cooldowns","right-only storage","Firefly"],
+  "mustNotBeInvented": ["new food or utensil","new Vô Vĩ design","slash/combat effect","camera/background movement"],
+  "outputRequirements": ["single RGBA PNG at 160x144","hard pixel edges","plate semantics preserved","no annotation"],
+  "status": "CANDIDATE_SOURCE_SPEC_USER_DIRECTION_APPROVED_CONTINUITY_REVIEW_PENDING"
+}

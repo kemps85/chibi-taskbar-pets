@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "candidateManifest": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/remediation/miyabi-remediation-20260906-r01/full-pack/clip-packs/miyabi/v1/manifest.json",
+  "spiritTail": {
+    "frameCount": 32,
+    "durationMs": 2880,
+    "loopMode": "segmented-enter-loop-exit",
+    "segments": {
+      "enter": {
+        "start": 0,
+        "end": 12
+      },
+      "loop": {
+        "start": 13,
+        "end": 24
+      },
+      "exit": {
+        "start": 25,
+        "end": 31
+      }
+    }
+  },
+  "note": "status PASS was used only in memory to exercise the existing runtime contract; candidate file remains pending"
+}

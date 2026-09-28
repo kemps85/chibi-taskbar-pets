@@ -1,0 +1,5 @@
+
+> taskbar-pet@0.1.0 start
+> electron main.mjs --qa-character=miyabi --qa-action=sleep_enter --qa-direction=right --qa-exit-after-ms=3000
+
+

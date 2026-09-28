@@ -1,0 +1,30 @@
+{
+  "status": "CANDIDATE_ONLY",
+  "method": "hard-pixel segmented bridge using approved leaning key over grounded rest base; no alpha blend, no smoothing, no whole-sprite scale or rotation",
+  "source_frame": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-004.png",
+  "base_frames": {
+    "sleep_enter": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-006.png",
+    "wake": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\wake\\frame-002.png"
+  },
+  "pose_evidence": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\03-motion\\native-rest-probe\\left-leg\\contact.png",
+  "outputs": {
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\transition-repair\\refined-probe\\sleep_dy11.png": {
+      "sha256": "ec3e2d95326130c4c1ca6906e92750272e4431f1958ba61b41edddfec92f173b",
+      "size": 14599
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\transition-repair\\refined-probe\\wake_dy12.png": {
+      "sha256": "2e47518e8bc73421a3da2007602d62059718136205e981a893b7437c5d6db0bd",
+      "size": 13823
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-005.png": {
+      "sha256": "ec3e2d95326130c4c1ca6906e92750272e4431f1958ba61b41edddfec92f173b",
+      "size": 14599
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\wake\\frame-003.png": {
+      "sha256": "2e47518e8bc73421a3da2007602d62059718136205e981a893b7437c5d6db0bd",
+      "size": 13823
+    }
+  },
+  "review_status": "TECHNICAL_PARTIAL_PASS_TRANSITION_REVIEW_REQUIRED",
+  "note": "Candidate only. Exact weapon handoff and duration-accurate playback remain user-review items."
+}

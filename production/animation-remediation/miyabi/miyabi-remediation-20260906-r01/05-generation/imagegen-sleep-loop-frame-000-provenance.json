@@ -1,0 +1,58 @@
+{
+  "tool": "image_gen.imagegen",
+  "request_id": null,
+  "model": null,
+  "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\sleep-loop-frame-000-imagegen.png",
+  "raw_output_sha256": "847ddf20c4251069edf7ea4a68a08777ce97255067447ad84035b5a40d6a6d23",
+  "raw_output_canvas": [
+    1322,
+    1190
+  ],
+  "raw_output_alpha_observation": "opaque checkerboard/near-white background; alpha channel fully opaque",
+  "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw-sleep-rest-frame-000-candidate.png",
+  "processed_output_sha256": "32aa55491918b4efae4ea8ce3f05f5f2b939072614d57b6955dd6eb07fc3b9e5",
+  "processed_output_canvas": [
+    160,
+    144
+  ],
+  "processed_output_alpha_observation": "binary alpha only after border-connected near-white removal and nearest-neighbor placement",
+  "references": [
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\tmp\\miyabi-model-preview\\three_quarter.png",
+      "sha256": "91a856f5e761a4fc960f0503613b5262e7a1431d22228940d094cd1f4934df01",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\sleep-rest-frame-000-guide.png",
+      "sha256": "ba505efecbec8bbbba2bae6da093551f6f80ad77496362a84fd7ff823b25580a",
+      "exists": true
+    }
+  ],
+  "post_process": [
+    "border-connected near-white flood-fill to transparency",
+    "crop to non-transparent content",
+    "nearest-neighbor resize to 124x108",
+    "place at x=2, bottom on ground line y=143"
+  ],
+  "status": "CANDIDATE_FRAME_TECHNICAL_REVIEW_PENDING",
+  "related_probe": {
+    "frame": "sleep_loop/frame-006",
+    "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\sleep-loop-frame-006-imagegen.png",
+    "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\sleep-loop-frame-006-candidate.png",
+    "decision": "REJECTED_FOR_CONTINUITY",
+    "reason": "processed authored content is 124x85 at y=58-143 versus frame-000 124x108 at y=35-143; requested one-pixel inhale was not realized",
+    "request_id": null,
+    "model": null
+  },
+  "prompt": "Bạn chỉ thực hiện frame được mô tả bên dưới. Bạn không thiết kế lại animation. Ưu tiên identity master, weapon master, current annotated pose guide, then previous/next pose continuity. Generate only sleep_loop frame-000, 160x144 transparent hard-pixel Miyabi rest pose: compact seated/leaning feet-left/head-right, ground line y=143, protected visible weapon beside the body, no Vô Vĩ effect, no slash, no background, no camera movement. The supplied pose guide is authoritative for current landmarks; output only the requested frame without annotations."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "CANDIDATE_ONLY",
+  "method": "hard-pixel segmented pose bridge; no alpha blend, no smoothing, no whole-sprite squash",
+  "source_frame": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-004.png",
+  "base_frames": {
+    "sleep_enter": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-006.png",
+    "wake": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\wake\\frame-002.png"
+  },
+  "outputs": {
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\transition-repair\\sleep-enter-frame-005-bridge.png": {
+      "sha256": "72a7a0402a8cea3be2b89ae71ca2bcfbd4f339468876d204bddcce7f92833111",
+      "size": 15032
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\transition-repair\\wake-frame-003-bridge.png": {
+      "sha256": "d5a48dd91fdc36e992ca68f3253f782d3faa3e5273921d63090c94ef618cc49b",
+      "size": 13612
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\sleep_enter\\frame-005.png": {
+      "sha256": "72a7a0402a8cea3be2b89ae71ca2bcfbd4f339468876d204bddcce7f92833111",
+      "size": 15032
+    },
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\wake\\frame-003.png": {
+      "sha256": "d5a48dd91fdc36e992ca68f3253f782d3faa3e5273921d63090c94ef618cc49b",
+      "size": 13612
+    }
+  },
+  "constraints": [
+    "preserve grounded lower body and weapon until the explicit pickup/recovery key",
+    "replace only upper-body/head/cape region",
+    "nearest-neighbor pixel placement",
+    "stable source/master untouched"
+  ]
+}

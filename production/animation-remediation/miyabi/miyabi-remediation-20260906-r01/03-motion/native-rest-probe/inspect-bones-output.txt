@@ -1,0 +1,14 @@
+character_setup_wizard addon: Verbose is enabled
+character_setup_wizard addon: Read in JSON settings from file
+Reloading external rigs...
+Reloading external metarigs...
+Info: Imported MMD model from "C:\Users\ASUS\Downloads\qOXyji3wYu\星见雅.pmx"
+センター head (0.0, 0.0, 0.0) tail (0.0, -0.631, 0.0) parent 全ての親 pose_loc (0.0, 0.0, 0.0) constraints []
+下半身 head (-0.0, -0.0296, 0.0379) tail (-0.0, -0.0992, 0.0805) parent 腰 pose_loc (0.0, 0.0, 0.0) constraints []
+上半身 head (-0.0, -0.0259, 0.0347) tail (0.0, 0.0421, -0.0217) parent 腰 pose_loc (0.0, 0.0, 0.0) constraints []
+上半身1 head (0.0, 0.0, -0.0) tail (-0.0, 0.0934, -0.0046) parent 上半身 pose_loc (0.0, 0.0, 0.0) constraints []
+腰 head (-0.0, 0.1551, -0.0377) tail (0.0, 0.2075, 0.0107) parent グルーブ pose_loc (0.0, 0.0, 0.0) constraints []
+Blender 4.1.1 (hash e1743a0317bc built 2024-04-15 23:33:30)
+Read prefs: "C:\Users\ASUS\AppData\Roaming\Blender Foundation\Blender\4.1\config\userpref.blend"
+
+Blender quit

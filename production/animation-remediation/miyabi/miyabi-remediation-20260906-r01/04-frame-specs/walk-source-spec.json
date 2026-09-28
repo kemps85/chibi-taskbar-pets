@@ -1,0 +1,1558 @@
+{
+  "run": "miyabi-remediation-20260906-r01",
+  "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING",
+  "rows": [
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-000",
+      "timestampMs": 0,
+      "durationMs": 100,
+      "phase": "left contact",
+      "role": "keyframe",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          40,
+          112
+        ],
+        "rightLowerLegXY": [
+          60,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            40,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            40,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            60,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-001",
+      "timestampMs": 100,
+      "durationMs": 100,
+      "phase": "down",
+      "role": "breakdown",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          41,
+          112
+        ],
+        "rightLowerLegXY": [
+          59,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            41,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            41,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            59,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-002",
+      "timestampMs": 200,
+      "durationMs": 100,
+      "phase": "passing",
+      "role": "keyframe",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          44,
+          111
+        ],
+        "rightLowerLegXY": [
+          57,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            44,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            44,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            57,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-003",
+      "timestampMs": 300,
+      "durationMs": 100,
+      "phase": "up",
+      "role": "breakdown",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          45,
+          111
+        ],
+        "rightLowerLegXY": [
+          56,
+          110
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            45,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            45,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            56,
+            110
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-004",
+      "timestampMs": 400,
+      "durationMs": 100,
+      "phase": "right contact",
+      "role": "keyframe",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          45,
+          112
+        ],
+        "rightLowerLegXY": [
+          55,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            45,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            45,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            55,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-005",
+      "timestampMs": 500,
+      "durationMs": 100,
+      "phase": "down",
+      "role": "breakdown",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          44,
+          111
+        ],
+        "rightLowerLegXY": [
+          57,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            44,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            44,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            57,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-006",
+      "timestampMs": 600,
+      "durationMs": 100,
+      "phase": "passing",
+      "role": "keyframe",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          41,
+          112
+        ],
+        "rightLowerLegXY": [
+          59,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            41,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            41,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            59,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-walk-1",
+      "character": "hoshimi-miyabi",
+      "clip": "walk",
+      "frameId": "frame-007",
+      "timestampMs": 700,
+      "durationMs": 100,
+      "phase": "up/recovery",
+      "role": "breakdown",
+      "purpose": "short deliberate connected step cycle",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "previous walk phase / identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/walk-frame-001-guide.png",
+      "nextApprovedPose": "next walk phase / identity master",
+      "previousPose": "upper body and weapon fixed; prior lower-leg crop",
+      "currentPose": {
+        "leftLowerLegXY": [
+          40,
+          111
+        ],
+        "rightLowerLegXY": [
+          61,
+          112
+        ],
+        "upperBody": "identity master fixed"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            40,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded 3px x / 2px y",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "heels": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            40,
+            111
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "toes": {
+          "previousXY": "lower-leg crop",
+          "currentXY": [
+            61,
+            112
+          ],
+          "nextXY": "next lower-leg crop",
+          "deltaXY": "bounded",
+          "rotationChange": "source crop unchanged",
+          "fixedOrMoving": "moving"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "none",
+          "currentXY": "none",
+          "nextXY": "none",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "short deliberate step; one contact foot remains at y=143 except raised frame 003",
+      "support": "feet from identity lower-leg crops",
+      "actionLine": "contained forward step",
+      "primaryMotion": "lower leg/boot contact and passing",
+      "weaponPropTrajectory": "weapon fixed in this bounded pass; secondary response pending",
+      "accelerationDeceleration": "contact/down/pass/up spacing over 800ms loop",
+      "secondaryMotion": "none in this bounded pass; cape/weapon response pending",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "no detached strokes; upper identity silhouette stable",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "hair/cape fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "movement speed",
+        "behavior semantics",
+        "Firefly",
+        "clip duration"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "effect",
+        "floating leg fragments",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+run=miyabi-remediation-20260906-r01
+checked=337/337
+renderer_expected_current=71b179f07d3eb4852027e821b63f17ed91a512e8f316bb05c94a6677a87550b4
+renderer_current=['src/taskbar-pet/renderer.js']
+firefly_entries=240
+firefly_changed=[]
+status=PASS

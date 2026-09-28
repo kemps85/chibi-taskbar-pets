@@ -1,0 +1,1575 @@
+{
+  "run": "miyabi-remediation-20260906-r01",
+  "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING",
+  "clip": "hunger_cue",
+  "rows": [
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-000",
+      "timestampMs": 0,
+      "durationMs": 150,
+      "phase": "neutral",
+      "role": "keyframe",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-001",
+      "timestampMs": 150,
+      "durationMs": 150,
+      "phase": "look-breakdown",
+      "role": "breakdown",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-002",
+      "timestampMs": 300,
+      "durationMs": 150,
+      "phase": "look-key",
+      "role": "keyframe",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-003",
+      "timestampMs": 450,
+      "durationMs": 150,
+      "phase": "gesture-breakdown",
+      "role": "breakdown",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-004",
+      "timestampMs": 600,
+      "durationMs": 150,
+      "phase": "gesture-peak",
+      "role": "keyframe",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-005",
+      "timestampMs": 750,
+      "durationMs": 150,
+      "phase": "recovery",
+      "role": "recovery",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-006",
+      "timestampMs": 900,
+      "durationMs": 150,
+      "phase": "settle",
+      "role": "settle",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-hunger-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "hunger_cue",
+      "frameId": "frame-007",
+      "timestampMs": 1050,
+      "durationMs": 150,
+      "phase": "neutral-recovery",
+      "role": "recovery",
+      "purpose": "retain existing food-area semantics while removing disconnected body redraw",
+      "identityReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "weaponReference": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "previousApprovedPose": "identity master / prior hunger phase",
+      "currentAnnotatedPoseGuide": "APPROVAL_TBD",
+      "nextApprovedPose": "identity master / next hunger phase",
+      "previousPose": "identity master fixed",
+      "currentPose": {
+        "body": "identity master fixed",
+        "foodAreaBBox": [
+          112,
+          103,
+          128,
+          118
+        ],
+        "bodyGesture": "APPROVAL_TBD"
+      },
+      "nextPose": "next listed phase",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-fixed",
+          "currentXY": "identity-fixed",
+          "nextXY": "identity-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "source food-area anchor",
+          "currentXY": [
+            112,
+            103,
+            128,
+            118
+          ],
+          "nextXY": "next source food-area anchor",
+          "deltaXY": "source-authored cue only",
+          "rotationChange": "none",
+          "fixedOrMoving": "moving"
+        }
+      },
+      "weightAndBalance": "feet remain on ground; no whole-body translate",
+      "support": "identity master feet at y=143",
+      "actionLine": "contained look toward existing food area",
+      "primaryMotion": "food-area cue remains source-authored; body gesture pending approval",
+      "weaponPropTrajectory": "weapon fixed in this candidate",
+      "accelerationDeceleration": "source timing preserved at 150ms per frame",
+      "secondaryMotion": "body/eye restraint gesture pending approval",
+      "secondaryOnsetDelayMs": null,
+      "silhouetteExpectation": "identity silhouette unchanged; no detached non-food fragments",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "palette fixed",
+        "hair/cape fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "Firefly",
+        "clip duration",
+        "food-area source semantics"
+      ],
+      "mustNotBeInvented": [
+        "new food",
+        "utensil",
+        "slash",
+        "effect",
+        "body fragment"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    }
+  ]
+}

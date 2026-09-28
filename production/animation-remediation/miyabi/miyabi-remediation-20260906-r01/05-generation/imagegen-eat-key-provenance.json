@@ -1,0 +1,114 @@
+[
+  {
+    "tool": "image_gen.imagegen",
+    "frame": "eat/frame-003",
+    "request_id": null,
+    "model": null,
+    "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\eat-frame-003-imagegen.png",
+    "raw_output_sha256": "e8de4f45405fe65600857cf8136c8d395912e72f7087a7e470e13c60499507fd",
+    "raw_output_canvas": [
+      1322,
+      1190
+    ],
+    "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\eat-frame-003-body-plate-candidate.png",
+    "processed_output_sha256": "bf890258e8ef512a970766dd8c526262eed59177407e27667ea2d53bafad0287",
+    "processed_output_canvas": [
+      160,
+      144
+    ],
+    "raw_alpha_observation": "frame-003: transparent canvas with partial alpha; frame-009: opaque black background removed by border-connected black/near-white flood fill",
+    "post_process": [
+      "bounded body crop",
+      "alpha threshold at 128 for generated body",
+      "nearest-neighbor normalize to 120px body height at y=23..143",
+      "restore exact stable empty-plate pixels from eat frame-000"
+    ],
+    "references": [
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+        "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+        "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\eat\\right\\frames\\frame-000.png",
+        "sha256": "6ffeb02a6585405e344089e25524948aceee38fdbe2550cda72eb17947444303",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\eat-frame-003-guide.png.png",
+        "sha256": "ff73d21cdb94f766c4b8073e043eb9d2956b6a7361d613e60407ab8586eb3617",
+        "exists": true,
+        "canonical_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\eat-frame-003-guide.png"
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\eat-frame-006-body-plate-candidate.png",
+        "sha256": "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "exists": true
+      }
+    ],
+    "status": "CANDIDATE_KEY_TECHNICAL_REVIEW_PENDING",
+    "prompt": null,
+    "prompt_status": "NOT_CAPTURED_IN_CURRENT_EVIDENCE; do not infer or reconstruct"
+  },
+  {
+    "tool": "image_gen.imagegen",
+    "frame": "eat/frame-009",
+    "request_id": null,
+    "model": null,
+    "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\eat-frame-009-imagegen.png",
+    "raw_output_sha256": "b222f210a80729bfa0002d6d09e6fc6d9bcdf03aa667ac50d0aabc3fa31c3392",
+    "raw_output_canvas": [
+      1322,
+      1190
+    ],
+    "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\eat-frame-009-body-plate-candidate.png",
+    "processed_output_sha256": "c433a9f3833df0a1295b5e51e5cdaae9495c407324f5f7dc0dceaa950eaf4e46",
+    "processed_output_canvas": [
+      160,
+      144
+    ],
+    "raw_alpha_observation": "frame-003: transparent canvas with partial alpha; frame-009: opaque black background removed by border-connected black/near-white flood fill",
+    "post_process": [
+      "bounded body crop",
+      "alpha threshold at 128 for generated body",
+      "nearest-neighbor normalize to 120px body height at y=23..143",
+      "restore exact stable empty-plate pixels from eat frame-000"
+    ],
+    "references": [
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+        "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+        "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\eat\\right\\frames\\frame-000.png",
+        "sha256": "6ffeb02a6585405e344089e25524948aceee38fdbe2550cda72eb17947444303",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\eat-frame-009-guide.png.png",
+        "sha256": "d5041a02630111f7dfcf8618cc9d17588f488cd055a5e3944d6e62d12ae884b5",
+        "exists": true,
+        "canonical_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\eat-frame-009-guide.png"
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\eat-frame-006-body-plate-candidate.png",
+        "sha256": "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+        "exists": true
+      }
+    ],
+    "status": "CANDIDATE_KEY_TECHNICAL_REVIEW_PENDING",
+    "prompt": null,
+    "prompt_status": "NOT_CAPTURED_IN_CURRENT_EVIDENCE; do not infer or reconstruct"
+  }
+]

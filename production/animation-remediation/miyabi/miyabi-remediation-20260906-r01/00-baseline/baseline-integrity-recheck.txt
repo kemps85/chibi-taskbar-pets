@@ -1,0 +1,8 @@
+Baseline recheck: 2026-09-06T03:46:07.862006
+Entries: 337
+Missing: 0
+Size mismatches: 0
+Changed: 0
+Result: PASS
+
+Scope includes stable Miyabi pack, stable Firefly pack, behavior/runtime config, build generator, optimizer, and renderer.

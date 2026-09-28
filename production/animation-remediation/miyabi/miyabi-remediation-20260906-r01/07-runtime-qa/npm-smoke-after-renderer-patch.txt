@@ -1,0 +1,6 @@
+
+> taskbar-pet@0.1.0 smoke
+> electron main.mjs --smoke
+
+
+Taskbar pet smoke passed: first miyabi frame rendered.

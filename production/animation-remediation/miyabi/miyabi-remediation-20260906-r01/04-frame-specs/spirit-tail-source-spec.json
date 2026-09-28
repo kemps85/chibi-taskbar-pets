@@ -1,0 +1,5870 @@
+{
+  "run": "miyabi-remediation-20260906-r01",
+  "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING",
+  "rows": [
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-000",
+      "timestampMs": 0,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "clip start hidden companion",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 1; companion center source=[34.0, 70.0], scale=0.22, opacity=0.0",
+      "nextApprovedPose": "layered-v6 human frame 2",
+      "previousPose": null,
+      "currentPose": [
+        38.0,
+        89.0
+      ],
+      "nextPose": [
+        39.141,
+        88.39
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": null,
+        "currentXY": [
+          38.0,
+          89.0
+        ],
+        "nextXY": [
+          39.141,
+          88.39
+        ],
+        "deltaXY": null,
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 1,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-001",
+      "timestampMs": 90,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 1",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 2; companion center source=[35.141, 69.39], scale=0.2353, opacity=0.2083",
+      "nextApprovedPose": "layered-v6 human frame 3",
+      "previousPose": [
+        38.0,
+        89.0
+      ],
+      "currentPose": [
+        39.141,
+        88.39
+      ],
+      "nextPose": [
+        42.296,
+        86.704
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          38.0,
+          89.0
+        ],
+        "currentXY": [
+          39.141,
+          88.39
+        ],
+        "nextXY": [
+          42.296,
+          86.704
+        ],
+        "deltaXY": [
+          1.141,
+          -0.61
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 2,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-002",
+      "timestampMs": 180,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 2",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 3; companion center source=[38.296, 67.704], scale=0.2778, opacity=0.4167",
+      "nextApprovedPose": "layered-v6 human frame 4",
+      "previousPose": [
+        39.141,
+        88.39
+      ],
+      "currentPose": [
+        42.296,
+        86.704
+      ],
+      "nextPose": [
+        47.062,
+        84.156
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          39.141,
+          88.39
+        ],
+        "currentXY": [
+          42.296,
+          86.704
+        ],
+        "nextXY": [
+          47.062,
+          84.156
+        ],
+        "deltaXY": [
+          3.155,
+          -1.686
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 3,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-003",
+      "timestampMs": 270,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 3",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 4; companion center source=[43.062, 65.156], scale=0.3419, opacity=0.625",
+      "nextApprovedPose": "layered-v6 human frame 5",
+      "previousPose": [
+        42.296,
+        86.704
+      ],
+      "currentPose": [
+        47.062,
+        84.156
+      ],
+      "nextPose": [
+        53.037,
+        80.963
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          42.296,
+          86.704
+        ],
+        "currentXY": [
+          47.062,
+          84.156
+        ],
+        "nextXY": [
+          53.037,
+          80.963
+        ],
+        "deltaXY": [
+          4.766,
+          -2.548
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 4,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-004",
+      "timestampMs": 360,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 4",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 5; companion center source=[49.037, 61.963], scale=0.4222, opacity=0.8333",
+      "nextApprovedPose": "layered-v6 human frame 6",
+      "previousPose": [
+        47.062,
+        84.156
+      ],
+      "currentPose": [
+        53.037,
+        80.963
+      ],
+      "nextPose": [
+        59.817,
+        77.339
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          47.062,
+          84.156
+        ],
+        "currentXY": [
+          53.037,
+          80.963
+        ],
+        "nextXY": [
+          59.817,
+          77.339
+        ],
+        "deltaXY": [
+          5.975,
+          -3.193
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 5,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-005",
+      "timestampMs": 450,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 5",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 6; companion center source=[55.817, 58.339], scale=0.5134, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 7",
+      "previousPose": [
+        53.037,
+        80.963
+      ],
+      "currentPose": [
+        59.817,
+        77.339
+      ],
+      "nextPose": [
+        67.0,
+        73.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          53.037,
+          80.963
+        ],
+        "currentXY": [
+          59.817,
+          77.339
+        ],
+        "nextXY": [
+          67.0,
+          73.5
+        ],
+        "deltaXY": [
+          6.78,
+          -3.624
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 6,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-006",
+      "timestampMs": 540,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 6",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 7; companion center source=[63.0, 54.5], scale=0.61, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 8",
+      "previousPose": [
+        59.817,
+        77.339
+      ],
+      "currentPose": [
+        67.0,
+        73.5
+      ],
+      "nextPose": [
+        74.183,
+        69.661
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          59.817,
+          77.339
+        ],
+        "currentXY": [
+          67.0,
+          73.5
+        ],
+        "nextXY": [
+          74.183,
+          69.661
+        ],
+        "deltaXY": [
+          7.183,
+          -3.839
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 7,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-007",
+      "timestampMs": 630,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 7",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 8; companion center source=[70.183, 50.661], scale=0.7066, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 9",
+      "previousPose": [
+        67.0,
+        73.5
+      ],
+      "currentPose": [
+        74.183,
+        69.661
+      ],
+      "nextPose": [
+        80.963,
+        66.037
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          67.0,
+          73.5
+        ],
+        "currentXY": [
+          74.183,
+          69.661
+        ],
+        "nextXY": [
+          80.963,
+          66.037
+        ],
+        "deltaXY": [
+          7.183,
+          -3.839
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 8,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-008",
+      "timestampMs": 720,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 8",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 9; companion center source=[76.963, 47.037], scale=0.7978, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 10",
+      "previousPose": [
+        74.183,
+        69.661
+      ],
+      "currentPose": [
+        80.963,
+        66.037
+      ],
+      "nextPose": [
+        86.938,
+        62.844
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          74.183,
+          69.661
+        ],
+        "currentXY": [
+          80.963,
+          66.037
+        ],
+        "nextXY": [
+          86.938,
+          62.844
+        ],
+        "deltaXY": [
+          6.78,
+          -3.624
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 9,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-009",
+      "timestampMs": 810,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 9",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 10; companion center source=[82.938, 43.844], scale=0.8781, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 11",
+      "previousPose": [
+        80.963,
+        66.037
+      ],
+      "currentPose": [
+        86.938,
+        62.844
+      ],
+      "nextPose": [
+        91.704,
+        60.296
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          80.963,
+          66.037
+        ],
+        "currentXY": [
+          86.938,
+          62.844
+        ],
+        "nextXY": [
+          91.704,
+          60.296
+        ],
+        "deltaXY": [
+          5.975,
+          -3.193
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 10,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-010",
+      "timestampMs": 900,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 10",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 11; companion center source=[87.704, 41.296], scale=0.9422, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 12",
+      "previousPose": [
+        86.938,
+        62.844
+      ],
+      "currentPose": [
+        91.704,
+        60.296
+      ],
+      "nextPose": [
+        94.859,
+        58.61
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          86.938,
+          62.844
+        ],
+        "currentXY": [
+          91.704,
+          60.296
+        ],
+        "nextXY": [
+          94.859,
+          58.61
+        ],
+        "deltaXY": [
+          4.766,
+          -2.548
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 11,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-011",
+      "timestampMs": 990,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 11",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 12; companion center source=[90.859, 39.61], scale=0.9847, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 13",
+      "previousPose": [
+        91.704,
+        60.296
+      ],
+      "currentPose": [
+        94.859,
+        58.61
+      ],
+      "nextPose": [
+        96.0,
+        58.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          91.704,
+          60.296
+        ],
+        "currentXY": [
+          94.859,
+          58.61
+        ],
+        "nextXY": [
+          96.0,
+          58.0
+        ],
+        "deltaXY": [
+          3.155,
+          -1.686
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 12,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-012",
+      "timestampMs": 1080,
+      "durationMs": 90,
+      "phase": "enter",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 12",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 13; companion center source=[92.0, 39.0], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 14",
+      "previousPose": [
+        94.859,
+        58.61
+      ],
+      "currentPose": [
+        96.0,
+        58.0
+      ],
+      "nextPose": [
+        98.0,
+        58.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          94.859,
+          58.61
+        ],
+        "currentXY": [
+          96.0,
+          58.0
+        ],
+        "nextXY": [
+          98.0,
+          58.0
+        ],
+        "deltaXY": [
+          1.141,
+          -0.61
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 13,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-013",
+      "timestampMs": 1170,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 13",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 14; companion center source=[94.0, 39.0], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 15",
+      "previousPose": [
+        96.0,
+        58.0
+      ],
+      "currentPose": [
+        98.0,
+        58.0
+      ],
+      "nextPose": [
+        97.732,
+        59.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          96.0,
+          58.0
+        ],
+        "currentXY": [
+          98.0,
+          58.0
+        ],
+        "nextXY": [
+          97.732,
+          59.5
+        ],
+        "deltaXY": [
+          2.0,
+          0.0
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 14,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-014",
+      "timestampMs": 1260,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 14",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 15; companion center source=[93.732, 40.5], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 16",
+      "previousPose": [
+        98.0,
+        58.0
+      ],
+      "currentPose": [
+        97.732,
+        59.5
+      ],
+      "nextPose": [
+        97.0,
+        60.598
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          98.0,
+          58.0
+        ],
+        "currentXY": [
+          97.732,
+          59.5
+        ],
+        "nextXY": [
+          97.0,
+          60.598
+        ],
+        "deltaXY": [
+          -0.268,
+          1.5
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 15,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-015",
+      "timestampMs": 1350,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 15",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 16; companion center source=[93.0, 41.598], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 17",
+      "previousPose": [
+        97.732,
+        59.5
+      ],
+      "currentPose": [
+        97.0,
+        60.598
+      ],
+      "nextPose": [
+        96.0,
+        61.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          97.732,
+          59.5
+        ],
+        "currentXY": [
+          97.0,
+          60.598
+        ],
+        "nextXY": [
+          96.0,
+          61.0
+        ],
+        "deltaXY": [
+          -0.732,
+          1.098
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 16,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-016",
+      "timestampMs": 1440,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 16",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 17; companion center source=[92.0, 42.0], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 18",
+      "previousPose": [
+        97.0,
+        60.598
+      ],
+      "currentPose": [
+        96.0,
+        61.0
+      ],
+      "nextPose": [
+        95.0,
+        60.598
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          97.0,
+          60.598
+        ],
+        "currentXY": [
+          96.0,
+          61.0
+        ],
+        "nextXY": [
+          95.0,
+          60.598
+        ],
+        "deltaXY": [
+          -1.0,
+          0.402
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 17,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-017",
+      "timestampMs": 1530,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 17",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 18; companion center source=[91.0, 41.598], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 19",
+      "previousPose": [
+        96.0,
+        61.0
+      ],
+      "currentPose": [
+        95.0,
+        60.598
+      ],
+      "nextPose": [
+        94.268,
+        59.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          96.0,
+          61.0
+        ],
+        "currentXY": [
+          95.0,
+          60.598
+        ],
+        "nextXY": [
+          94.268,
+          59.5
+        ],
+        "deltaXY": [
+          -1.0,
+          -0.402
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 18,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-018",
+      "timestampMs": 1620,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 18",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 19; companion center source=[90.268, 40.5], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 20",
+      "previousPose": [
+        95.0,
+        60.598
+      ],
+      "currentPose": [
+        94.268,
+        59.5
+      ],
+      "nextPose": [
+        94.0,
+        58.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          95.0,
+          60.598
+        ],
+        "currentXY": [
+          94.268,
+          59.5
+        ],
+        "nextXY": [
+          94.0,
+          58.0
+        ],
+        "deltaXY": [
+          -0.732,
+          -1.098
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 19,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-019",
+      "timestampMs": 1710,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 19",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 20; companion center source=[90.0, 39.0], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 21",
+      "previousPose": [
+        94.268,
+        59.5
+      ],
+      "currentPose": [
+        94.0,
+        58.0
+      ],
+      "nextPose": [
+        94.268,
+        56.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          94.268,
+          59.5
+        ],
+        "currentXY": [
+          94.0,
+          58.0
+        ],
+        "nextXY": [
+          94.268,
+          56.5
+        ],
+        "deltaXY": [
+          -0.268,
+          -1.5
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 20,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-020",
+      "timestampMs": 1800,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 20",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 21; companion center source=[90.268, 37.5], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 22",
+      "previousPose": [
+        94.0,
+        58.0
+      ],
+      "currentPose": [
+        94.268,
+        56.5
+      ],
+      "nextPose": [
+        95.0,
+        55.402
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          94.0,
+          58.0
+        ],
+        "currentXY": [
+          94.268,
+          56.5
+        ],
+        "nextXY": [
+          95.0,
+          55.402
+        ],
+        "deltaXY": [
+          0.268,
+          -1.5
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 21,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-021",
+      "timestampMs": 1890,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 21",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 22; companion center source=[91.0, 36.402], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 23",
+      "previousPose": [
+        94.268,
+        56.5
+      ],
+      "currentPose": [
+        95.0,
+        55.402
+      ],
+      "nextPose": [
+        96.0,
+        55.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          94.268,
+          56.5
+        ],
+        "currentXY": [
+          95.0,
+          55.402
+        ],
+        "nextXY": [
+          96.0,
+          55.0
+        ],
+        "deltaXY": [
+          0.732,
+          -1.098
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 22,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-022",
+      "timestampMs": 1980,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 22",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 23; companion center source=[92.0, 36.0], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 24",
+      "previousPose": [
+        95.0,
+        55.402
+      ],
+      "currentPose": [
+        96.0,
+        55.0
+      ],
+      "nextPose": [
+        97.0,
+        55.402
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          95.0,
+          55.402
+        ],
+        "currentXY": [
+          96.0,
+          55.0
+        ],
+        "nextXY": [
+          97.0,
+          55.402
+        ],
+        "deltaXY": [
+          1.0,
+          -0.402
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 23,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-023",
+      "timestampMs": 2070,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 23",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 24; companion center source=[93.0, 36.402], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 25",
+      "previousPose": [
+        96.0,
+        55.0
+      ],
+      "currentPose": [
+        97.0,
+        55.402
+      ],
+      "nextPose": [
+        97.732,
+        56.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          96.0,
+          55.0
+        ],
+        "currentXY": [
+          97.0,
+          55.402
+        ],
+        "nextXY": [
+          97.732,
+          56.5
+        ],
+        "deltaXY": [
+          1.0,
+          0.402
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 24,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-024",
+      "timestampMs": 2160,
+      "durationMs": 90,
+      "phase": "loop",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 24",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 25; companion center source=[93.732, 37.5], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 26",
+      "previousPose": [
+        97.0,
+        55.402
+      ],
+      "currentPose": [
+        97.732,
+        56.5
+      ],
+      "nextPose": [
+        97.732,
+        56.5
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          97.0,
+          55.402
+        ],
+        "currentXY": [
+          97.732,
+          56.5
+        ],
+        "nextXY": [
+          97.732,
+          56.5
+        ],
+        "deltaXY": [
+          0.732,
+          1.098
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 25,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-025",
+      "timestampMs": 2250,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 25",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 26; companion center source=[93.732, 37.5], scale=1.0, opacity=1.0",
+      "nextApprovedPose": "layered-v6 human frame 27",
+      "previousPose": [
+        97.732,
+        56.5
+      ],
+      "currentPose": [
+        97.732,
+        56.5
+      ],
+      "nextPose": [
+        93.307,
+        58.907
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          97.732,
+          56.5
+        ],
+        "currentXY": [
+          97.732,
+          56.5
+        ],
+        "nextXY": [
+          93.307,
+          58.907
+        ],
+        "deltaXY": [
+          0.0,
+          0.0
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 26,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-026",
+      "timestampMs": 2340,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 26",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 27; companion center source=[89.307, 39.907], scale=0.9422, opacity=0.9259",
+      "nextApprovedPose": "layered-v6 human frame 28",
+      "previousPose": [
+        97.732,
+        56.5
+      ],
+      "currentPose": [
+        93.307,
+        58.907
+      ],
+      "nextPose": [
+        82.246,
+        64.926
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          97.732,
+          56.5
+        ],
+        "currentXY": [
+          93.307,
+          58.907
+        ],
+        "nextXY": [
+          82.246,
+          64.926
+        ],
+        "deltaXY": [
+          -4.425,
+          2.407
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 27,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-027",
+      "timestampMs": 2430,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 27",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 28; companion center source=[78.246, 45.926], scale=0.7978, opacity=0.7407",
+      "nextApprovedPose": "layered-v6 human frame 29",
+      "previousPose": [
+        93.307,
+        58.907
+      ],
+      "currentPose": [
+        82.246,
+        64.926
+      ],
+      "nextPose": [
+        67.866,
+        72.75
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          93.307,
+          58.907
+        ],
+        "currentXY": [
+          82.246,
+          64.926
+        ],
+        "nextXY": [
+          67.866,
+          72.75
+        ],
+        "deltaXY": [
+          -11.061,
+          6.019
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 28,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-028",
+      "timestampMs": 2520,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 28",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 29; companion center source=[63.866, 53.75], scale=0.61, opacity=0.5",
+      "nextApprovedPose": "layered-v6 human frame 30",
+      "previousPose": [
+        82.246,
+        64.926
+      ],
+      "currentPose": [
+        67.866,
+        72.75
+      ],
+      "nextPose": [
+        53.486,
+        80.574
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          82.246,
+          64.926
+        ],
+        "currentXY": [
+          67.866,
+          72.75
+        ],
+        "nextXY": [
+          53.486,
+          80.574
+        ],
+        "deltaXY": [
+          -14.38,
+          7.824
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 29,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-029",
+      "timestampMs": 2610,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 29",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 30; companion center source=[49.486, 61.574], scale=0.4222, opacity=0.2593",
+      "nextApprovedPose": "layered-v6 human frame 31",
+      "previousPose": [
+        67.866,
+        72.75
+      ],
+      "currentPose": [
+        53.486,
+        80.574
+      ],
+      "nextPose": [
+        42.425,
+        86.593
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          67.866,
+          72.75
+        ],
+        "currentXY": [
+          53.486,
+          80.574
+        ],
+        "nextXY": [
+          42.425,
+          86.593
+        ],
+        "deltaXY": [
+          -14.38,
+          7.824
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 30,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-030",
+      "timestampMs": 2700,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "breakdown",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 30",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 31; companion center source=[38.425, 67.593], scale=0.2778, opacity=0.0741",
+      "nextApprovedPose": "layered-v6 human frame 32",
+      "previousPose": [
+        53.486,
+        80.574
+      ],
+      "currentPose": [
+        42.425,
+        86.593
+      ],
+      "nextPose": [
+        38.0,
+        89.0
+      ],
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          53.486,
+          80.574
+        ],
+        "currentXY": [
+          42.425,
+          86.593
+        ],
+        "nextXY": [
+          38.0,
+          89.0
+        ],
+        "deltaXY": [
+          -11.061,
+          6.019
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 31,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-spirit-source-1",
+      "character": "hoshimi-miyabi",
+      "clip": "spirit_tail",
+      "frameId": "frame-031",
+      "timestampMs": 2790,
+      "durationMs": 90,
+      "phase": "exit",
+      "role": "keyframe",
+      "purpose": "reuse the existing authored Vô Vĩ companion path without arbitrary frame reversal",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "layered-v6 human frame 31",
+      "currentAnnotatedPoseGuide": "layered-v6 QA human frame 32; companion center source=[34.0, 70.0], scale=0.22, opacity=0.0",
+      "nextApprovedPose": "clip end hidden companion",
+      "previousPose": [
+        42.425,
+        86.593
+      ],
+      "currentPose": [
+        38.0,
+        89.0
+      ],
+      "nextPose": null,
+      "landmarks": {
+        "head": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "shoulders": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "elbows": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "wrists": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "pelvis": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "knees": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "heels": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "toes": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponHilt": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        },
+        "weaponTip": {
+          "previousXY": null,
+          "currentXY": null,
+          "nextXY": null,
+          "deltaXY": null,
+          "rotationChange": null,
+          "fixedOrMoving": "fixed-to-layered-v6-body-master"
+        }
+      },
+      "propCompanionAnchor": {
+        "previousXY": [
+          42.425,
+          86.593
+        ],
+        "currentXY": [
+          38.0,
+          89.0
+        ],
+        "nextXY": null,
+        "deltaXY": [
+          -4.425,
+          2.407
+        ],
+        "rotationChange": "source-authored companion orientation",
+        "fixedOrMoving": "moving"
+      },
+      "weightAndBalance": "body fixed; feet baseline y=143",
+      "support": "standing body from layered-v6 body lock",
+      "actionLine": "companion path only; body remains fixed",
+      "primaryMotion": "companion position/scale/opacity from source QA",
+      "weaponPropTrajectory": "weapon fixed to body master; companion is separate layer",
+      "accelerationDeceleration": "source-authored enter/exit easing; loop bounded hover",
+      "secondaryMotion": "companion only",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "body bbox/weapon unchanged; companion visibility follows source opacity",
+      "identityLocks": [
+        "body_pixel_drift=0",
+        "body_scale_drift=0",
+        "body_anchor_drift=0",
+        "weapon_drift=0"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right-authored frame for left",
+      "mustRemainUnchanged": [
+        "body master",
+        "weapon master",
+        "behavior semantics",
+        "Firefly",
+        "right-only storage"
+      ],
+      "mustNotBeInvented": [
+        "slash",
+        "shockwave",
+        "new effect",
+        "new character silhouette",
+        "camera movement"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "no resize after composition",
+        "hard runtime sampling"
+      ],
+      "sourceEvidence": {
+        "qaFile": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layered-animation-qa.json",
+        "sourceHumanFrame": 32,
+        "sourceCanvas": "128x128",
+        "compositionOffset": [
+          4,
+          19
+        ]
+      },
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    }
+  ],
+  "sourceLayerLock": {
+    "body_sha256": "6d6bbf2a6cc76cb340591a3e2d74dcc68321d1f96c9ec8378e04bcf94fa62779",
+    "body_pixel_drift": 0,
+    "body_scale_drift": 0,
+    "body_anchor_drift": 0,
+    "weapon_drift": 0,
+    "rear_scabbard_present": false,
+    "companion_is_separate_layer": true
+  },
+  "segments": {
+    "enter": [
+      0,
+      12
+    ],
+    "loop": [
+      13,
+      24
+    ],
+    "exit": [
+      25,
+      31
+    ]
+  }
+}

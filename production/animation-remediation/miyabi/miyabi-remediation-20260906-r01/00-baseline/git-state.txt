@@ -1,0 +1,43 @@
+UTC=2026-09-05T20:25:37.9270344Z
+Branch=codex/game-studio-5.6
+Git status:
+?? OriginalAssestCharacter/
+?? assets/data/taskbar_pet_behavior_v1.json
+?? assets/data/taskbar_pet_behavior_v1.schema.json
+?? assets/data/taskbar_pet_runtime_v1.json
+?? assets/data/taskbar_pet_runtime_v1.schema.json
+?? assets/generated/
+?? assets/references/
+?? assets/runtime/
+?? docs/architecture/adr-0001-electron-windows-taskbar-pet-runtime.md
+?? docs/architecture/adr-0002-random-needs-taskbar-pet-runtime.md
+?? production/art-direction/
+?? production/qa/
+?? production/session-state/NEXT-SESSION.md
+?? scripts/build_directional_timing_preview.py
+?? scripts/build_firefly_idle_animations.py
+?? scripts/build_layered_miyabi_demo.py
+?? scripts/build_layered_signature_demo.py
+?? scripts/build_miyabi_energy_blade_slash.py
+?? scripts/build_miyabi_energy_surge_slash.py
+?? scripts/build_miyabi_final_blow_slash.py
+?? scripts/build_miyabi_forward_crescent_slash.py
+?? scripts/build_miyabi_hip_rise_crescent_slash.py
+?? scripts/build_taskbar_behavior_packs.py
+?? scripts/build_taskbar_pet.ps1
+?? scripts/optimize_miyabi_taskbar_pack.py
+?? scripts/prepare_pixel_body_master.py
+?? scripts/process_pixel_sprite_sheet.py
+?? scripts/remove_white_matte_fringe.py
+?? scripts/render_firefly_sam_reference.py
+?? scripts/render_firefly_sword_reference.py
+?? scripts/render_miyabi_taskbar_pack_v2.py
+?? scripts/render_miyabi_taskbar_reference.py
+?? scripts/stabilize_sprite_frames.py
+?? scripts/validate_layered_signature.py
+?? scripts/validate_taskbar_pet_package.ps1
+?? src/taskbar-pet/
+?? tests/taskbar-pet/
+?? tmp/
+Process snapshot:
+

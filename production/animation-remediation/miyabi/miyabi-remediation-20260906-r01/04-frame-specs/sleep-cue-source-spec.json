@@ -1,0 +1,1534 @@
+{
+  "run": "miyabi-remediation-20260906-r01",
+  "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING",
+  "rows": [
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-000",
+      "timestampMs": 0,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "hold",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 0,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-001",
+      "timestampMs": 150,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "hold",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 0,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-002",
+      "timestampMs": 300,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "breakdown",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 1,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-003",
+      "timestampMs": 450,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "breakdown",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 2,
+        "earTipReductionPixels": 3
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-004",
+      "timestampMs": 600,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "breakdown",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 2,
+        "earTipReductionPixels": 3
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-005",
+      "timestampMs": 750,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "breakdown",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 1,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-006",
+      "timestampMs": 900,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "breakdown",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 0,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    },
+    {
+      "specificationRevision": "miyabi-remediation-20260906-r01-sleep-cue-1",
+      "character": "hoshimi-miyabi",
+      "clip": "sleep_cue",
+      "frameId": "frame-007",
+      "timestampMs": 1050,
+      "durationMs": 150,
+      "phase": "drowsiness",
+      "role": "hold",
+      "purpose": "restrained drowsiness cue without prop pop",
+      "identityReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/layered-v6-clean/layers/miyabi-body-fixed.png",
+      "weaponReference": "assets/generated/pixel-chibi/production-v2/hoshimi-miyabi/hip-rise-crescent-slash-v3/references/weapon-overview.png",
+      "previousApprovedPose": "standing identity master",
+      "currentAnnotatedPoseGuide": "04-frame-specs/pose-guides/sleep-cue-frame-004-guide.png",
+      "nextApprovedPose": "standing identity master",
+      "previousPose": "standing body/weapon/feet fixed",
+      "currentPose": {
+        "body": "identity master unchanged",
+        "eyelidLevel": 0,
+        "earTipReductionPixels": 0
+      },
+      "nextPose": "standing destination",
+      "landmarks": {
+        "head": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "shoulders": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "elbows": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "wrists": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "pelvis": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "knees": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "heels": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "toes": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponHilt": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "weaponTip": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        },
+        "propCompanionAnchor": {
+          "previousXY": "identity-master-fixed",
+          "currentXY": "identity-master-fixed",
+          "nextXY": "identity-master-fixed",
+          "deltaXY": [
+            0,
+            0
+          ],
+          "rotationChange": 0,
+          "fixedOrMoving": "fixed"
+        }
+      },
+      "weightAndBalance": "standing; no translation",
+      "support": "both feet on y=143",
+      "actionLine": "contained standing drowsiness",
+      "primaryMotion": "eyelid closure/recovery",
+      "weaponPropTrajectory": "none; weapon fixed",
+      "accelerationDeceleration": "hold then close then recover",
+      "secondaryMotion": "ear-tip reduction only at level 2",
+      "secondaryOnsetDelayMs": 0,
+      "silhouetteExpectation": "identity silhouette unchanged except 1px ear-tip softening",
+      "identityLocks": [
+        "body scale fixed",
+        "weapon fixed",
+        "feet baseline fixed",
+        "palette fixed"
+      ],
+      "canvas": "160x144",
+      "placementAnchorXY": [
+        64,
+        120
+      ],
+      "groundLineY": 143,
+      "authoredDirection": "right",
+      "mirrorRule": "runtime mirrors right",
+      "mustRemainUnchanged": [
+        "behavior semantics",
+        "clip duration",
+        "Firefly",
+        "food/effect policy"
+      ],
+      "mustNotBeInvented": [
+        "Z symbol",
+        "food",
+        "plate",
+        "tea",
+        "slash",
+        "breath effect",
+        "new prop"
+      ],
+      "outputRequirements": [
+        "RGBA PNG 160x144",
+        "transparent background",
+        "hard pixel edges",
+        "no annotation"
+      ],
+      "status": "CANDIDATE_SOURCE_SPEC_USER_APPROVAL_PENDING"
+    }
+  ]
+}

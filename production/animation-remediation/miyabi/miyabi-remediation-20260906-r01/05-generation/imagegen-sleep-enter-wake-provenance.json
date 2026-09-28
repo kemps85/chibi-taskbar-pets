@@ -1,0 +1,110 @@
+[
+  {
+    "tool": "image_gen.imagegen",
+    "frame": "sleep_enter/frame-004",
+    "request_id": null,
+    "model": null,
+    "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\sleep-enter-frame-004-imagegen.png",
+    "raw_output_sha256": "4b0192948043cb4cc740c4cb7ceb8f6e41165d1bdbb26620ffa6c48a648e367e",
+    "raw_output_canvas": [
+      1322,
+      1190
+    ],
+    "raw_alpha_observation": "transparent canvas with substantial partial alpha before thresholding",
+    "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\sleep-enter-frame-004-candidate.png",
+    "processed_output_sha256": "aba29931b75ae762f1df18955a79dc80c917c9dda162c960bd3002cea13c7c00",
+    "processed_output_canvas": [
+      160,
+      144
+    ],
+    "post_process": [
+      "threshold generated alpha at 128",
+      "crop to authored bbox",
+      "nearest-neighbor normalize within 124x112 logical-pixel budget",
+      "place centered with bottom at ground y=143"
+    ],
+    "references": [
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+        "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+        "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw-sleep-rest-frame-000-candidate.png",
+        "sha256": "32aa55491918b4efae4ea8ce3f05f5f2b939072614d57b6955dd6eb07fc3b9e5",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\sleep-enter-frame-004-guide.png",
+        "sha256": "a26c9410f8a6396ef0f1d3e943ee73e0f72b91875d7eddfc3fe41f6cc9bbeab7",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\sleep_enter\\right\\frames\\frame-003.png",
+        "sha256": "6ed2371a1c214d2f7dc5504b334ad5129d94660e39273db2f39c52d28e461e6b",
+        "exists": true
+      }
+    ],
+    "status": "CANDIDATE_KEY_TECHNICAL_REVIEW_PENDING",
+    "prompt": "Tạo sleep_enter frame-004 weight-transfer breakdown: pelvis lowers, knees fold feet-left, head-right, support carries weight, coat pools, weapon protected, no rotation/crop/squash."
+  },
+  {
+    "tool": "image_gen.imagegen",
+    "frame": "wake/frame-004",
+    "request_id": null,
+    "model": null,
+    "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\wake-frame-004-imagegen.png",
+    "raw_output_sha256": "dc76676f4c091784f203c6a9f64d97a2a0d738f42a50bd3ebdf1501c9745ab78",
+    "raw_output_canvas": [
+      1322,
+      1190
+    ],
+    "raw_alpha_observation": "transparent canvas with substantial partial alpha before thresholding",
+    "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\wake-frame-004-candidate.png",
+    "processed_output_sha256": "e368906e815a4926b9c32058b9be8ef76787e89669b7c7842f8754c58d06a4b8",
+    "processed_output_canvas": [
+      160,
+      144
+    ],
+    "post_process": [
+      "threshold generated alpha at 128",
+      "crop to authored bbox",
+      "nearest-neighbor normalize within 124x112 logical-pixel budget",
+      "place centered with bottom at ground y=143"
+    ],
+    "references": [
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+        "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+        "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw-sleep-rest-frame-000-candidate.png",
+        "sha256": "32aa55491918b4efae4ea8ce3f05f5f2b939072614d57b6955dd6eb07fc3b9e5",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\wake-frame-004-guide.png",
+        "sha256": "e46c45a7f536be048aee088ecf924f02e14a2ef5a4c5d29d31db0c48fe2dd280",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\wake\\right\\frames\\frame-004.png",
+        "sha256": "ce5efce8b0394373c5ae8d14bc58ac66f08c05339ae7482f12255fb30ae54356",
+        "exists": true
+      }
+    ],
+    "status": "CANDIDATE_KEY_TECHNICAL_REVIEW_PENDING",
+    "prompt": "Tạo wake frame-004 support-release breakdown: ears and eyes lift, torso rises slightly, pelvis/knees grounded, feet and weapon attached, no teleport/crop/squash."
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "tool": "image_gen.imagegen",
+  "request_id": null,
+  "model": null,
+  "raw_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\raw\\eat-frame-006-imagegen.png",
+  "raw_output_sha256": "1de24853f6a7e66f9391c6c229389d2ba0c055c2c2db78c3722fa65fdbf8a510",
+  "raw_output_canvas": [
+    1322,
+    1190
+  ],
+  "raw_output_alpha_observation": "opaque checkerboard/near-white background; alpha channel fully opaque",
+  "processed_output_path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\05-generation\\eat-frame-006-body-plate-candidate.png",
+  "processed_output_sha256": "4f64274b86ad0424cd131edf818a9bcc012e178cc49d2a5b33a29e8369c37e5a",
+  "processed_output_canvas": [
+    160,
+    144
+  ],
+  "processed_output_alpha_observation": "38 partial-alpha pixels are retained only from the stable empty-plate source; generated body pixels are hard-edged after nearest-neighbor processing",
+  "references": [
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+      "sha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+      "sha256": "a125b8d878e5a745f2857a5a5082a4fafe1924743061bda9ec37f9d664fcda3d",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\eat\\right\\frames\\frame-000.png",
+      "sha256": "6ffeb02a6585405e344089e25524948aceee38fdbe2550cda72eb17947444303",
+      "exists": true
+    },
+    {
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\eat-frame-006-guide.png",
+      "sha256": "674fd66afbfab0253f0990342c32fa265ce0a7f7bbecc281bbf566ac3bfb2464",
+      "exists": true
+    }
+  ],
+  "post_process": [
+    "border-connected near-white flood-fill",
+    "bounded generated-body crop",
+    "nearest-neighbor normalize to 120px body height and y=23..143",
+    "restore exact stable empty-plate pixels from eat frame-000"
+  ],
+  "status": "CANDIDATE_KEY_TECHNICAL_REVIEW_PENDING",
+  "prompt": "Bạn chỉ thực hiện đúng một frame được mô tả bên dưới. Bạn không thiết kế lại animation. Ưu tiên identity master cho Miyabi, weapon master cho kiếm/vỏ, current stable eat frame-000 chỉ để giữ nguyên plate semantics, pose guide cho pose. Tạo eat frame-006, 160x144 logical pixels, hard pixel edges, transparent background, right-authored. Miyabi performs a compact bite-like pause: torso leans slightly toward the existing empty plate area, one hand travels toward her mouth, the other keeps the sheathed weapon clear and attached. Preserve exactly the existing empty pale plate/food-area cue at x=112..127,y=113..117; it is empty, not a new food item. Keep feet on ground y=143, keep fox ears, hair, teal coat, black skirt, mechanical arm, and weapon identity. No spoon, chopsticks, bowl, food, crumbs, Vô Vĩ, slash, energy, effect, background, camera movement, or annotations. Output only the requested frame."
+}

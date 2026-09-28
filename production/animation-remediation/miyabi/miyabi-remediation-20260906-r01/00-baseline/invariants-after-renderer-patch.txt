@@ -1,0 +1,5 @@
+Integrity check after renderer patch: 2026-09-06T03:54:41.211977
+Non-renderer baseline entries: 336
+Non-renderer changed: 0
+Protected Miyabi/Firefly/behavior/runtime changed: 0
+Result: PASS

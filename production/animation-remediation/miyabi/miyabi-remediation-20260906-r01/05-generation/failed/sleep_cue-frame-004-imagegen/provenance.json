@@ -1,0 +1,17 @@
+{
+  "status": "REJECTED",
+  "clip": "sleep_cue",
+  "frame": "frame-004",
+  "tool": "built-in image_gen",
+  "requestId": null,
+  "outputPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a0733e-2630-7bf1-97dc-8c0f2a76683d\\exec-d79ae53f-3f93-40a2-9edb-ba6521490184.png",
+  "workspaceCopy": "output.png",
+  "referencePaths": [
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\tmp\\miyabi-model-preview\\front.png",
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\references\\weapon-overview.png",
+    "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\production\\animation-remediation\\miyabi\\miyabi-remediation-20260906-r01\\04-frame-specs\\pose-guides\\sleep-cue-frame-004-guide.png"
+  ],
+  "postProcess": [],
+  "failureReasons": ["wrong canvas", "opaque checkerboard", "pose intent not visibly realized"]
+}

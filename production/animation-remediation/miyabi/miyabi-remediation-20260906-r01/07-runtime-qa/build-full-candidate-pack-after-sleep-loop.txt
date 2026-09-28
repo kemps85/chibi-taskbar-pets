@@ -1,0 +1,2 @@
+C:\Users\ASUS\Documents\ChatGPT\Game\assets\generated\pixel-chibi\production-v2\hoshimi-miyabi\remediation\miyabi-remediation-20260906-r01\full-pack\clip-packs\miyabi\v1
+frame counts {'idle': 8, 'walk': 8, 'hunger_cue': 8, 'eat': 12, 'sleep_cue': 8, 'sleep_enter': 10, 'sleep_loop': 12, 'wake': 8, 'spirit_tail': 32}
