@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src pet-asset:; script-src pet-app:; style-src pet-app:; connect-src pet-asset:; base-uri 'none'; form-action 'none'">
+    <title>Taskbar Pet</title>
+    <link rel="stylesheet" href="./renderer.css">
+  </head>
+  <body>
+    <canvas id="pet" width="160" height="144" aria-hidden="true"></canvas>
+    <script type="module" src="./renderer.js"></script>
+  </body>
+</html>

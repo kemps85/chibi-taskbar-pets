@@ -1,0 +1,78 @@
+{
+  "name": "taskbar-pet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Windows taskbar pet with pixel-chibi HoYoverse characters",
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "electron main.mjs",
+    "smoke": "electron main.mjs --smoke",
+    "test": "node --test ../../tests/taskbar-pet/*.test.mjs",
+    "validate:assets": "node --test ../../tests/taskbar-pet/asset-contract.test.mjs",
+    "build:win:dir": "electron-builder --win --dir",
+    "build:win:portable": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "43.2.0",
+    "electron-builder": "26.15.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "build": {
+    "appId": "local.codex.taskbar-pet",
+    "productName": "TaskbarPet",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "*.js",
+      "*.mjs",
+      "*.cjs",
+      "*.html",
+      "*.css",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../../assets/data/taskbar_pet_runtime_v1.json",
+        "to": "pet-assets/config/taskbar_pet_runtime_v1.json"
+      },
+      {
+        "from": "../../assets/data/taskbar_pet_behavior_v1.json",
+        "to": "pet-assets/config/taskbar_pet_behavior_v1.json"
+      },
+      {
+        "from": "../../assets/runtime/taskbar-pet/clip-packs",
+        "to": "pet-assets/clip-packs",
+        "filter": [
+          "**/v2/**"
+        ]
+      },
+      {
+        "from": "../../assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/firefly-idle-animation-manifest.json",
+        "to": "pet-assets/firefly/m0-human-right/firefly-idle-animation-manifest.json"
+      },
+      {
+        "from": "../../assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/human-module-sword/right/frames",
+        "to": "pet-assets/firefly/m0-human-right/frames",
+        "filter": [
+          "*.png"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "TaskbarPet-${version}-${arch}.${ext}"
+    }
+  }
+}

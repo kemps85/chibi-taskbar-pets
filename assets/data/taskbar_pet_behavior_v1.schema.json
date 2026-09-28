@@ -1,0 +1,912 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-code-game-studios.local/schemas/taskbar_pet_behavior_v1.schema.json",
+  "title": "Taskbar Pet M1 Random Needs Behavior",
+  "description": "Strict behavior contract for Miyabi and Firefly taskbar pets.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "milestone",
+    "scope",
+    "random",
+    "needs",
+    "locomotion",
+    "scheduler",
+    "statePolicy",
+    "clipPackContract",
+    "characters",
+    "signals"
+  ],
+  "$defs": {
+    "uniformRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum",
+        "maximum",
+        "distribution"
+      ],
+      "properties": {
+        "minimum": {
+          "type": "number"
+        },
+        "maximum": {
+          "type": "number"
+        },
+        "distribution": {
+          "const": "uniform"
+        }
+      }
+    },
+    "idleAction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "clip",
+        "baseWeight",
+        "cooldownMs",
+        "requiredLoopPolicy",
+        "loopDurationMs",
+        "atomic"
+      ],
+      "properties": {
+        "id": {
+          "const": "idle"
+        },
+        "clip": {
+          "const": "idle"
+        },
+        "baseWeight": {
+          "const": 5
+        },
+        "cooldownMs": {
+          "const": 0
+        },
+        "requiredLoopPolicy": {
+          "const": "loop"
+        },
+        "loopDurationMs": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/uniformRange"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "minimum": {
+                  "const": 2000
+                },
+                "maximum": {
+                  "const": 6000
+                }
+              }
+            }
+          ]
+        },
+        "atomic": {
+          "const": false
+        }
+      }
+    }
+  },
+  "properties": {
+    "$schema": {
+      "const": "./taskbar_pet_behavior_v1.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "milestone": {
+      "const": "M1"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "characters",
+        "targetDisplay",
+        "taskbarEdge"
+      ],
+      "properties": {
+        "characters": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "miyabi"
+            },
+            {
+              "const": "firefly"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "targetDisplay": {
+          "const": "primary"
+        },
+        "taskbarEdge": {
+          "const": "bottom"
+        }
+      }
+    },
+    "random": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "zeroSeedReplacementUint32",
+        "productionSeedSource",
+        "testSeedSource",
+        "stateFields",
+        "forbiddenSurface"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "xorshift32"
+        },
+        "zeroSeedReplacementUint32": {
+          "const": 1831565813
+        },
+        "productionSeedSource": {
+          "const": "crypto-random-uint32"
+        },
+        "testSeedSource": {
+          "const": "explicit-uint32"
+        },
+        "stateFields": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "stateUint32"
+            },
+            {
+              "const": "drawCount"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "forbiddenSurface": {
+          "const": "Math.random"
+        }
+      }
+    },
+    "needs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "clock",
+        "range",
+        "hunger",
+        "sleepiness"
+      ],
+      "properties": {
+        "clock": {
+          "const": "elapsed-wall-time-ms"
+        },
+        "range": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minimum",
+            "maximum"
+          ],
+          "properties": {
+            "minimum": {
+              "const": 0
+            },
+            "maximum": {
+              "const": 1
+            }
+          }
+        },
+        "hunger": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "initialValue",
+            "fullAfterMs",
+            "cueThreshold",
+            "cueVisibleMs",
+            "cueRepeatMsAtThreshold",
+            "cueRepeatMsAtMaximum",
+            "persistsUntilSignal",
+            "valueAfterFeed",
+            "accruesWhileSleeping"
+          ],
+          "properties": {
+            "initialValue": {
+              "const": 0
+            },
+            "fullAfterMs": {
+              "const": 5400000
+            },
+            "cueThreshold": {
+              "const": 0.6
+            },
+            "cueVisibleMs": {
+              "const": 4000
+            },
+            "cueRepeatMsAtThreshold": {
+              "const": 20000
+            },
+            "cueRepeatMsAtMaximum": {
+              "const": 8000
+            },
+            "persistsUntilSignal": {
+              "const": "feed"
+            },
+            "valueAfterFeed": {
+              "const": 0
+            },
+            "accruesWhileSleeping": {
+              "const": true
+            }
+          }
+        },
+        "sleepiness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "initialValue",
+            "fullAfterAwakeMs",
+            "eligibleThreshold",
+            "forcedThreshold",
+            "valueAfterWake",
+            "accruesWhileSleeping",
+            "sequence",
+            "sleepLoopDurationMs",
+            "sleepBaseWeight",
+            "sleepUrgencyWeightGain"
+          ],
+          "properties": {
+            "initialValue": {
+              "const": 0
+            },
+            "fullAfterAwakeMs": {
+              "const": 7200000
+            },
+            "eligibleThreshold": {
+              "const": 0.7
+            },
+            "forcedThreshold": {
+              "const": 0.9
+            },
+            "valueAfterWake": {
+              "const": 0.05
+            },
+            "accruesWhileSleeping": {
+              "const": false
+            },
+            "sequence": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "sleep_cue-once"
+                },
+                {
+                  "const": "sleep_enter-once"
+                },
+                {
+                  "const": "sleep_loop-for-selected-duration"
+                },
+                {
+                  "const": "wake-once"
+                }
+              ],
+              "items": false,
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "sleepLoopDurationMs": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/uniformRange"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "minimum": {
+                      "const": 480000
+                    },
+                    "maximum": {
+                      "const": 720000
+                    }
+                  }
+                }
+              ]
+            },
+            "sleepBaseWeight": {
+              "const": 1
+            },
+            "sleepUrgencyWeightGain": {
+              "const": 8
+            }
+          }
+        }
+      }
+    },
+    "locomotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cycle",
+        "edgeInsetDip",
+        "preferredDistanceDip",
+        "directionSelection",
+        "speedDipPerSecond",
+        "pauseDurationMs",
+        "keepFullCanvasInsideWorkArea",
+        "boundChangePolicy"
+      ],
+      "properties": {
+        "cycle": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "choose-random-bounded-target"
+            },
+            {
+              "const": "walk"
+            },
+            {
+              "const": "pause"
+            },
+            {
+              "const": "weighted-eligible-action"
+            }
+          ],
+          "items": false,
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "edgeInsetDip": {
+          "const": 16
+        },
+        "preferredDistanceDip": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/uniformRange"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "minimum": {
+                  "const": 96
+                },
+                "maximum": {
+                  "const": 360
+                }
+              }
+            }
+          ]
+        },
+        "directionSelection": {
+          "const": "uniform-among-feasible-left-right"
+        },
+        "speedDipPerSecond": {
+          "const": 48
+        },
+        "pauseDurationMs": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/uniformRange"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "minimum": {
+                  "const": 800
+                },
+                "maximum": {
+                  "const": 2400
+                }
+              }
+            }
+          ]
+        },
+        "keepFullCanvasInsideWorkArea": {
+          "const": true
+        },
+        "boundChangePolicy": {
+          "const": "clamp-anchor-and-cancel-walk"
+        }
+      }
+    },
+    "scheduler": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selection",
+        "recentHistoryLength",
+        "repeatPenalty",
+        "ordinaryActionHungerMultiplierAtMaximum",
+        "cooldownGate",
+        "sleepWeightFormula",
+        "forcedSleepPolicy",
+        "ineligibleCandidatesConsumeRandomDraws"
+      ],
+      "properties": {
+        "selection": {
+          "const": "weighted-random-from-eligible-actions"
+        },
+        "recentHistoryLength": {
+          "const": 3
+        },
+        "repeatPenalty": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "immediateMultiplier",
+            "recentMultiplier",
+            "notRecentMultiplier"
+          ],
+          "properties": {
+            "immediateMultiplier": {
+              "const": 0.1
+            },
+            "recentMultiplier": {
+              "const": 0.5
+            },
+            "notRecentMultiplier": {
+              "const": 1
+            }
+          }
+        },
+        "ordinaryActionHungerMultiplierAtMaximum": {
+          "const": 0.5
+        },
+        "cooldownGate": {
+          "const": "zero-while-active-one-otherwise"
+        },
+        "sleepWeightFormula": {
+          "const": "1 + sleepUrgencyWeightGain * normalizedSleepUrgency"
+        },
+        "forcedSleepPolicy": {
+          "const": "queue-at-next-safe-boundary"
+        },
+        "ineligibleCandidatesConsumeRandomDraws": {
+          "const": false
+        }
+      }
+    },
+    "statePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "priorityHighToLow",
+        "atomicStates",
+        "rules"
+      ],
+      "properties": {
+        "priorityHighToLow": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "shutdown"
+            },
+            {
+              "const": "active-sleep"
+            },
+            {
+              "const": "forced-sleep-request"
+            },
+            {
+              "const": "queued-feed-signal"
+            },
+            {
+              "const": "hunger-cue-due"
+            },
+            {
+              "const": "display-bounds-correction"
+            },
+            {
+              "const": "atomic-character-action"
+            },
+            {
+              "const": "walk"
+            },
+            {
+              "const": "pause-or-idle"
+            }
+          ],
+          "items": false,
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "atomicStates": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "sleep-enter-through-wake"
+            },
+            {
+              "const": "miyabi-spirit-tail-enter-through-exit"
+            },
+            {
+              "const": "firefly-module-sword"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shutdown",
+            "forcedSleepDuringWalk",
+            "forcedSleepDuringAtomicAction",
+            "feedDuringPauseIdleOrCue",
+            "feedDuringSleepOrAtomicAction",
+            "hungerCueDuringSleep",
+            "displayBoundsChange"
+          ],
+          "properties": {
+            "shutdown": {
+              "const": "cancel-all-immediately"
+            },
+            "forcedSleepDuringWalk": {
+              "const": "stop-at-current-bounded-anchor"
+            },
+            "forcedSleepDuringAtomicAction": {
+              "const": "queue-until-action-exit"
+            },
+            "feedDuringPauseIdleOrCue": {
+              "const": "apply-at-next-frame-boundary"
+            },
+            "feedDuringSleepOrAtomicAction": {
+              "const": "queue-until-safe-boundary"
+            },
+            "hungerCueDuringSleep": {
+              "const": "hide-and-reappear-after-wake-if-still-required"
+            },
+            "displayBoundsChange": {
+              "const": "clamp-immediately-without-cancelling-atomic-animation"
+            }
+          }
+        }
+      }
+    },
+    "clipPackContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "canvas",
+        "masterDirection",
+        "leftRendering",
+        "frameNamePattern",
+        "requireRightAnchor",
+        "leftAnchorDerived",
+        "timingPolicy",
+        "loopPolicies",
+        "storeLeftFrames",
+        "failClosedOnMissingContract"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "canvas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "width",
+            "height"
+          ],
+          "properties": {
+            "width": {
+              "const": 160
+            },
+            "height": {
+              "const": 144
+            }
+          }
+        },
+        "masterDirection": {
+          "const": "right"
+        },
+        "leftRendering": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strategy",
+            "anchorFormula"
+          ],
+          "properties": {
+            "strategy": {
+              "const": "mirror-right-at-runtime"
+            },
+            "anchorFormula": {
+              "const": "canvas.width-rightAnchor.x"
+            }
+          }
+        },
+        "frameNamePattern": {
+          "const": "frame-{index:000}.png"
+        },
+        "requireRightAnchor": {
+          "const": true
+        },
+        "leftAnchorDerived": {
+          "const": true
+        },
+        "timingPolicy": {
+          "const": "exactly-one-of-fps-or-frameDurationsMs"
+        },
+        "loopPolicies": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "once"
+            },
+            {
+              "const": "loop"
+            },
+            {
+              "const": "segmented-enter-loop-exit"
+            }
+          ],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "storeLeftFrames": {
+          "const": false
+        },
+        "failClosedOnMissingContract": {
+          "const": true
+        }
+      }
+    },
+    "characters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "miyabi",
+        "firefly"
+      ],
+      "properties": {
+        "miyabi": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "clipPackManifest",
+            "requiredClips",
+            "actions"
+          ],
+          "properties": {
+            "clipPackManifest": {
+              "const": "assets/runtime/taskbar-pet/clip-packs/miyabi/v1/manifest.json"
+            },
+            "requiredClips": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "idle"
+                },
+                {
+                  "const": "walk"
+                },
+                {
+                  "const": "hunger_cue"
+                },
+                {
+                  "const": "eat"
+                },
+                {
+                  "const": "sleep_cue"
+                },
+                {
+                  "const": "sleep_enter"
+                },
+                {
+                  "const": "sleep_loop"
+                },
+                {
+                  "const": "wake"
+                },
+                {
+                  "const": "spirit_tail"
+                }
+              ],
+              "items": false,
+              "minItems": 9,
+              "maxItems": 9
+            },
+            "actions": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "$ref": "#/$defs/idleAction"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "clip",
+                    "baseWeight",
+                    "cooldownMs",
+                    "requiredLoopPolicy",
+                    "loopDurationMs",
+                    "atomic"
+                  ],
+                  "properties": {
+                    "id": {
+                      "const": "spirit_tail"
+                    },
+                    "clip": {
+                      "const": "spirit_tail"
+                    },
+                    "baseWeight": {
+                      "const": 2
+                    },
+                    "cooldownMs": {
+                      "const": 45000
+                    },
+                    "requiredLoopPolicy": {
+                      "const": "segmented-enter-loop-exit"
+                    },
+                    "loopDurationMs": {
+                      "allOf": [
+                        {
+                          "$ref": "#/$defs/uniformRange"
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "minimum": {
+                              "const": 4000
+                            },
+                            "maximum": {
+                              "const": 12000
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "atomic": {
+                      "const": true
+                    }
+                  }
+                }
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        "firefly": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "clipPackManifest",
+            "requiredClips",
+            "actions"
+          ],
+          "properties": {
+            "clipPackManifest": {
+              "const": "assets/runtime/taskbar-pet/clip-packs/firefly/v1/manifest.json"
+            },
+            "requiredClips": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "idle"
+                },
+                {
+                  "const": "walk"
+                },
+                {
+                  "const": "hunger_cue"
+                },
+                {
+                  "const": "eat"
+                },
+                {
+                  "const": "sleep_cue"
+                },
+                {
+                  "const": "sleep_enter"
+                },
+                {
+                  "const": "sleep_loop"
+                },
+                {
+                  "const": "wake"
+                },
+                {
+                  "const": "module_sword"
+                }
+              ],
+              "items": false,
+              "minItems": 9,
+              "maxItems": 9
+            },
+            "actions": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "$ref": "#/$defs/idleAction"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "clip",
+                    "baseWeight",
+                    "cooldownMs",
+                    "requiredLoopPolicy",
+                    "durationSource",
+                    "atomic"
+                  ],
+                  "properties": {
+                    "id": {
+                      "const": "module_sword"
+                    },
+                    "clip": {
+                      "const": "module_sword"
+                    },
+                    "baseWeight": {
+                      "const": 2
+                    },
+                    "cooldownMs": {
+                      "const": 60000
+                    },
+                    "requiredLoopPolicy": {
+                      "const": "once"
+                    },
+                    "durationSource": {
+                      "const": "clip-pack-frameDurationsMs"
+                    },
+                    "atomic": {
+                      "const": true
+                    }
+                  }
+                }
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        }
+      }
+    },
+    "signals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "feed"
+      ],
+      "properties": {
+        "feed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "effect"
+          ],
+          "properties": {
+            "source": {
+              "const": "tray-command-later"
+            },
+            "effect": {
+              "const": "set-hunger-to-valueAfterFeed-and-clear-hunger-cue"
+            }
+          }
+        }
+      }
+    }
+  }
+}

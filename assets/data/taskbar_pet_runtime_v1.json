@@ -1,0 +1,98 @@
+{
+  "$schema": "./taskbar_pet_runtime_v1.schema.json",
+  "schemaVersion": 1,
+  "milestone": "M0",
+  "runtime": {
+    "framework": "electron",
+    "frameworkVersion": "43.2.0",
+    "platform": "win32",
+    "architecture": "x64"
+  },
+  "source": {
+    "character": "firefly",
+    "clip": "human_module_sword_idle",
+    "direction": "right",
+    "manifestPath": "assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/firefly-idle-animation-manifest.json",
+    "requiredManifestStatus": "PASS",
+    "framesDirectory": "assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/human-module-sword/right/frames",
+    "frameNamePattern": "frame-{index:000}.png",
+    "frameDurationsJsonPointer": "/human_module_sword_idle/frame_durations_ms"
+  },
+  "timeline": {
+    "frameCount": 164,
+    "durationMs": 10950,
+    "restDurationMs": 60000,
+    "initialState": "resting-on-frame-000",
+    "nominalLogicalFps": 15,
+    "loop": true,
+    "clock": "performance.now",
+    "frameSelection": "cumulative-duration-binary-search",
+    "interpolation": "none"
+  },
+  "display": {
+    "targetDisplay": "primary",
+    "taskbarEdge": "bottom",
+    "autoHideSupported": false,
+    "canvas": {
+      "width": 160,
+      "height": 144
+    },
+    "renderScale": 1,
+    "anchor": {
+      "x": 64,
+      "y": 120
+    },
+    "horizontalPlacement": "work-area-center",
+    "verticalPlacement": "anchor-on-work-area-bottom",
+    "nearestNeighbor": true
+  },
+  "window": {
+    "logicalWidthDip": 160,
+    "logicalHeightDip": 144,
+    "transparent": true,
+    "clickThrough": true,
+    "focusable": false,
+    "skipTaskbar": true,
+    "alwaysOnTopLevel": "pop-up-menu"
+  },
+  "packaging": {
+    "format": "portable",
+    "asar": true,
+    "resourceRoot": "pet-assets/firefly/m0-human-right",
+    "include": [
+      "firefly-idle-animation-manifest.json",
+      "human-module-sword/right/frames/frame-000.png..frame-163.png"
+    ],
+    "excludeScopes": [
+      "left-facing-frames",
+      "sam",
+      "review-videos",
+      "contact-sheets",
+      "keyposes"
+    ]
+  },
+  "performanceExitGate": {
+    "coldLaunchToFirstFrameMsMax": 2000,
+    "workingSetMbMax": 200,
+    "idleCpuPercentAverageMax": 3,
+    "measurementWindowMinutes": 10,
+    "consecutiveCleanRunsRequired": 2,
+    "cumulativeTimelineDriftMsMax": 0,
+    "actionOnFailure": "stop-scope-expansion-and-propose-wpf-superseding-adr"
+  },
+  "deferred": {
+    "leftDirection": true,
+    "secondaryDisplays": true,
+    "nonBottomTaskbars": true,
+    "autoHiddenTaskbar": true,
+    "directPetInteraction": true,
+    "sam": {
+      "enabled": false,
+      "reasonCodes": [
+        "mixed-160x144-and-128x128-canvases",
+        "directional-anchors-absent-from-manifest",
+        "cross-clip-placement-contract-absent"
+      ]
+    }
+  }
+}

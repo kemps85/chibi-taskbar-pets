@@ -1,0 +1,508 @@
+{
+  "$schema": "./taskbar_pet_behavior_v1.schema.json",
+  "schemaVersion": 1,
+  "milestone": "M1",
+  "scope": {
+    "characters": [
+      "miyabi",
+      "firefly",
+      "evanescia",
+      "robin",
+      "remielle-dan",
+      "ye-shunguang",
+      "ye-shunguang-white",
+      "ye-shunguang-red",
+      "ye-shunguang-red-white"
+    ],
+    "targetDisplay": "primary",
+    "taskbarEdge": "bottom"
+  },
+  "random": {
+    "algorithm": "xorshift32",
+    "zeroSeedReplacementUint32": 1831565813,
+    "productionSeedSource": "crypto-random-uint32",
+    "testSeedSource": "explicit-uint32",
+    "stateFields": [
+      "stateUint32",
+      "drawCount"
+    ],
+    "forbiddenSurface": "Math.random"
+  },
+  "needs": {
+    "clock": "elapsed-wall-time-ms",
+    "range": {
+      "minimum": 0,
+      "maximum": 1
+    },
+    "hunger": {
+      "initialValue": 0,
+      "fullAfterMs": 5400000,
+      "cueThreshold": 0.6,
+      "cueVisibleMs": 4000,
+      "cueRepeatMsAtThreshold": 20000,
+      "cueRepeatMsAtMaximum": 8000,
+      "persistsUntilSignal": "feed",
+      "valueAfterFeed": 0,
+      "accruesWhileSleeping": true
+    },
+    "sleepiness": {
+      "initialValue": 0,
+      "fullAfterAwakeMs": 7200000,
+      "eligibleThreshold": 0.7,
+      "forcedThreshold": 0.9,
+      "valueAfterWake": 0.05,
+      "accruesWhileSleeping": false,
+      "sequence": [
+        "sleep_cue-once",
+        "sleep_enter-once",
+        "sleep_loop-for-selected-duration",
+        "wake-once"
+      ],
+      "sleepLoopDurationMs": {
+        "minimum": 480000,
+        "maximum": 720000,
+        "distribution": "uniform"
+      },
+      "sleepBaseWeight": 1,
+      "sleepUrgencyWeightGain": 8
+    }
+  },
+  "locomotion": {
+    "cycle": [
+      "choose-random-bounded-target",
+      "walk",
+      "pause",
+      "weighted-eligible-action"
+    ],
+    "edgeInsetDip": 16,
+    "preferredDistanceDip": {
+      "minimum": 96,
+      "maximum": 360,
+      "distribution": "uniform"
+    },
+    "directionSelection": "uniform-among-feasible-left-right",
+    "speedDipPerSecond": 48,
+    "pauseDurationMs": {
+      "minimum": 800,
+      "maximum": 2400,
+      "distribution": "uniform"
+    },
+    "keepFullCanvasInsideWorkArea": true,
+    "boundChangePolicy": "clamp-anchor-and-cancel-walk"
+  },
+  "scheduler": {
+    "selection": "weighted-random-from-eligible-actions",
+    "recentHistoryLength": 3,
+    "repeatPenalty": {
+      "immediateMultiplier": 0.1,
+      "recentMultiplier": 0.5,
+      "notRecentMultiplier": 1
+    },
+    "ordinaryActionHungerMultiplierAtMaximum": 0.5,
+    "cooldownGate": "zero-while-active-one-otherwise",
+    "sleepWeightFormula": "1 + sleepUrgencyWeightGain * normalizedSleepUrgency",
+    "forcedSleepPolicy": "queue-at-next-safe-boundary",
+    "ineligibleCandidatesConsumeRandomDraws": false
+  },
+  "statePolicy": {
+    "priorityHighToLow": [
+      "shutdown",
+      "active-sleep",
+      "forced-sleep-request",
+      "queued-feed-signal",
+      "hunger-cue-due",
+      "display-bounds-correction",
+      "atomic-character-action",
+      "walk",
+      "pause-or-idle"
+    ],
+    "atomicStates": [
+      "sleep-enter-through-wake",
+      "miyabi-spirit-tail-enter-through-exit",
+      "firefly-module-sword",
+      "character-signature"
+    ],
+    "rules": {
+      "shutdown": "cancel-all-immediately",
+      "forcedSleepDuringWalk": "stop-at-current-bounded-anchor",
+      "forcedSleepDuringAtomicAction": "queue-until-action-exit",
+      "feedDuringPauseIdleOrCue": "apply-at-next-frame-boundary",
+      "feedDuringSleepOrAtomicAction": "queue-until-safe-boundary",
+      "hungerCueDuringSleep": "hide-and-reappear-after-wake-if-still-required",
+      "displayBoundsChange": "clamp-immediately-without-cancelling-atomic-animation"
+    }
+  },
+  "clipPackContract": {
+    "schemaVersion": 1,
+    "canvas": {
+      "width": 160,
+      "height": 144
+    },
+    "masterDirection": "right",
+    "leftRendering": {
+      "strategy": "mirror-right-at-runtime",
+      "anchorFormula": "canvas.width-rightAnchor.x"
+    },
+    "frameNamePattern": "frame-{index:000}.png",
+    "requireRightAnchor": true,
+    "leftAnchorDerived": true,
+    "timingPolicy": "exactly-one-of-fps-or-frameDurationsMs",
+    "loopPolicies": [
+      "once",
+      "loop",
+      "segmented-enter-loop-exit"
+    ],
+    "storeLeftFrames": false,
+    "failClosedOnMissingContract": true
+  },
+  "characters": {
+    "miyabi": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/miyabi/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "spirit_tail"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "spirit_tail",
+          "clip": "spirit_tail",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "firefly": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/firefly/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "module_sword"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "module_sword",
+          "clip": "module_sword",
+          "baseWeight": 2,
+          "cooldownMs": 60000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "evanescia": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/evanescia/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "robin": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/robin/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "remielle-dan": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/remielle-dan/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "ye-shunguang": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/ye-shunguang/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "ye-shunguang-white": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/ye-shunguang-white/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "ye-shunguang-red": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/ye-shunguang-red/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    },
+    "ye-shunguang-red-white": {
+      "clipPackManifest": "assets/runtime/taskbar-pet/clip-packs/ye-shunguang-red-white/v2/manifest.json",
+      "requiredClips": [
+        "idle",
+        "walk",
+        "hunger_cue",
+        "eat",
+        "sleep_cue",
+        "sleep_enter",
+        "sleep_loop",
+        "wake",
+        "signature"
+      ],
+      "actions": [
+        {
+          "id": "idle",
+          "clip": "idle",
+          "baseWeight": 5,
+          "cooldownMs": 0,
+          "requiredLoopPolicy": "loop",
+          "loopDurationMs": {
+            "minimum": 2000,
+            "maximum": 6000,
+            "distribution": "uniform"
+          },
+          "atomic": false
+        },
+        {
+          "id": "signature",
+          "clip": "signature",
+          "baseWeight": 2,
+          "cooldownMs": 45000,
+          "requiredLoopPolicy": "once",
+          "durationSource": "clip-pack-frameDurationsMs",
+          "atomic": true
+        }
+      ]
+    }
+  },
+  "signals": {
+    "feed": {
+      "source": "tray-command-later",
+      "effect": "set-hunger-to-valueAfterFeed-and-clear-hunger-cue"
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-code-game-studios.local/schemas/taskbar_pet_runtime_v1.schema.json",
+  "title": "Taskbar Pet M0 Runtime Configuration",
+  "description": "Schema for the Firefly human-right Electron taskbar-pet M0 vertical slice.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "milestone",
+    "runtime",
+    "source",
+    "timeline",
+    "display",
+    "window",
+    "packaging",
+    "performanceExitGate",
+    "deferred"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "./taskbar_pet_runtime_v1.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "milestone": {
+      "const": "M0"
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "framework",
+        "frameworkVersion",
+        "platform",
+        "architecture"
+      ],
+      "properties": {
+        "framework": {
+          "const": "electron"
+        },
+        "frameworkVersion": {
+          "const": "43.2.0"
+        },
+        "platform": {
+          "const": "win32"
+        },
+        "architecture": {
+          "const": "x64"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character",
+        "clip",
+        "direction",
+        "manifestPath",
+        "requiredManifestStatus",
+        "framesDirectory",
+        "frameNamePattern",
+        "frameDurationsJsonPointer"
+      ],
+      "properties": {
+        "character": {
+          "const": "firefly"
+        },
+        "clip": {
+          "const": "human_module_sword_idle"
+        },
+        "direction": {
+          "const": "right"
+        },
+        "manifestPath": {
+          "const": "assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/firefly-idle-animation-manifest.json"
+        },
+        "requiredManifestStatus": {
+          "const": "PASS"
+        },
+        "framesDirectory": {
+          "const": "assets/generated/pixel-chibi/production-v2/firefly/idle-sequences/production-v2-smooth/human-module-sword/right/frames"
+        },
+        "frameNamePattern": {
+          "const": "frame-{index:000}.png"
+        },
+        "frameDurationsJsonPointer": {
+          "const": "/human_module_sword_idle/frame_durations_ms"
+        }
+      }
+    },
+    "timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frameCount",
+        "durationMs",
+        "restDurationMs",
+        "initialState",
+        "nominalLogicalFps",
+        "loop",
+        "clock",
+        "frameSelection",
+        "interpolation"
+      ],
+      "properties": {
+        "frameCount": {
+          "const": 164
+        },
+        "durationMs": {
+          "const": 10950
+        },
+        "restDurationMs": {
+          "const": 60000
+        },
+        "initialState": {
+          "const": "resting-on-frame-000"
+        },
+        "nominalLogicalFps": {
+          "const": 15
+        },
+        "loop": {
+          "const": true
+        },
+        "clock": {
+          "const": "performance.now"
+        },
+        "frameSelection": {
+          "const": "cumulative-duration-binary-search"
+        },
+        "interpolation": {
+          "const": "none"
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "targetDisplay",
+        "taskbarEdge",
+        "autoHideSupported",
+        "canvas",
+        "renderScale",
+        "anchor",
+        "horizontalPlacement",
+        "verticalPlacement",
+        "nearestNeighbor"
+      ],
+      "properties": {
+        "targetDisplay": {
+          "const": "primary"
+        },
+        "taskbarEdge": {
+          "const": "bottom"
+        },
+        "autoHideSupported": {
+          "const": false
+        },
+        "canvas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "width",
+            "height"
+          ],
+          "properties": {
+            "width": {
+              "const": 160
+            },
+            "height": {
+              "const": 144
+            }
+          }
+        },
+        "renderScale": {
+          "const": 1
+        },
+        "anchor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "x",
+            "y"
+          ],
+          "properties": {
+            "x": {
+              "const": 64
+            },
+            "y": {
+              "const": 120
+            }
+          }
+        },
+        "horizontalPlacement": {
+          "const": "work-area-center"
+        },
+        "verticalPlacement": {
+          "const": "anchor-on-work-area-bottom"
+        },
+        "nearestNeighbor": {
+          "const": true
+        }
+      }
+    },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logicalWidthDip",
+        "logicalHeightDip",
+        "transparent",
+        "clickThrough",
+        "focusable",
+        "skipTaskbar",
+        "alwaysOnTopLevel"
+      ],
+      "properties": {
+        "logicalWidthDip": {
+          "const": 160
+        },
+        "logicalHeightDip": {
+          "const": 144
+        },
+        "transparent": {
+          "const": true
+        },
+        "clickThrough": {
+          "const": true
+        },
+        "focusable": {
+          "const": false
+        },
+        "skipTaskbar": {
+          "const": true
+        },
+        "alwaysOnTopLevel": {
+          "const": "pop-up-menu"
+        }
+      }
+    },
+    "packaging": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "asar",
+        "resourceRoot",
+        "include",
+        "excludeScopes"
+      ],
+      "properties": {
+        "format": {
+          "const": "portable"
+        },
+        "asar": {
+          "const": true
+        },
+        "resourceRoot": {
+          "const": "pet-assets/firefly/m0-human-right"
+        },
+        "include": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "firefly-idle-animation-manifest.json"
+            },
+            {
+              "const": "human-module-sword/right/frames/frame-000.png..frame-163.png"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "excludeScopes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "left-facing-frames",
+              "sam",
+              "review-videos",
+              "contact-sheets",
+              "keyposes"
+            ]
+          },
+          "minItems": 5,
+          "maxItems": 5
+        }
+      }
+    },
+    "performanceExitGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coldLaunchToFirstFrameMsMax",
+        "workingSetMbMax",
+        "idleCpuPercentAverageMax",
+        "measurementWindowMinutes",
+        "consecutiveCleanRunsRequired",
+        "cumulativeTimelineDriftMsMax",
+        "actionOnFailure"
+      ],
+      "properties": {
+        "coldLaunchToFirstFrameMsMax": {
+          "const": 2000
+        },
+        "workingSetMbMax": {
+          "const": 200
+        },
+        "idleCpuPercentAverageMax": {
+          "const": 3
+        },
+        "measurementWindowMinutes": {
+          "const": 10
+        },
+        "consecutiveCleanRunsRequired": {
+          "const": 2
+        },
+        "cumulativeTimelineDriftMsMax": {
+          "const": 0
+        },
+        "actionOnFailure": {
+          "const": "stop-scope-expansion-and-propose-wpf-superseding-adr"
+        }
+      }
+    },
+    "deferred": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "leftDirection",
+        "secondaryDisplays",
+        "nonBottomTaskbars",
+        "autoHiddenTaskbar",
+        "directPetInteraction",
+        "sam"
+      ],
+      "properties": {
+        "leftDirection": {
+          "const": true
+        },
+        "secondaryDisplays": {
+          "const": true
+        },
+        "nonBottomTaskbars": {
+          "const": true
+        },
+        "autoHiddenTaskbar": {
+          "const": true
+        },
+        "directPetInteraction": {
+          "const": true
+        },
+        "sam": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "reasonCodes"
+          ],
+          "properties": {
+            "enabled": {
+              "const": false
+            },
+            "reasonCodes": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "const": "mixed-160x144-and-128x128-canvases"
+                },
+                {
+                  "const": "directional-anchors-absent-from-manifest"
+                },
+                {
+                  "const": "cross-clip-placement-contract-absent"
+                }
+              ],
+              "items": false,
+              "minItems": 3,
+              "maxItems": 3
+            }
+          }
+        }
+      }
+    }
+  }
+}
