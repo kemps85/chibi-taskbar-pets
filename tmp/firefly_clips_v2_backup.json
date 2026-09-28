@@ -1,0 +1,3517 @@
+{
+  "character": "firefly",
+  "rig": {
+    "pivot_y": 99,
+    "trailing": {
+      "attach_x": 56,
+      "reach_x": 18,
+      "start_y": 55,
+      "reach_y": 25,
+      "end_y": 92
+    },
+    "carried": []
+  },
+  "clips": {
+    "idle": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 580
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "bob": -1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 700,
+          "bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "trail_bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 1200
+        }
+      ]
+    },
+    "hunger_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "hunger/hk1_curious.png",
+          "ms": 160,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "hunger/hk1_curious.png",
+          "ms": 200,
+          "trail_bob": 1
+        },
+        {
+          "pose": "hunger/hk1_curious.png",
+          "ms": 520
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "eat": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.35
+            }
+          ]
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 350
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 200,
+          "bob": 1
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 250
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.5
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 100,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.85
+            }
+          ]
+        }
+      ]
+    },
+    "sleep_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 360
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 400,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 500,
+          "bob": 1
+        }
+      ]
+    },
+    "sleep_enter": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 300,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 78,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 300
+        }
+      ]
+    },
+    "sleep_loop": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "bob": 1,
+          "pivot_y": 108
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "bob": 1,
+          "pivot_y": 108
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "pivot_y": 108
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "pivot_y": 108
+        }
+      ],
+      "rig": {
+        "carried": []
+      }
+    },
+    "wake": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 80
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 120
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "bob": 1,
+          "trail_bob": 1,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "trail_bob": 1,
+          "trail_dx": -1,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.8
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150
+        }
+      ]
+    },
+    "signature": {
+      "loop_policy": "once",
+      "rig": {
+        "carried": [],
+        "trailing": {
+          "attach_x": 0,
+          "reach_x": 1,
+          "start_y": 0,
+          "reach_y": 1,
+          "end_y": 0
+        }
+      },
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 500
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 400,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 111,
+              "y": 64,
+              "progress": 0.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 130,
+          "wipe_seed": 0,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 130,
+              "seed": 0,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 124,
+          "wipe_seed": 1,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 124,
+              "seed": 1,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 118,
+          "wipe_seed": 2,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 118,
+              "seed": 2,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 112,
+          "wipe_seed": 3,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 112,
+              "seed": 3,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 106,
+          "wipe_seed": 4,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 106,
+              "seed": 4,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 100,
+          "wipe_seed": 5,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 100,
+              "seed": 5,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 94,
+          "wipe_seed": 6,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 94,
+              "seed": 6,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 88,
+          "wipe_seed": 7,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 88,
+              "seed": 7,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 82,
+          "wipe_seed": 8,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 82,
+              "seed": 8,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 76,
+          "wipe_seed": 9,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 76,
+              "seed": 9,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 70,
+          "wipe_seed": 10,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 70,
+              "seed": 10,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 64,
+          "wipe_seed": 11,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 64,
+              "seed": 11,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 58,
+          "wipe_seed": 12,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 58,
+              "seed": 12,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 52,
+          "wipe_seed": 13,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 52,
+              "seed": 13,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 46,
+          "wipe_seed": 14,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 46,
+              "seed": 14,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 40,
+          "wipe_seed": 15,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 40,
+              "seed": 15,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 34,
+          "wipe_seed": 16,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 34,
+              "seed": 16,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 28,
+          "wipe_seed": 17,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 28,
+              "seed": 17,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/h1.png",
+          "ms": 158,
+          "wipe_to": "signature/a1n.png",
+          "wipe_y": 22,
+          "wipe_seed": 18,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 22,
+              "seed": 18,
+              "band": 12,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 500
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.833
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.667
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.30000000000000004
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.5
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.333
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.5
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.167
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.6000000000000001
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/a1n.png",
+            "hilts": [
+              [
+                100,
+                62
+              ]
+            ],
+            "progress": 0.0
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 62,
+              "progress": 0.7
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1s_clean.png",
+          "ms": 700
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 260,
+              "at": [
+                101,
+                55
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 160,
+              "at": [
+                102,
+                47
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 60,
+              "at": [
+                103,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 320,
+              "at": [
+                104,
+                33
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 220,
+              "at": [
+                105,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 120,
+              "at": [
+                106,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 100,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 106,
+              "y": 18,
+              "progress": 0.25
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 100,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 106,
+              "y": 18,
+              "progress": 0.55
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "wipe_to": "signature/a2_hover.png",
+          "wipe_y": 24,
+          "wipe_dir": "down",
+          "wipe_seed": 30,
+          "wipe_ragged": 3,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 324,
+              "at": [
+                94,
+                33
+              ]
+            },
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": -198,
+              "at": [
+                105,
+                32
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 24,
+              "seed": 30,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "wipe_to": "signature/a2_hover.png",
+          "wipe_y": 50,
+          "wipe_dir": "down",
+          "wipe_seed": 31,
+          "wipe_ragged": 3,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 288,
+              "at": [
+                81,
+                47
+              ]
+            },
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": -126,
+              "at": [
+                104,
+                46
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 50,
+              "seed": 31,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "wipe_to": "signature/a2_hover.png",
+          "wipe_y": 76,
+          "wipe_dir": "down",
+          "wipe_seed": 32,
+          "wipe_ragged": 3,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 252,
+              "at": [
+                69,
+                62
+              ]
+            },
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": -54,
+              "at": [
+                102,
+                61
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 76,
+              "seed": 32,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "wipe_to": "signature/a2_hover.png",
+          "wipe_y": 102,
+          "wipe_dir": "down",
+          "wipe_seed": 33,
+          "wipe_ragged": 3,
+          "props": [
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 216,
+              "at": [
+                56,
+                76
+              ]
+            },
+            {
+              "from": "signature/a1s_clean.png",
+              "bare": "signature/a1n.png",
+              "pivot": [
+                100,
+                62
+              ],
+              "angle": 18,
+              "at": [
+                101,
+                75
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 102,
+              "seed": 33,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a1n.png",
+          "ms": 90,
+          "wipe_to": "signature/a2_hover.png",
+          "wipe_y": 128,
+          "wipe_dir": "down",
+          "wipe_seed": 34,
+          "wipe_ragged": 3,
+          "props": [],
+          "fx": [
+            {
+              "type": "flame_hug",
+              "y": 128,
+              "seed": 34,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 300,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 44,
+              "y": 91,
+              "progress": 0.4
+            },
+            {
+              "type": "poof",
+              "x": 100,
+              "y": 89,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 300
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -1,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 0
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 0
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -2,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 1
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 1
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -3,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 2
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 2
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -4,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 3
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 3
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -6,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 4
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 4
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -7,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 5
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 5
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -8,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 6
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 6
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -9,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 7
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 7
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -10,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 8
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 8
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 9
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 9
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 50
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 50
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 51
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 51
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 52
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 52
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 53
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 53
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 54
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 54
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 55
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 55
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 56
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 56
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 57
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 57
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 58
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 58
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 59
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 59
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 60
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 60
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 61
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 61
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 62
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 62
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 63
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 63
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 64
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 64
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 350,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 65
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 65
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.05
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 80
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 80
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.1
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 81
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 81
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.15
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 82
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 82
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.2
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 83
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 83
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.25
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 84
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 84
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.3
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 85
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 85
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.35
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 86
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 86
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.4
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 87
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 87
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.45
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 88
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 88
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.5
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 89
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 89
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.55
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 90
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 90
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.6
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 91
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 91
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.65
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 92
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 92
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.7
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 93
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 93
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.75
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 94
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 94
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.8
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 95
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 95
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.85
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 96
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 96
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.9
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 97
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 97
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -11,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 0.95
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 98
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 98
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_hover.png",
+          "ms": 200,
+          "lift": -12,
+          "dissolve": {
+            "bare": "signature/a2_bare.png",
+            "hilts": [
+              [
+                44,
+                91
+              ],
+              [
+                100,
+                89
+              ]
+            ],
+            "progress": 1.0
+          },
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 99
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 99
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 100
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 100
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 101
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 101
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 102
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 102
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 103
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 103
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -11,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 104
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 104
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 333,
+          "lift": -12,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 105
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 105
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -9,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 120
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 120
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -8,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 121
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 121
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -7,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 122
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 122
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -6,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 123
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 123
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -4,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 124
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 124
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -2,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 8,
+              "seed": 125
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 8,
+              "seed": 125
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": -1,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 6,
+              "seed": 126
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 6,
+              "seed": 126
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": 1,
+          "fx": [
+            {
+              "type": "thrust",
+              "x": 61,
+              "y": 125,
+              "length": 7,
+              "seed": 127
+            },
+            {
+              "type": "thrust",
+              "x": 71,
+              "y": 123,
+              "length": 7,
+              "seed": 127
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": 3,
+          "fx": []
+        },
+        {
+          "pose": "signature/a2_bare.png",
+          "ms": 200,
+          "lift": 6,
+          "fx": []
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 120,
+              "r": 34,
+              "phase": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 108,
+              "r": 34,
+              "phase": 0.12
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 96,
+              "r": 34,
+              "phase": 0.24
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 84,
+              "r": 34,
+              "phase": 0.36
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 72,
+              "r": 34,
+              "phase": 0.48
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 60,
+              "r": 34,
+              "phase": 0.6
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 48,
+              "r": 34,
+              "phase": 0.72
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 70,
+              "y0": 132,
+              "y1": 36,
+              "r": 34,
+              "phase": 0.84
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 131,
+          "wipe_seed": 60,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 71,
+              "y0": 128,
+              "y1": 27,
+              "r": 35,
+              "phase": 0.96
+            },
+            {
+              "type": "flame_hug",
+              "y": 131,
+              "seed": 60,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 123,
+          "wipe_seed": 61,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 73,
+              "y0": 124,
+              "y1": 29,
+              "r": 32,
+              "phase": 1.1
+            },
+            {
+              "type": "flame_hug",
+              "y": 123,
+              "seed": 61,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 115,
+          "wipe_seed": 62,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 74,
+              "y0": 120,
+              "y1": 32,
+              "r": 30,
+              "phase": 1.24
+            },
+            {
+              "type": "flame_hug",
+              "y": 115,
+              "seed": 62,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 107,
+          "wipe_seed": 63,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 76,
+              "y0": 115,
+              "y1": 35,
+              "r": 27,
+              "phase": 1.38
+            },
+            {
+              "type": "flame_hug",
+              "y": 107,
+              "seed": 63,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 99,
+          "wipe_seed": 64,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 77,
+              "y0": 111,
+              "y1": 38,
+              "r": 25,
+              "phase": 1.52
+            },
+            {
+              "type": "flame_hug",
+              "y": 99,
+              "seed": 64,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 91,
+          "wipe_seed": 65,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 79,
+              "y0": 107,
+              "y1": 40,
+              "r": 22,
+              "phase": 1.6600000000000001
+            },
+            {
+              "type": "flame_hug",
+              "y": 91,
+              "seed": 65,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 83,
+          "wipe_seed": 66,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 80,
+              "y0": 103,
+              "y1": 43,
+              "r": 20,
+              "phase": 1.8
+            },
+            {
+              "type": "flame_hug",
+              "y": 83,
+              "seed": 66,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 75,
+          "wipe_seed": 67,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 81,
+              "y0": 99,
+              "y1": 46,
+              "r": 18,
+              "phase": 1.94
+            },
+            {
+              "type": "flame_hug",
+              "y": 75,
+              "seed": 67,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 67,
+          "wipe_seed": 68,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 83,
+              "y0": 95,
+              "y1": 48,
+              "r": 15,
+              "phase": 2.08
+            },
+            {
+              "type": "flame_hug",
+              "y": 67,
+              "seed": 68,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 59,
+          "wipe_seed": 69,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 84,
+              "y0": 91,
+              "y1": 51,
+              "r": 13,
+              "phase": 2.22
+            },
+            {
+              "type": "flame_hug",
+              "y": 59,
+              "seed": 69,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 51,
+          "wipe_seed": 70,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 86,
+              "y0": 86,
+              "y1": 54,
+              "r": 10,
+              "phase": 2.3600000000000003
+            },
+            {
+              "type": "flame_hug",
+              "y": 51,
+              "seed": 70,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 43,
+          "wipe_seed": 71,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 87,
+              "y0": 82,
+              "y1": 57,
+              "r": 8,
+              "phase": 2.5
+            },
+            {
+              "type": "flame_hug",
+              "y": 43,
+              "seed": 71,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 35,
+          "wipe_seed": 72,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 89,
+              "y0": 78,
+              "y1": 59,
+              "r": 5,
+              "phase": 2.64
+            },
+            {
+              "type": "flame_hug",
+              "y": 35,
+              "seed": 72,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "signature/a2_landed.png",
+          "ms": 171,
+          "wipe_to": "idle/k1.png",
+          "wipe_y": 27,
+          "wipe_seed": 73,
+          "wipe_ragged": 3,
+          "fx": [
+            {
+              "type": "vortex",
+              "cx": 90,
+              "y0": 74,
+              "y1": 62,
+              "r": 3,
+              "phase": 2.7800000000000002
+            },
+            {
+              "type": "flame_hug",
+              "y": 27,
+              "seed": 73,
+              "band": 8,
+              "x0": 20,
+              "x1": 140
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.3
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.7
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 600
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 200,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.25
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.833
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.667
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.30000000000000004
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.5
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.333
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.5
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.167
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.6000000000000001
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 100,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.0
+          },
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.7
+            }
+          ]
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 1500
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 200,
+          "bob": 1
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 300
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.167
+          }
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.333
+          }
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.5
+          }
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.667
+          }
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 0.833
+          }
+        },
+        {
+          "pose": "signature/ks.png",
+          "ms": 90,
+          "dissolve": {
+            "bare": "signature/ks_bare.png",
+            "hilts": [
+              [
+                88,
+                89
+              ]
+            ],
+            "progress": 1.0
+          }
+        },
+        {
+          "pose": "signature/ks_bare.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 88,
+              "y": 89,
+              "progress": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120,
+          "fx": [
+            {
+              "type": "poof",
+              "x": 90,
+              "y": 68,
+              "progress": 0.6
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        }
+      ]
+    }
+  },
+  "_walk": "walk is built by scripts/build_painted_walk.py (painted IK legs, feet world-locked at 48 px/s)"
+}
