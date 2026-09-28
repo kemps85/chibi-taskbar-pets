@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "schema_version": 1,
+  "pack_id": "robin-v2",
+  "character_id": "robin",
+  "canvas": {
+    "width": 160,
+    "height": 144
+  },
+  "master_direction": "right",
+  "left_rendering": {
+    "strategy": "mirror-right-at-runtime",
+    "anchor_formula": "canvas.width-right_anchor.x"
+  },
+  "clip_policy": "right-authored frames only; no stored left frames",
+  "source": "assets/generated/pixel-chibi/imagegen-v1/robin/clips-out",
+  "required_clips": [
+    "idle",
+    "walk",
+    "hunger_cue",
+    "eat",
+    "sleep_cue",
+    "sleep_enter",
+    "sleep_loop",
+    "wake",
+    "signature"
+  ],
+  "clips": {
+    "idle": {
+      "frames": "clips/idle/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 7,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        400,
+        120,
+        580,
+        500,
+        700,
+        500,
+        1200
+      ],
+      "loop_policy": "loop"
+    },
+    "walk": {
+      "frames": "clips/walk/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop_policy": "loop"
+    },
+    "hunger_cue": {
+      "frames": "clips/hunger_cue/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 6,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        200,
+        160,
+        200,
+        520,
+        140,
+        120
+      ],
+      "loop_policy": "once"
+    },
+    "eat": {
+      "frames": "clips/eat/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 9,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        120,
+        380,
+        300,
+        200,
+        300,
+        250,
+        150,
+        140,
+        160
+      ],
+      "loop_policy": "once"
+    },
+    "sleep_cue": {
+      "frames": "clips/sleep_cue/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 5,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        200,
+        140,
+        360,
+        400,
+        500
+      ],
+      "loop_policy": "once"
+    },
+    "sleep_enter": {
+      "frames": "clips/sleep_enter/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 5,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        150,
+        300,
+        150,
+        300,
+        300
+      ],
+      "loop_policy": "once"
+    },
+    "sleep_loop": {
+      "frames": "clips/sleep_loop/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 4,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        500,
+        1000,
+        500,
+        1000
+      ],
+      "loop_policy": "loop"
+    },
+    "wake": {
+      "frames": "clips/wake/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 6,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        80,
+        150,
+        200,
+        150,
+        150,
+        120
+      ],
+      "loop_policy": "once"
+    },
+    "signature": {
+      "frames": "clips/signature/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 30,
+      "right_anchor": {
+        "x": 64,
+        "y": 142
+      },
+      "frame_durations_ms": [
+        300,
+        120,
+        200,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        200,
+        120,
+        400
+      ],
+      "loop_policy": "once"
+    }
+  },
+  "signature": {
+    "clip": "signature",
+    "atomic": true
+  }
+}
