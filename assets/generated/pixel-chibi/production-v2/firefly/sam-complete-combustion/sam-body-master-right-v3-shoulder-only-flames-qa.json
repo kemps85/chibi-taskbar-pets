@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\source\\sam-pixel-source-v3-shoulder-only-flames.png",
+  "output": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\sam-body-master-right-v3-shoulder-only-flames.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_alpha_bounds_after_background_cleanup": [
+    345,
+    131,
+    1050,
+    1095
+  ],
+  "output_size": [
+    128,
+    128
+  ],
+  "output_alpha_bounds": [
+    21,
+    5,
+    107,
+    123
+  ],
+  "placement": {
+    "max_width": 112,
+    "max_height": 118,
+    "center_x": 64,
+    "bottom": 123,
+    "position": [
+      21,
+      5
+    ],
+    "resized_subject": [
+      86,
+      118
+    ]
+  },
+  "cleanup": {
+    "passes": 5,
+    "fringe_pixels_recolored": 692,
+    "stable": true
+  },
+  "transparent_corners": true,
+  "alpha_value_count": 2
+}

@@ -1,0 +1,5 @@
+width=160
+height=144
+r_frame_rate=100/9
+duration=2.880000
+nb_frames=32

@@ -1,0 +1,380 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-spirit-tail-v1",
+  "canvas": "160x144",
+  "frames": [
+    {
+      "frameId": "frame-000",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-001",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 37,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-002",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 53,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-003",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 65,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-004",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 26,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-005",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-006",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-007",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-008",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-009",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-010",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-011",
+      "bbox": [
+        22,
+        24,
+        109,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-012",
+      "bbox": [
+        22,
+        24,
+        111,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-013",
+      "bbox": [
+        22,
+        24,
+        113,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-014",
+      "bbox": [
+        22,
+        24,
+        113,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-015",
+      "bbox": [
+        22,
+        24,
+        112,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-016",
+      "bbox": [
+        22,
+        24,
+        111,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-017",
+      "bbox": [
+        22,
+        24,
+        110,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-018",
+      "bbox": [
+        22,
+        24,
+        109,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-019",
+      "bbox": [
+        22,
+        24,
+        109,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-020",
+      "bbox": [
+        22,
+        24,
+        109,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-021",
+      "bbox": [
+        22,
+        24,
+        110,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-022",
+      "bbox": [
+        22,
+        24,
+        111,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-023",
+      "bbox": [
+        22,
+        24,
+        112,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-024",
+      "bbox": [
+        22,
+        24,
+        113,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-025",
+      "bbox": [
+        22,
+        24,
+        113,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-026",
+      "bbox": [
+        22,
+        24,
+        107,
+        143
+      ],
+      "partialAlphaPixels": 477,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-027",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 84,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-028",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-029",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 26,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-030",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 53,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-031",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    }
+  ],
+  "unionBBox": [
+    22,
+    24,
+    113,
+    143
+  ],
+  "partialAlphaPixelsTotal": 821,
+  "maxBorderAlpha": 0,
+  "segments": {
+    "enter": {
+      "start": 0,
+      "end": 12
+    },
+    "loop": {
+      "start": 13,
+      "end": 24
+    },
+    "exit": {
+      "start": 25,
+      "end": 31
+    }
+  }
+}

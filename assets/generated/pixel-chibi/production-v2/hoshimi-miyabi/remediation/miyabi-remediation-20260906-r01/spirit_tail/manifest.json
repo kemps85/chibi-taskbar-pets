@@ -1,0 +1,38 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-spirit-tail-v1",
+  "characterId": "miyabi",
+  "clip": "spirit_tail",
+  "status": "CANDIDATE_USER_APPROVAL_PENDING",
+  "canvas": {
+    "width": 160,
+    "height": 144,
+    "logicalPixels": true
+  },
+  "authoredDirection": "right",
+  "mirror": "runtime-horizontal-exact",
+  "placementAnchor": [
+    64,
+    120
+  ],
+  "groundLineY": 143,
+  "frameCount": 32,
+  "frameDurationMs": 90,
+  "totalDurationMs": 2880,
+  "loopPolicy": "segmented-enter-loop-exit",
+  "segments": {
+    "enter": {
+      "start": 0,
+      "end": 12
+    },
+    "loop": {
+      "start": 13,
+      "end": 24
+    },
+    "exit": {
+      "start": 25,
+      "end": 31
+    }
+  },
+  "sourceContract": "layered-v6-clean right companion path; source frames are 128x128 and are only composed onto the 160x144 runtime canvas",
+  "frames": "spirit_tail/right/frames"
+}

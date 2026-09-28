@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "character": "firefly",
+  "directions": {
+    "right": "authored master",
+    "left": "exact horizontal mirror of right"
+  },
+  "human_module_sword_idle": {
+    "duration_seconds": 9.2,
+    "logical_frame_policy": "32 authored frames with variable hold durations",
+    "logical_frame_count": 32,
+    "frame_durations_ms": [
+      400,
+      400,
+      240,
+      240,
+      240,
+      240,
+      240,
+      160,
+      235,
+      235,
+      235,
+      235,
+      267,
+      267,
+      267,
+      127,
+      127,
+      127,
+      285,
+      285,
+      488,
+      488,
+      488,
+      488,
+      260,
+      260,
+      260,
+      260,
+      260,
+      367,
+      367,
+      367
+    ],
+    "render_fps": 60,
+    "phases": [
+      {
+        "name": "module-ready",
+        "start": 0.0,
+        "end": 0.8,
+        "keypose": 1
+      },
+      {
+        "name": "module-burnout",
+        "start": 0.8,
+        "end": 2.0,
+        "keypose": 2
+      },
+      {
+        "name": "module-gone-gap",
+        "start": 2.0,
+        "end": 2.16,
+        "keypose": 3
+      },
+      {
+        "name": "half-sword-forming",
+        "start": 2.16,
+        "end": 3.1,
+        "keypose": 3
+      },
+      {
+        "name": "full-sword-windup",
+        "start": 3.1,
+        "end": 3.9,
+        "keypose": 4
+      },
+      {
+        "name": "single-forward-slash",
+        "start": 3.9,
+        "end": 4.28,
+        "keypose": 5
+      },
+      {
+        "name": "return-and-mote-appears",
+        "start": 4.28,
+        "end": 4.85,
+        "keypose": 6
+      },
+      {
+        "name": "dazed-pause",
+        "start": 4.85,
+        "end": 6.8,
+        "keypose": 6
+      },
+      {
+        "name": "tip-to-hilt-retraction",
+        "start": 6.8,
+        "end": 8.1,
+        "keypose": 7
+      },
+      {
+        "name": "module-restored-mote-held",
+        "start": 8.1,
+        "end": 9.2,
+        "keypose": 8
+      }
+    ],
+    "requirements": {
+      "module_burns_before_sword": true,
+      "half_sword_before_full_sword": true,
+      "one_forward_slash": true,
+      "dazed_pause_before_retraction": true,
+      "retraction_direction": "tip-to-hilt",
+      "mote_shape": "abstract green light dot, no insect silhouette"
+    },
+    "video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v1\\human-module-sword\\video\\firefly-module-sword-idle-review-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 9.2,
+      "frame_count": 552,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "module-restored-mote-held"
+    }
+  },
+  "sam_transform_hover": {
+    "activation_seconds": 1.2,
+    "assembly_seconds": 2.4,
+    "assembly_direction": "feet-to-head",
+    "hover_state_seconds": 60.0,
+    "hover_loop": {
+      "logical_frames": 32,
+      "logical_fps": 16,
+      "loop_seconds": 2.0,
+      "repeat_count_for_60s": 30
+    },
+    "transform_enter_frames": 32,
+    "transform_exit_frames": 32,
+    "reverse_seconds": 2.2,
+    "dual_sword_master": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\sam-dual-swords-master-right-v2-short-grips.png",
+    "short_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v1\\sam-transform-hover\\video\\firefly-sam-transform-short-review-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 11.8,
+      "frame_count": 708,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "armor-release"
+    },
+    "full_60s_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v1\\sam-transform-hover\\video\\firefly-sam-transform-hover-60s-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 65.8,
+      "frame_count": 3948,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "armor-release"
+    }
+  },
+  "qa": {
+    "mirror_failures": [],
+    "transparent_corner_failures": [],
+    "video_probe": {
+      "human": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 552,
+        "duration": 9.2
+      },
+      "sam_short": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 708,
+        "duration": 11.8
+      },
+      "sam_60s": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 3948,
+        "duration": 65.8
+      }
+    }
+  }
+}

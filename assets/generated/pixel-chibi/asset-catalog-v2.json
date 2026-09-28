@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "status": "production-plan-locked",
+  "playback": {
+    "render_fps": 60,
+    "logical_frame_count": 32,
+    "signature_timeline": {
+      "enter_once": [1, 13],
+      "hover_loop": [14, 25],
+      "hover_seconds": 60,
+      "exit_once": [26, 32],
+      "rendering": "continuous effect transform at 60 FPS; immutable body layer; nearest-neighbor sprite scaling"
+    },
+    "filtering": "nearest-neighbor",
+    "character_cell": [128, 128],
+    "effect_cells": [[16, 16], [24, 24], [32, 32]],
+    "max_active_effects_per_pet": 3
+  },
+  "layer_order": [
+    "trail_back",
+    "equipment_back",
+    "character_body",
+    "equipment_front",
+    "effect_front"
+  ],
+  "collision": {
+    "movement_hitbox": "body-and-feet-only",
+    "visual_overflow": "hair, tails, wings and weapons may extend outside the movement hitbox",
+    "baseline": "feet or sleeping body contact line stays fixed"
+  },
+  "common_effects": {
+    "sleep_zzz": {"unique_frames": 4, "trigger": "sleep-loop", "priority": 0},
+    "eat_crumbs": {"unique_frames": 4, "trigger": "eat-bite", "priority": 0},
+    "walk_dust": {"unique_frames": 4, "trigger": "every-4-to-7-steps", "priority": 0}
+  },
+  "characters": {
+    "evanescia": {
+      "product": "Honkai: Star Rail",
+      "official_page": "https://hsr.hoyoverse.com/en-us/character?charIndex=81",
+      "reference": "OriginalAssestCharacter/HonkaiStarRail/Evanescia/profile_004_evanescia_url_276434e170.png",
+      "equipment": {"type": "official-long-straight-pink-sword-with-white-blossom-pattern-red-hilt-and-tassel", "carry": "left-side", "idle_visibility": "idle-prop-only"},
+      "prop": "bubble-tea-cup",
+      "motif": "pink-cherry-blossom-petals",
+      "idle_signature": "sip bubble tea, brighten, then settle",
+      "idle_prop": "briefly lift the exact blossom-patterned pink sword by its red hilt, keep it sheathed/at rest, then return it to the left side",
+      "confidence": "high-from-official-profile-art"
+    },
+    "firefly": {
+      "product": "Honkai: Star Rail",
+      "official_page": "https://hsr.hoyoverse.com/en-us/character?charIndex=49",
+      "reference": "OriginalAssestCharacter/HonkaiStarRail/Firefly/profile_004_firefly_url_59de31403d.png",
+      "equipment": {"type": "sam-transformation-module-and-complete-combustion-light-blade", "carry": "concealed-module; blade appears only with the module", "idle_visibility": "idle-prop-only"},
+      "prop": "white-gold-transformation-module-with-translucent-teal-wing-panels",
+      "motif": "yellow-green-fireflies-and-teal-motes",
+      "idle_signature": "notice and cup a floating firefly light, then release it",
+      "idle_prop": "open the transformation module, project one SAM light blade briefly, then close the module without a full armor transformation",
+      "confidence": "high-from-official-profile-art"
+    },
+    "robin": {
+      "product": "Honkai: Star Rail",
+      "official_page": "https://hsr.hoyoverse.com/en-us/character?charIndex=47",
+      "reference": "OriginalAssestCharacter/HonkaiStarRail/Robin/profile_001_robin_url_599a4a5c23.png",
+      "equipment": {"type": "concert-cane-microphone-stand", "carry": "stage-prop-summoned-for-idle", "idle_visibility": "idle-prop-only"},
+      "prop": "purple-blue-gold-winged-microphone-staff",
+      "motif": "blue-white-feathers-music-notes-and-stars",
+      "idle_signature": "hand to chest, hum a short phrase, feather and note drift upward",
+      "idle_prop": "summon the concert microphone staff, sing one short phrase, then dismiss it",
+      "confidence": "high-for-theme-and-microphone-staff; simplified-for-pet-staging"
+    },
+    "hoshimi-miyabi": {
+      "product": "Zenless Zone Zero",
+      "official_page": "https://zenless.hoyoverse.com/en-us/character?id=103379",
+      "reference": "OriginalAssestCharacter/ZenlessZoneZero/Hoshimi_Miyabi/profile_001_hoshimi_miyabi_url_3a5f354bc0.png",
+      "equipment": {"type": "tailless-katana-and-matching-scabbard", "carry": "left-side", "idle_visibility": "always"},
+      "prop": "tailless-hilt-scabbard-and-blue-cursed-frost-presence",
+      "motif": "blue-frost-shards-and-small-fox-flame",
+      "idle_signature": "ear twitch, cold breath and one fox-flame orbit",
+      "idle_prop": "steady Tailless by its exact angular hilt and scabbard, briefly acknowledge the blue presence, then relax without drawing",
+      "confidence": "high-from-official-profile-and-mechanics-art"
+    },
+    "remielle-dan": {
+      "product": "Zenless Zone Zero",
+      "official_page": "https://zenless.hoyoverse.com/en-us/character?id=164866",
+      "reference": "OriginalAssestCharacter/ZenlessZoneZero/Remielle_Dan/profile_001_agent_record_remielle_url_7af4dc13b5.png",
+      "equipment": {"type": "full-mechanical-lumiflux-wing-array", "carry": "back", "idle_visibility": "always-visible-folded"},
+      "prop": "floating-radiance-core-and-lumiflux-feather-curtain",
+      "motif": "white-pink-feathers-and-lilac-light-motes",
+      "idle_signature": "wing cores light in sequence, release a short feather curtain and a Floating Radiance ring",
+      "idle_prop": "mechanical wing array opens into a bold full fan, performs a short one-pixel hover with pink-lilac Voidflare accents, then folds",
+      "confidence": "high-from-official-profile-and-mechanics-art"
+    },
+    "ye-shunguang": {
+      "product": "Zenless Zone Zero",
+      "official_page": "https://zenless.hoyoverse.com/en-us/character?id=160762",
+      "reference": "OriginalAssestCharacter/ZenlessZoneZero/Ye_Shunguang/profile_002_ye_shunguang_url_c33830c0f0.png",
+      "equipment": {"type": "qingming-sword-and-custom-sword-case", "carry": "side-and-back", "idle_visibility": "idle-prop-only"},
+      "prop": "red-ribbon-talisman",
+      "motif": "red-ribbons-crimson-sparks-and-warm-gold-motes",
+      "idle_signature": "ribbons lift in a small breeze as one warm mote circles her",
+      "idle_prop": "release the Qingming Sword slightly from its custom case, form two small flying-sword afterimages, then seal it again",
+      "confidence": "high-from-official-profile-and-mechanics-art"
+    }
+  },
+  "trigger_defaults": {
+    "idle_signature_seconds": [60, 60],
+    "idle_prop_seconds": [60, 60],
+    "signature_effect_seconds": [60, 60]
+  },
+  "copyright_note": "Personal local project. Official art is reference material; generated pixel assets are redrawn and should be reviewed before any redistribution."
+}

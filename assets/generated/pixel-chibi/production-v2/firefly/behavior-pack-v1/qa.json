@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "canvas": [
+    160,
+    144
+  ],
+  "anchor_right": [
+    64,
+    120
+  ],
+  "feet_baseline_y": 143,
+  "mirror_strategy": "render-mirror",
+  "clips": {
+    "idle": {
+      "frame_count": 8,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        22,
+        24,
+        106,
+        143
+      ]
+    },
+    "walk": {
+      "frame_count": 8,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        21,
+        23,
+        108,
+        143
+      ]
+    },
+    "sleep_cue": {
+      "frame_count": 8,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        22,
+        24,
+        110,
+        143
+      ]
+    },
+    "sleep_enter": {
+      "frame_count": 10,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        8,
+        24,
+        114,
+        143
+      ]
+    },
+    "sleep_loop": {
+      "frame_count": 12,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        8,
+        81,
+        111,
+        143
+      ]
+    },
+    "wake": {
+      "frame_count": 8,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        8,
+        24,
+        114,
+        143
+      ]
+    },
+    "hunger_cue": {
+      "frame_count": 8,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        21,
+        23,
+        128,
+        143
+      ]
+    },
+    "eat": {
+      "frame_count": 12,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        8,
+        24,
+        128,
+        143
+      ]
+    },
+    "module_sword": {
+      "frame_count": 164,
+      "dimensions_ok": true,
+      "rgba_ok": true,
+      "feet_baseline_y": 143,
+      "baseline_ok": true,
+      "max_border_alpha_pixels": 0,
+      "alpha_bounds_union": [
+        15,
+        27,
+        144,
+        143
+      ]
+    }
+  }
+}

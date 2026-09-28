@@ -1,0 +1,281 @@
+{
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\source\\idle-signature-sheet-v2.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 4
+  },
+  "frame_count": 16,
+  "cell_size": [
+    128,
+    128
+  ],
+  "fps": 16,
+  "all_corners_transparent": true,
+  "outputs": {
+    "sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\sheet-4x4.png",
+    "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\strip-16x1.png",
+    "preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\preview-16fps.gif"
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-00.png",
+      "alpha_bounds": [
+        31,
+        5,
+        113,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 1,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-01.png",
+      "alpha_bounds": [
+        20,
+        5,
+        105,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-02.png",
+      "alpha_bounds": [
+        14,
+        5,
+        99,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-03.png",
+      "alpha_bounds": [
+        8,
+        5,
+        92,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-04.png",
+      "alpha_bounds": [
+        29,
+        3,
+        127,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-05.png",
+      "alpha_bounds": [
+        20,
+        3,
+        118,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-06.png",
+      "alpha_bounds": [
+        14,
+        3,
+        114,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-07.png",
+      "alpha_bounds": [
+        8,
+        3,
+        110,
+        126
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 8,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-08.png",
+      "alpha_bounds": [
+        29,
+        4,
+        128,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 9,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-09.png",
+      "alpha_bounds": [
+        0,
+        4,
+        117,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 10,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-10.png",
+      "alpha_bounds": [
+        14,
+        4,
+        112,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 11,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-11.png",
+      "alpha_bounds": [
+        8,
+        4,
+        100,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 12,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-12.png",
+      "alpha_bounds": [
+        29,
+        4,
+        128,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 13,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-13.png",
+      "alpha_bounds": [
+        0,
+        4,
+        108,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 14,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-14.png",
+      "alpha_bounds": [
+        14,
+        4,
+        101,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 15,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature\\frames\\frame-15.png",
+      "alpha_bounds": [
+        8,
+        4,
+        95,
+        127
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

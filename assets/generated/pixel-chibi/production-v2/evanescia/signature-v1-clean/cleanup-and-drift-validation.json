@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "character_id": "evanescia",
+  "effect_id": "sakura-breeze",
+  "body_overlay_pixel_violations": 0,
+  "left_right_mirror_failures": [],
+  "dimension_failures": [],
+  "missing_frames": [],
+  "remaining_body_fringe_recolor_candidates": 0,
+  "remaining_effect_fringe_recolor_candidates": 0,
+  "logical_frames": 32,
+  "body_bbox": [
+    35,
+    5,
+    93,
+    124
+  ],
+  "effect_bbox": [
+    7,
+    5,
+    31,
+    31
+  ],
+  "effect_transparent_gutter": {
+    "left": 7,
+    "top": 5,
+    "right": 7,
+    "bottom": 7
+  },
+  "effect_gutter_failure": false,
+  "videos": {
+    "evanescia-sakura-breeze-60s-state-demo.mp4": {
+      "width": 960,
+      "height": 360,
+      "r_frame_rate": "60/1",
+      "nb_read_frames": 3810,
+      "duration": 63.5
+    },
+    "evanescia-sakura-breeze-short-review.mp4": {
+      "width": 960,
+      "height": 360,
+      "r_frame_rate": "60/1",
+      "nb_read_frames": 690,
+      "duration": 11.5
+    }
+  },
+  "video_failures": [],
+  "contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean\\video\\evanescia-sakura-breeze-logical-contact-sheet.png"
+}

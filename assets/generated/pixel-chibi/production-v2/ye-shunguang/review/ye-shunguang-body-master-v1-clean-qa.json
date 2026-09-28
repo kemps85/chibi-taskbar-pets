@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\source\\ye-shunguang-body-imagegen-source-v1.png",
+  "output": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\review\\ye-shunguang-body-master-v1-clean.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_alpha_bounds_after_background_cleanup": [
+    127,
+    74,
+    1066,
+    1099
+  ],
+  "output_size": [
+    128,
+    128
+  ],
+  "output_alpha_bounds": [
+    10,
+    5,
+    119,
+    124
+  ],
+  "placement": {
+    "max_width": 120,
+    "max_height": 119,
+    "center_x": 64,
+    "bottom": 124,
+    "position": [
+      10,
+      5
+    ],
+    "resized_subject": [
+      109,
+      119
+    ]
+  },
+  "cleanup": {
+    "passes": 3,
+    "fringe_pixels_recolored": 189,
+    "stable": true
+  },
+  "transparent_corners": true,
+  "alpha_value_count": 2
+}

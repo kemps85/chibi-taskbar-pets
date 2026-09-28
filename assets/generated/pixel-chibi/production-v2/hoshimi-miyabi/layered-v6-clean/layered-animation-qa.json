@@ -1,0 +1,348 @@
+{
+  "logical_frame_count": 32,
+  "human_timeline": {
+    "enter_once": [
+      1,
+      13
+    ],
+    "hover_loop": [
+      14,
+      25
+    ],
+    "hover_state_seconds": 60,
+    "exit_once": [
+      26,
+      32
+    ]
+  },
+  "layer_lock": {
+    "body_sha256": "6d6bbf2a6cc76cb340591a3e2d74dcc68321d1f96c9ec8378e04bcf94fa62779",
+    "body_pixel_drift": 0,
+    "body_scale_drift": 0,
+    "body_anchor_drift": 0,
+    "weapon_drift": 0,
+    "rear_scabbard_present": false,
+    "companion_is_separate_layer": true
+  },
+  "video_renderer": {
+    "fps": 60,
+    "sprite_sampling": "continuous transform at render FPS",
+    "filter": "nearest-neighbour"
+  },
+  "outputs": {
+    "body_layer": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+    "companion_layer": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\tiny-tailless-fixed.png",
+    "short_review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\video\\miyabi-tailless-short-review.mp4",
+      "fps": 60,
+      "duration_seconds": 11.5,
+      "hover_seconds": 8.0,
+      "frame_count": 690,
+      "resolution": [
+        960,
+        360
+      ]
+    },
+    "exact_60_second_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\video\\miyabi-tailless-60s-state-demo.mp4",
+      "fps": 60,
+      "duration_seconds": 63.5,
+      "hover_seconds": 60.0,
+      "frame_count": 3810,
+      "resolution": [
+        960,
+        360
+      ]
+    }
+  },
+  "poses": [
+    {
+      "human_frame": 1,
+      "companion_center": [
+        34.0,
+        70.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    },
+    {
+      "human_frame": 2,
+      "companion_center": [
+        35.141,
+        69.39
+      ],
+      "scale": 0.2353,
+      "opacity": 0.2083
+    },
+    {
+      "human_frame": 3,
+      "companion_center": [
+        38.296,
+        67.704
+      ],
+      "scale": 0.2778,
+      "opacity": 0.4167
+    },
+    {
+      "human_frame": 4,
+      "companion_center": [
+        43.062,
+        65.156
+      ],
+      "scale": 0.3419,
+      "opacity": 0.625
+    },
+    {
+      "human_frame": 5,
+      "companion_center": [
+        49.037,
+        61.963
+      ],
+      "scale": 0.4222,
+      "opacity": 0.8333
+    },
+    {
+      "human_frame": 6,
+      "companion_center": [
+        55.817,
+        58.339
+      ],
+      "scale": 0.5134,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 7,
+      "companion_center": [
+        63.0,
+        54.5
+      ],
+      "scale": 0.61,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 8,
+      "companion_center": [
+        70.183,
+        50.661
+      ],
+      "scale": 0.7066,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 9,
+      "companion_center": [
+        76.963,
+        47.037
+      ],
+      "scale": 0.7978,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 10,
+      "companion_center": [
+        82.938,
+        43.844
+      ],
+      "scale": 0.8781,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 11,
+      "companion_center": [
+        87.704,
+        41.296
+      ],
+      "scale": 0.9422,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 12,
+      "companion_center": [
+        90.859,
+        39.61
+      ],
+      "scale": 0.9847,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 13,
+      "companion_center": [
+        92.0,
+        39.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 14,
+      "companion_center": [
+        94.0,
+        39.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 15,
+      "companion_center": [
+        93.732,
+        40.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 16,
+      "companion_center": [
+        93.0,
+        41.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 17,
+      "companion_center": [
+        92.0,
+        42.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 18,
+      "companion_center": [
+        91.0,
+        41.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 19,
+      "companion_center": [
+        90.268,
+        40.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 20,
+      "companion_center": [
+        90.0,
+        39.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 21,
+      "companion_center": [
+        90.268,
+        37.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 22,
+      "companion_center": [
+        91.0,
+        36.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 23,
+      "companion_center": [
+        92.0,
+        36.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 24,
+      "companion_center": [
+        93.0,
+        36.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 25,
+      "companion_center": [
+        93.732,
+        37.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 26,
+      "companion_center": [
+        93.732,
+        37.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 27,
+      "companion_center": [
+        89.307,
+        39.907
+      ],
+      "scale": 0.9422,
+      "opacity": 0.9259
+    },
+    {
+      "human_frame": 28,
+      "companion_center": [
+        78.246,
+        45.926
+      ],
+      "scale": 0.7978,
+      "opacity": 0.7407
+    },
+    {
+      "human_frame": 29,
+      "companion_center": [
+        63.866,
+        53.75
+      ],
+      "scale": 0.61,
+      "opacity": 0.5
+    },
+    {
+      "human_frame": 30,
+      "companion_center": [
+        49.486,
+        61.574
+      ],
+      "scale": 0.4222,
+      "opacity": 0.2593
+    },
+    {
+      "human_frame": 31,
+      "companion_center": [
+        38.425,
+        67.593
+      ],
+      "scale": 0.2778,
+      "opacity": 0.0741
+    },
+    {
+      "human_frame": 32,
+      "companion_center": [
+        34.0,
+        70.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    }
+  ]
+}

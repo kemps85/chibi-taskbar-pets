@@ -1,0 +1,107 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-walk-v1",
+  "status": "CANDIDATE_USER_APPROVAL_PENDING",
+  "frames": [
+    {
+      "frameId": "frame-000",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-001",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-002",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-003",
+      "bbox": [
+        22,
+        24,
+        106,
+        142
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-004",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-005",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-006",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    },
+    {
+      "frameId": "frame-007",
+      "bbox": [
+        22,
+        24,
+        106,
+        143
+      ],
+      "partialAlphaPixels": 0,
+      "maxBorderAlpha": 0
+    }
+  ],
+  "unionBBox": [
+    22,
+    24,
+    106,
+    143
+  ],
+  "totalPartialAlphaPixels": 0,
+  "maxBorderAlpha": 0,
+  "notes": [
+    "only lower leg/boot regions move",
+    "identity body, weapon, hair, cape remain fixed",
+    "no detached walk accents"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "FAIL",
+  "body_overlay_pixel_violations": 30,
+  "left_right_mirror_failures": [],
+  "remaining_body_fringe_recolor_candidates": 167,
+  "remaining_effect_fringe_recolor_candidates": 11,
+  "logical_frames": 32,
+  "videos": {
+    "firefly-sam-hologram-60s-state-demo.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 960,
+          "height": 360,
+          "r_frame_rate": "60/1",
+          "nb_read_frames": "3810"
+        }
+      ],
+      "format": {
+        "duration": "63.500000"
+      }
+    },
+    "firefly-sam-hologram-short-review.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 960,
+          "height": 360,
+          "r_frame_rate": "60/1",
+          "nb_read_frames": "690"
+        }
+      ],
+      "format": {
+        "duration": "11.500000"
+      }
+    }
+  }
+}

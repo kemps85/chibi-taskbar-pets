@@ -1,0 +1,29 @@
+{
+  "animation_id": "miyabi-hip-rise-crescent-slash-v3",
+  "fps": 60,
+  "frame_count": 156,
+  "duration_seconds": 2.6,
+  "orientation": "right-facing master",
+  "outputs": {
+    "pose_sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\source\\miyabi-right-facing-hip-rise-pose-sheet.png",
+    "right_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\right\\frames",
+    "left_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\left\\frames",
+    "right_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\right\\strip-156x1.png",
+    "left_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\left\\strip-156x1.png",
+    "review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\video\\miyabi-hip-rise-crescent-slash-review.mp4",
+      "fps": 60,
+      "duration_seconds": 2.6,
+      "frame_count": 156,
+      "resolution": [
+        1280,
+        520
+      ],
+      "sprite_canvas": [
+        512,
+        192
+      ]
+    },
+    "keyframe_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\hip-rise-crescent-slash-v3\\video\\miyabi-hip-rise-keyframe-contact-sheet.png"
+  }
+}

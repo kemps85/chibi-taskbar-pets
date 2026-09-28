@@ -1,0 +1,1251 @@
+{
+  "character": "ye-shunguang-red",
+  "rig": {
+    "pivot_y": 126,
+    "trailing": {
+      "attach_x": 60,
+      "reach_x": 22,
+      "start_y": 40,
+      "reach_y": 40,
+      "end_y": 126
+    },
+    "carried": []
+  },
+  "_walk": "walk is built by scripts/build_painted_walk.py",
+  "clips": {
+    "idle": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 580
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "bob": -1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 700,
+          "bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "trail_bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 1200
+        }
+      ]
+    },
+    "hunger_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 160,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 200,
+          "trail_bob": 1
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 520
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "eat": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 380
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 200,
+          "bob": 1
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 250
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 160
+        }
+      ]
+    },
+    "sleep_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 360
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 400,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 500,
+          "bob": 1
+        }
+      ]
+    },
+    "sleep_enter": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 300
+        }
+      ]
+    },
+    "sleep_loop": {
+      "loop_policy": "loop",
+      "rig": {
+        "carried": []
+      },
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "bob": 1,
+          "pivot_y": 126
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "bob": 1,
+          "pivot_y": 126
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "pivot_y": 126
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "pivot_y": 126
+        }
+      ]
+    },
+    "wake": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 80
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 150
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "bob": 1,
+          "trail_bob": 1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "trail_bob": 1,
+          "trail_dx": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "signature": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 300
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 110,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 103,
+              "y": 100,
+              "r": 14,
+              "t": 0.1,
+              "color": "pink",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 103,
+              "y": 100,
+              "r": 18,
+              "t": 0.5,
+              "color": "white",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 600
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 250,
+          "bob": 1
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 90,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "rise": 0.15,
+              "t": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 90,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "rise": 0.35,
+              "t": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 90,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "rise": 0.55,
+              "t": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 90,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "rise": 0.75,
+              "t": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 90,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "rise": 1.0,
+              "t": 0.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 200,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.03
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.06
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 88,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.0,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.13
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 88,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.15,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.2
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 88,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.3,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.27
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 87,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.44999999999999996,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.34
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 87,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.6,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.41000000000000003
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 87,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.75,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.48000000000000004
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 86,
+              "rx": 32,
+              "ry": 10,
+              "t": 0.8999999999999999,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.55
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 86,
+              "rx": 32,
+              "ry": 10,
+              "t": 1.05,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.6200000000000001
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 86,
+              "rx": 32,
+              "ry": 10,
+              "t": 1.2,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.6900000000000002
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 85,
+              "rx": 32,
+              "ry": 10,
+              "t": 1.3499999999999999,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.76
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 85,
+              "rx": 32,
+              "ry": 10,
+              "t": 1.5,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 110,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.8300000000000001
+            },
+            {
+              "type": "ribbon",
+              "x": 72,
+              "y": 85,
+              "rx": 32,
+              "ry": 10,
+              "t": 1.65,
+              "length": 2.2
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.9,
+              "fade": 0.14285714285714285
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 2.0,
+              "length": 1.6
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 0.9500000000000001,
+              "fade": 0.2857142857142857
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 2.2,
+              "length": 1.4000000000000001
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 1.0,
+              "fade": 0.42857142857142855
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 2.4,
+              "length": 1.2000000000000002
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 1.05,
+              "fade": 0.5714285714285714
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 2.6,
+              "length": 1.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 1.1,
+              "fade": 0.7142857142857143
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 2.8,
+              "length": 0.8
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 1.15,
+              "fade": 0.8571428571428571
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 3.0,
+              "length": 0.6000000000000001
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 130,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ],
+          "fx": [
+            {
+              "type": "sword_ring",
+              "cx": 70,
+              "cy": 122,
+              "rx": 46,
+              "ry": 8,
+              "count": 7,
+              "length": 28,
+              "t": 1.2000000000000002,
+              "fade": 1.0
+            },
+            {
+              "type": "ribbon",
+              "x": 68,
+              "y": 80,
+              "rx": 26,
+              "ry": 8,
+              "t": 3.2,
+              "length": 0.4
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 700,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 300,
+          "props": [
+            {
+              "from": "signature/case.png",
+              "bare": "signature/empty.png",
+              "pivot": [
+                100,
+                100
+              ],
+              "angle": 0,
+              "at": [
+                100,
+                100
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 110,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 103,
+              "y": 100,
+              "r": 18,
+              "t": 0.7,
+              "color": "pink",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 300
+        }
+      ]
+    }
+  }
+}

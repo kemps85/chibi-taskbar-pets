@@ -1,0 +1,273 @@
+{
+  "status": "CANDIDATE_USER_APPROVAL_PENDING",
+  "schema_version": 1,
+  "pack_id": "miyabi-remediation-r01-candidate-pack",
+  "character_id": "miyabi",
+  "canvas": {
+    "width": 160,
+    "height": 144
+  },
+  "master_direction": "right",
+  "left_rendering": {
+    "strategy": "mirror-right-at-runtime",
+    "anchor_formula": "canvas.width-right_anchor.x"
+  },
+  "clip_policy": "right-authored frames only; no stored left frames",
+  "required_clips": [
+    "idle",
+    "walk",
+    "hunger_cue",
+    "eat",
+    "sleep_cue",
+    "sleep_enter",
+    "sleep_loop",
+    "wake",
+    "spirit_tail"
+  ],
+  "clips": {
+    "idle": {
+      "frames": "clips/idle/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        450,
+        450,
+        450,
+        450,
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop_policy": "loop"
+    },
+    "walk": {
+      "frames": "clips/walk/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop_policy": "loop"
+    },
+    "sleep_cue": {
+      "frames": "clips/sleep_cue/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop_policy": "once"
+    },
+    "sleep_enter": {
+      "frames": "clips/sleep_enter/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 10,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop_policy": "once"
+    },
+    "sleep_loop": {
+      "frames": "clips/sleep_loop/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 12,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop_policy": "loop"
+    },
+    "wake": {
+      "frames": "clips/wake/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop_policy": "once"
+    },
+    "hunger_cue": {
+      "frames": "clips/hunger_cue/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 8,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop_policy": "once"
+    },
+    "eat": {
+      "frames": "clips/eat/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 12,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop_policy": "once"
+    },
+    "spirit_tail": {
+      "frames": "clips/spirit_tail/right/frames",
+      "frame_name_pattern": "frame-{index:000}.png",
+      "frame_count": 32,
+      "right_anchor": {
+        "x": 64,
+        "y": 120
+      },
+      "frame_durations_ms": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "loop_policy": "segmented-enter-loop-exit",
+      "segments": {
+        "enter": {
+          "start": 0,
+          "end": 12
+        },
+        "loop": {
+          "start": 13,
+          "end": 24
+        },
+        "exit": {
+          "start": 25,
+          "end": 31
+        }
+      }
+    }
+  },
+  "signature": {
+    "clip": "spirit_tail",
+    "atomic": true
+  },
+  "qa": "candidate-qa.json",
+  "candidate_review": "../spirit_tail/continuity-review.md",
+  "candidate_reviews": {
+    "walk": "../walk/continuity-review.md",
+    "hunger_cue": "../hunger_cue/continuity-review.md",
+    "eat": "../eat/continuity-review.md",
+    "sleep_cue": "../sleep_cue/continuity-review.md",
+    "sleep_enter": "../sleep_enter/continuity-review.md",
+    "sleep_loop": "../sleep_loop/continuity-review.md",
+    "wake": "../wake/continuity-review.md",
+    "spirit_tail": "../spirit_tail/continuity-review.md"
+  }
+}

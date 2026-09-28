@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\source\\sam-pixel-source.png",
+  "output": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\sam-body-master-right.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_alpha_bounds_after_background_cleanup": [
+    187,
+    163,
+    1030,
+    1077
+  ],
+  "output_size": [
+    128,
+    128
+  ],
+  "output_alpha_bounds": [
+    10,
+    5,
+    119,
+    123
+  ],
+  "placement": {
+    "max_width": 118,
+    "max_height": 118,
+    "center_x": 64,
+    "bottom": 123,
+    "position": [
+      10,
+      5
+    ],
+    "resized_subject": [
+      109,
+      118
+    ]
+  },
+  "cleanup": {
+    "passes": 4,
+    "fringe_pixels_recolored": 584,
+    "stable": true
+  },
+  "transparent_corners": true,
+  "alpha_value_count": 2
+}

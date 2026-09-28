@@ -1,0 +1,61 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-walk-v1",
+  "createdUtc": "2026-09-05T21:16:18.808402+00:00",
+  "tool": "deterministic-Pillow-pixel-edit",
+  "imagegen": {
+    "used": false
+  },
+  "sourceIdentity": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+  "sourceIdentitySha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+  "operations": [
+    "place unchanged identity body on transparent 160x144 at (4,19)",
+    "move only lower leg/boot crops through eight contact/pass poses",
+    "no detached walk cue accents",
+    "no scaling",
+    "no whole-sprite rotation",
+    "no palette-wide edit"
+  ],
+  "outputHashes": [
+    {
+      "frameId": "frame-000",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-000.png",
+      "sha256": "32eed8191d0d92e462bc8a50d6112e733887a9a92b42680cb5dbc53da76bacbf"
+    },
+    {
+      "frameId": "frame-001",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-001.png",
+      "sha256": "d33e5d2c0236eecd10d43225dad06923f72f2f967aa7391d71769b4975c23846"
+    },
+    {
+      "frameId": "frame-002",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-002.png",
+      "sha256": "bb48f298a76070563b8d1fc5e25e7a6030b5389293efe12bf62b25fad061aab8"
+    },
+    {
+      "frameId": "frame-003",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-003.png",
+      "sha256": "7afceea5346ae897ad79ed30cf16ab7365ab5521a769f1a954f2bbf29f326cbb"
+    },
+    {
+      "frameId": "frame-004",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-004.png",
+      "sha256": "8200de7c5af9d22fe4e2f389393bdfdc371de50481a78cf4db005627fbd3e01c"
+    },
+    {
+      "frameId": "frame-005",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-005.png",
+      "sha256": "bb48f298a76070563b8d1fc5e25e7a6030b5389293efe12bf62b25fad061aab8"
+    },
+    {
+      "frameId": "frame-006",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-006.png",
+      "sha256": "d33e5d2c0236eecd10d43225dad06923f72f2f967aa7391d71769b4975c23846"
+    },
+    {
+      "frameId": "frame-007",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\walk\\right\\frames\\frame-007.png",
+      "sha256": "8b7403a260398adb8f2f292aa291928ea84fadfd4d914b2054d266e5ee8d5821"
+    }
+  ],
+  "approvalStatus": "PENDING"
+}

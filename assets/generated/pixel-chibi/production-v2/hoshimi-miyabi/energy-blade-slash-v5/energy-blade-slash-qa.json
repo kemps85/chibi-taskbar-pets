@@ -1,0 +1,1848 @@
+{
+  "status": "PASS",
+  "animation_id": "miyabi-energy-blade-slash-v5",
+  "orientation": {
+    "master": "right-facing",
+    "left_set": "exact_horizontal_mirror",
+    "frame_order_preserved": true
+  },
+  "canvas": {
+    "size": [
+      512,
+      192
+    ],
+    "pose_layer_size": [
+      176,
+      128
+    ],
+    "pose_position": [
+      32,
+      50
+    ],
+    "ground_y": 174
+  },
+  "timing": {
+    "fps": 60,
+    "frame_count": 156,
+    "duration_seconds": 2.6,
+    "brace_kneel_seconds": 0.366667,
+    "hit_stop_seconds": 0.133333,
+    "beats": {
+      "kneel_charge": [
+        1,
+        22
+      ],
+      "hip_rise": [
+        23,
+        40
+      ],
+      "initial_cut_line": [
+        41,
+        45
+      ],
+      "blade_launch": [
+        46,
+        53
+      ],
+      "blade_travel": [
+        54,
+        68
+      ],
+      "impact_hit_stop": [
+        69,
+        76
+      ],
+      "afterimage_fade": [
+        77,
+        121
+      ],
+      "standing_follow_through": [
+        122,
+        133
+      ],
+      "clean_idle": [
+        134,
+        156
+      ]
+    }
+  },
+  "path_validation": {
+    "hip_origin": [
+      145.0,
+      137.0
+    ],
+    "blade_front_x": 470.0,
+    "spine_rise_degrees": "8-12 trailing path; curved dao head final 15-20%",
+    "dao_head_pointed": true,
+    "dao_head_asymmetric": true,
+    "continuous_trailing_ribbons": true,
+    "origin_alpha_low_head_alpha_high": true,
+    "origin_alpha_mean_peak": 23.768,
+    "head_alpha_mean_peak": 49.68,
+    "max_cyan_ribbon_count": 4,
+    "detached_navy_streak_count": 3,
+    "no_detached_ring": true,
+    "no_vertical_cap": true,
+    "no_uniform_filled_wedge": true,
+    "projectile_count": 1,
+    "impact_is_white_cyan_split_flash_only": true
+  },
+  "weapon_validation": {
+    "charge_keeps_source_iai_grip": true,
+    "release_blade_redrawn_procedurally": true,
+    "release_blade": {
+      "guard": [
+        100.0,
+        54.0
+      ],
+      "angle_degrees_from_horizontal": -58.0,
+      "edge_side": "upper-left-leading",
+      "spine_side": "lower-right-trailing",
+      "length": 72.0
+    },
+    "generated_blade_cutting_edge": "bright smooth upper-left leading side",
+    "generated_blade_spine": "dark blue-gray serrated lower-right trailing side"
+  },
+  "source_validation": {
+    "pose_sheet_sha256": "314f2472f86d1dd40d7096345004e0175e8c204f641f524655011b6f47e6f057",
+    "sheet_cleanup": {
+      "source_mode": "RGBA",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "pose_gutter_split_x": 641,
+      "checker_background_policy": "border-connected near-neutral light pixels only",
+      "charge_half_bounds_before_crop": [
+        69,
+        370,
+        543,
+        868
+      ],
+      "standing_half_bounds_before_crop": [
+        12,
+        76,
+        819,
+        868
+      ],
+      "charge_crop_size": [
+        474,
+        498
+      ],
+      "standing_crop_size": [
+        807,
+        792
+      ],
+      "charge_fringe_pixels_recolored": 1353,
+      "standing_fringe_pixels_recolored": 3097
+    },
+    "release_blade_erase": {
+      "method": "post-gutter diagonal blade mask",
+      "guard_source_point": [
+        540.0,
+        350.0
+      ],
+      "erase_start_distance_px": 30.0,
+      "erase_mask_polygon": [
+        [
+          590,
+          350
+        ],
+        [
+          921,
+          -64
+        ],
+        [
+          839,
+          -127
+        ],
+        [
+          526,
+          302
+        ]
+      ],
+      "opaque_pixels_erased": 10030,
+      "mask_pixels_before": 10030,
+      "mask_residual_alpha_after": 0,
+      "source_blade_fully_erased": true
+    },
+    "blade_erasure_zoom_evidence": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\source\\release-blade-erasure-zoom.png",
+    "charge_pose": {
+      "input_crop_size": [
+        474,
+        498
+      ],
+      "normalized_size": [
+        176,
+        128
+      ],
+      "target_height": 116,
+      "resample": "nearest-neighbour",
+      "normalized_alpha_bounds": [
+        33,
+        8,
+        143,
+        124
+      ],
+      "matte_fringe_pixels_recolored": 18,
+      "pixel_sha256": "7d0d80bc9dcb3bdbf7abb81dfa682a908be448aaebbed4d25e7bca7a7c7b9abe"
+    },
+    "standing_base_pose": {
+      "input_crop_size": [
+        570,
+        613
+      ],
+      "normalized_size": [
+        176,
+        128
+      ],
+      "target_height": 116,
+      "resample": "nearest-neighbour",
+      "normalized_alpha_bounds": [
+        34,
+        8,
+        142,
+        124
+      ],
+      "matte_fringe_pixels_recolored": 71,
+      "pixel_sha256": "42685930353f9e68f21fd0379436e7ae1366befa13f4bc1147dfc72ad8c744f7"
+    },
+    "source_clean_preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\source\\pose-clean-preview.png",
+    "pmx_copied_to_output": false
+  },
+  "pose_validation": {
+    "charge_alpha_bounds": [
+      33,
+      8,
+      143,
+      124
+    ],
+    "release_base_alpha_bounds": [
+      34,
+      8,
+      142,
+      124
+    ],
+    "release_final_alpha_bounds": [
+      34,
+      0,
+      142,
+      124
+    ],
+    "head_to_feet_scale_delta_px": 0,
+    "scale_tolerance_px": 2,
+    "fixed_ground_anchor": true
+  },
+  "matte_validation": {
+    "no_full_canvas_border_alpha": true,
+    "clean_end_exact_standing": true,
+    "max_border_alpha_pixels": 0
+  },
+  "mirror_validation": {
+    "left_is_exact_horizontal_mirror_per_frame": true,
+    "mismatch_count": 0
+  },
+  "outputs": {
+    "pose_sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\source\\miyabi-right-facing-hip-rise-pose-sheet.png",
+    "right_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\right\\frames",
+    "left_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\left\\frames",
+    "right_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\right\\strip-156x1.png",
+    "left_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\left\\strip-156x1.png",
+    "review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\video\\miyabi-energy-blade-slash-review.mp4",
+      "fps": 60,
+      "duration_seconds": 2.6,
+      "frame_count": 156,
+      "resolution": [
+        1280,
+        520
+      ],
+      "sprite_canvas": [
+        512,
+        192
+      ]
+    },
+    "keyframe_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\video\\miyabi-energy-blade-keyframe-contact-sheet.png",
+    "blade_erasure_zoom": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\energy-blade-slash-v5\\source\\release-blade-erasure-zoom.png"
+  },
+  "keyframes": [
+    0,
+    12,
+    21,
+    30,
+    40,
+    44,
+    48,
+    52,
+    60,
+    67,
+    75,
+    90,
+    110,
+    125,
+    135,
+    155
+  ],
+  "timeline_samples": [
+    {
+      "human_frame": 1,
+      "time_seconds": 0.0,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 2,
+      "time_seconds": 0.016667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9892,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 3,
+      "time_seconds": 0.033333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9093,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 4,
+      "time_seconds": 0.05,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.6507,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 5,
+      "time_seconds": 0.066667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.5708,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 6,
+      "time_seconds": 0.083333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 7,
+      "time_seconds": 0.1,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9892,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 8,
+      "time_seconds": 0.116667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9093,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 9,
+      "time_seconds": 0.133333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.6507,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 10,
+      "time_seconds": 0.15,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.5708,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 11,
+      "time_seconds": 0.166667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 12,
+      "time_seconds": 0.183333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9892,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 13,
+      "time_seconds": 0.2,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9093,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 14,
+      "time_seconds": 0.216667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.6507,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 15,
+      "time_seconds": 0.233333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.5708,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 16,
+      "time_seconds": 0.25,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 17,
+      "time_seconds": 0.266667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9892,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 18,
+      "time_seconds": 0.283333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9093,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 19,
+      "time_seconds": 0.3,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.6507,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 20,
+      "time_seconds": 0.316667,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.5708,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 21,
+      "time_seconds": 0.333333,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 22,
+      "time_seconds": 0.35,
+      "phase": "kneel_charge",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.9892,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 23,
+      "time_seconds": 0.366667,
+      "phase": "hip_rise",
+      "stand_mix": 0.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 24,
+      "time_seconds": 0.383333,
+      "phase": "hip_rise",
+      "stand_mix": 0.0089,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 25,
+      "time_seconds": 0.4,
+      "phase": "hip_rise",
+      "stand_mix": 0.0343,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 26,
+      "time_seconds": 0.416667,
+      "phase": "hip_rise",
+      "stand_mix": 0.0741,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 27,
+      "time_seconds": 0.433333,
+      "phase": "hip_rise",
+      "stand_mix": 0.1262,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 28,
+      "time_seconds": 0.45,
+      "phase": "hip_rise",
+      "stand_mix": 0.1886,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 29,
+      "time_seconds": 0.466667,
+      "phase": "hip_rise",
+      "stand_mix": 0.2593,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 30,
+      "time_seconds": 0.483333,
+      "phase": "hip_rise",
+      "stand_mix": 0.3361,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 31,
+      "time_seconds": 0.5,
+      "phase": "hip_rise",
+      "stand_mix": 0.417,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 32,
+      "time_seconds": 0.516667,
+      "phase": "hip_rise",
+      "stand_mix": 0.5,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 33,
+      "time_seconds": 0.533333,
+      "phase": "hip_rise",
+      "stand_mix": 0.583,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 34,
+      "time_seconds": 0.55,
+      "phase": "hip_rise",
+      "stand_mix": 0.6639,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 35,
+      "time_seconds": 0.566667,
+      "phase": "hip_rise",
+      "stand_mix": 0.7407,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 36,
+      "time_seconds": 0.583333,
+      "phase": "hip_rise",
+      "stand_mix": 0.8114,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 37,
+      "time_seconds": 0.6,
+      "phase": "hip_rise",
+      "stand_mix": 0.8738,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 38,
+      "time_seconds": 0.616667,
+      "phase": "hip_rise",
+      "stand_mix": 0.9259,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 39,
+      "time_seconds": 0.633333,
+      "phase": "hip_rise",
+      "stand_mix": 0.9657,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 40,
+      "time_seconds": 0.65,
+      "phase": "hip_rise",
+      "stand_mix": 0.9911,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.68,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 41,
+      "time_seconds": 0.666667,
+      "phase": "initial_cut_line",
+      "stand_mix": 1.0,
+      "surge_progress": 0.025,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 42,
+      "time_seconds": 0.683333,
+      "phase": "initial_cut_line",
+      "stand_mix": 1.0,
+      "surge_progress": 0.043,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 43,
+      "time_seconds": 0.7,
+      "phase": "initial_cut_line",
+      "stand_mix": 1.0,
+      "surge_progress": 0.061,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 44,
+      "time_seconds": 0.716667,
+      "phase": "initial_cut_line",
+      "stand_mix": 1.0,
+      "surge_progress": 0.079,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 45,
+      "time_seconds": 0.733333,
+      "phase": "initial_cut_line",
+      "stand_mix": 1.0,
+      "surge_progress": 0.097,
+      "surge_intensity": 0.78,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 46,
+      "time_seconds": 0.75,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.1,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 47,
+      "time_seconds": 0.766667,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.1146,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 48,
+      "time_seconds": 0.783333,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.1531,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 49,
+      "time_seconds": 0.8,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.2076,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 50,
+      "time_seconds": 0.816667,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.27,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 51,
+      "time_seconds": 0.833333,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.3324,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 52,
+      "time_seconds": 0.85,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.3869,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 53,
+      "time_seconds": 0.866667,
+      "phase": "blade_launch",
+      "stand_mix": 1.0,
+      "surge_progress": 0.4254,
+      "surge_intensity": 0.9,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 54,
+      "time_seconds": 0.883333,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.44,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 55,
+      "time_seconds": 0.9,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.4471,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 56,
+      "time_seconds": 0.916667,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.4672,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 57,
+      "time_seconds": 0.933333,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.4982,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 58,
+      "time_seconds": 0.95,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.5382,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 59,
+      "time_seconds": 0.966667,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.5852,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 60,
+      "time_seconds": 0.983333,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.6371,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 61,
+      "time_seconds": 1.0,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.692,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 62,
+      "time_seconds": 1.016667,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.748,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 63,
+      "time_seconds": 1.033333,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.8029,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 64,
+      "time_seconds": 1.05,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.8548,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 65,
+      "time_seconds": 1.066667,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.9018,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 66,
+      "time_seconds": 1.083333,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.9418,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 67,
+      "time_seconds": 1.1,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.9728,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 68,
+      "time_seconds": 1.116667,
+      "phase": "blade_travel",
+      "stand_mix": 1.0,
+      "surge_progress": 0.9929,
+      "surge_intensity": 1.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 69,
+      "time_seconds": 1.133333,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 70,
+      "time_seconds": 1.15,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 71,
+      "time_seconds": 1.166667,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 72,
+      "time_seconds": 1.183333,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 73,
+      "time_seconds": 1.2,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 74,
+      "time_seconds": 1.216667,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 75,
+      "time_seconds": 1.233333,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 76,
+      "time_seconds": 1.25,
+      "phase": "impact_hit_stop",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 1.0,
+      "impact_flash": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 77,
+      "time_seconds": 1.266667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.92,
+      "impact_flash": 1.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 78,
+      "time_seconds": 1.283333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.919,
+      "impact_flash": 0.9985,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 79,
+      "time_seconds": 1.3,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.916,
+      "impact_flash": 0.9942,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 80,
+      "time_seconds": 1.316667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.9111,
+      "impact_flash": 0.9873,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 81,
+      "time_seconds": 1.333333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.9044,
+      "impact_flash": 0.9777,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 82,
+      "time_seconds": 1.35,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.896,
+      "impact_flash": 0.9657,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 83,
+      "time_seconds": 1.366667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.886,
+      "impact_flash": 0.9514,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 84,
+      "time_seconds": 1.383333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.8745,
+      "impact_flash": 0.9349,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 85,
+      "time_seconds": 1.4,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.8615,
+      "impact_flash": 0.9164,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 86,
+      "time_seconds": 1.416667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.8472,
+      "impact_flash": 0.896,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 87,
+      "time_seconds": 1.433333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.8317,
+      "impact_flash": 0.8738,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 88,
+      "time_seconds": 1.45,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.815,
+      "impact_flash": 0.85,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 89,
+      "time_seconds": 1.466667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.7972,
+      "impact_flash": 0.8246,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 90,
+      "time_seconds": 1.483333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.7785,
+      "impact_flash": 0.7978,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 91,
+      "time_seconds": 1.5,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.7589,
+      "impact_flash": 0.7699,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 92,
+      "time_seconds": 1.516667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.7385,
+      "impact_flash": 0.7407,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 93,
+      "time_seconds": 1.533333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.7174,
+      "impact_flash": 0.7106,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 94,
+      "time_seconds": 1.55,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.6958,
+      "impact_flash": 0.6797,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 95,
+      "time_seconds": 1.566667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.6736,
+      "impact_flash": 0.648,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 96,
+      "time_seconds": 1.583333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.651,
+      "impact_flash": 0.6157,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 97,
+      "time_seconds": 1.6,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.6281,
+      "impact_flash": 0.583,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 98,
+      "time_seconds": 1.616667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.6049,
+      "impact_flash": 0.5499,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 99,
+      "time_seconds": 1.633333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.5817,
+      "impact_flash": 0.5167,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 100,
+      "time_seconds": 1.65,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.5583,
+      "impact_flash": 0.4833,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 101,
+      "time_seconds": 1.666667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.5351,
+      "impact_flash": 0.4501,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 102,
+      "time_seconds": 1.683333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.5119,
+      "impact_flash": 0.417,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 103,
+      "time_seconds": 1.7,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.489,
+      "impact_flash": 0.3843,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 104,
+      "time_seconds": 1.716667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.4664,
+      "impact_flash": 0.352,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 105,
+      "time_seconds": 1.733333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.4442,
+      "impact_flash": 0.3203,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 106,
+      "time_seconds": 1.75,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.4226,
+      "impact_flash": 0.2894,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 107,
+      "time_seconds": 1.766667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.4015,
+      "impact_flash": 0.2593,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 108,
+      "time_seconds": 1.783333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.3811,
+      "impact_flash": 0.2301,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 109,
+      "time_seconds": 1.8,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.3615,
+      "impact_flash": 0.2022,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 110,
+      "time_seconds": 1.816667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.3428,
+      "impact_flash": 0.1754,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 111,
+      "time_seconds": 1.833333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.325,
+      "impact_flash": 0.15,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 112,
+      "time_seconds": 1.85,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.3083,
+      "impact_flash": 0.1262,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 113,
+      "time_seconds": 1.866667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2928,
+      "impact_flash": 0.104,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 114,
+      "time_seconds": 1.883333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2785,
+      "impact_flash": 0.0836,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 115,
+      "time_seconds": 1.9,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2655,
+      "impact_flash": 0.0651,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 116,
+      "time_seconds": 1.916667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.254,
+      "impact_flash": 0.0486,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 117,
+      "time_seconds": 1.933333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.244,
+      "impact_flash": 0.0343,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 118,
+      "time_seconds": 1.95,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2356,
+      "impact_flash": 0.0223,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 119,
+      "time_seconds": 1.966667,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2289,
+      "impact_flash": 0.0127,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 120,
+      "time_seconds": 1.983333,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.224,
+      "impact_flash": 0.0058,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 121,
+      "time_seconds": 2.0,
+      "phase": "afterimage_fade",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.221,
+      "impact_flash": 0.0015,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 122,
+      "time_seconds": 2.016667,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.24,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 123,
+      "time_seconds": 2.033333,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2353,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 124,
+      "time_seconds": 2.05,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2222,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 125,
+      "time_seconds": 2.066667,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.2025,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 126,
+      "time_seconds": 2.083333,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.1778,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 127,
+      "time_seconds": 2.1,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.1497,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 128,
+      "time_seconds": 2.116667,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.12,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 129,
+      "time_seconds": 2.133333,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.0903,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 130,
+      "time_seconds": 2.15,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.0622,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 131,
+      "time_seconds": 2.166667,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.0375,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 132,
+      "time_seconds": 2.183333,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.0178,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 133,
+      "time_seconds": 2.2,
+      "phase": "standing_follow_through",
+      "stand_mix": 1.0,
+      "surge_progress": 1.0,
+      "surge_intensity": 0.0047,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 134,
+      "time_seconds": 2.216667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 135,
+      "time_seconds": 2.233333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 136,
+      "time_seconds": 2.25,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 137,
+      "time_seconds": 2.266667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 138,
+      "time_seconds": 2.283333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 139,
+      "time_seconds": 2.3,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 140,
+      "time_seconds": 2.316667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 141,
+      "time_seconds": 2.333333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 142,
+      "time_seconds": 2.35,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 143,
+      "time_seconds": 2.366667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 144,
+      "time_seconds": 2.383333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 145,
+      "time_seconds": 2.4,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 146,
+      "time_seconds": 2.416667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 147,
+      "time_seconds": 2.433333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 148,
+      "time_seconds": 2.45,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 149,
+      "time_seconds": 2.466667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 150,
+      "time_seconds": 2.483333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 151,
+      "time_seconds": 2.5,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 152,
+      "time_seconds": 2.516667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 153,
+      "time_seconds": 2.533333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 154,
+      "time_seconds": 2.55,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 155,
+      "time_seconds": 2.566667,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 156,
+      "time_seconds": 2.583333,
+      "phase": "clean_idle",
+      "stand_mix": 1.0,
+      "surge_progress": 0.0,
+      "surge_intensity": 0.0,
+      "impact_flash": 0.0,
+      "hit_stop": false
+    }
+  ]
+}

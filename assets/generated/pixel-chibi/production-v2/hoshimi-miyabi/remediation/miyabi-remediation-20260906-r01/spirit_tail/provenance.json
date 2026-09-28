@@ -1,0 +1,353 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-spirit-tail-v1",
+  "createdUtc": "2026-09-05T20:56:16.729994+00:00",
+  "tool": "deterministic-Pillow-compositor",
+  "imagegen": {
+    "used": false,
+    "prompt": null,
+    "requestId": null,
+    "model": null
+  },
+  "source": {
+    "directory": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames",
+    "frameCount": 32,
+    "sourceCanvas": "128x128",
+    "sourceHashes": [
+      {
+        "frameId": "frame-00",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-00.png",
+        "sha256": "eb65e5d6f7bbb651ba9fde2debecb06f32ae7e0445676eb891922aa21820e9f0"
+      },
+      {
+        "frameId": "frame-01",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-01.png",
+        "sha256": "900895bea304c61e09b544cde1245433bc70eba030350da8697834855ce454f0"
+      },
+      {
+        "frameId": "frame-02",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-02.png",
+        "sha256": "49e9569473a2640208ca2e8467c05e0dc984f34335352e91bb310b1d70884f71"
+      },
+      {
+        "frameId": "frame-03",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-03.png",
+        "sha256": "36dbaf7c407978e45289b28dd86a587f6c8660d80145a94a29b479886cd706ad"
+      },
+      {
+        "frameId": "frame-04",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-04.png",
+        "sha256": "45593ebe17d6e44ded97bdf29a2c8cf51898fe40029fda9d2c5be441e2ff27f6"
+      },
+      {
+        "frameId": "frame-05",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-05.png",
+        "sha256": "3a8d5063005f3634db935a31f84053e17a25213c966abf15ba461c496e1947bf"
+      },
+      {
+        "frameId": "frame-06",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-06.png",
+        "sha256": "eb65e5d6f7bbb651ba9fde2debecb06f32ae7e0445676eb891922aa21820e9f0"
+      },
+      {
+        "frameId": "frame-07",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-07.png",
+        "sha256": "eb65e5d6f7bbb651ba9fde2debecb06f32ae7e0445676eb891922aa21820e9f0"
+      },
+      {
+        "frameId": "frame-08",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-08.png",
+        "sha256": "4a3a59558533e01cb68942c9f74126e55ff7934a9035450aaabd563d6d9ae15e"
+      },
+      {
+        "frameId": "frame-09",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-09.png",
+        "sha256": "a57dc731d49bd6ae23714b68f9b37fe30d5085c2beaaca8692d42f46eff6cb27"
+      },
+      {
+        "frameId": "frame-10",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-10.png",
+        "sha256": "fb7a78d9746d0c607c8e9b954f7aeecb622b7bc8ebce9b67e91618d881f3f965"
+      },
+      {
+        "frameId": "frame-11",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-11.png",
+        "sha256": "2ab71eba6434bdfea687a2e5451d35f59556259173ad51d23e63e204d3ede0af"
+      },
+      {
+        "frameId": "frame-12",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-12.png",
+        "sha256": "b49d2316ad65e4eebe9b2b692d3bee0b65fb96a3b7c55c87223db45bb201bec0"
+      },
+      {
+        "frameId": "frame-13",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-13.png",
+        "sha256": "a2c341d30a257370b7e53306a02281ca7d06b695d47b515fba7cc59c957aa423"
+      },
+      {
+        "frameId": "frame-14",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-14.png",
+        "sha256": "4fc4a2e934c459f6ea4b3f5136f81be89896708fe3c15f3defbe74ccb23c5266"
+      },
+      {
+        "frameId": "frame-15",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-15.png",
+        "sha256": "9963ad7b7869fe9c926e7a1fc1bdbbfb6cd5cf4d2c7428770682e34b79870bf6"
+      },
+      {
+        "frameId": "frame-16",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-16.png",
+        "sha256": "9d41674c9b7eabd9207509da63591ad8d5c7e01fc69fc6d9087bc9fefa70deac"
+      },
+      {
+        "frameId": "frame-17",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-17.png",
+        "sha256": "5e968c600679592dd69c9db341d3f46a113c4304473440097bfffebd3c4b4d82"
+      },
+      {
+        "frameId": "frame-18",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-18.png",
+        "sha256": "c2c22a1b0fe6e04d76ae685ef89b31842043b1576cc455a00f22d6eaf390eb17"
+      },
+      {
+        "frameId": "frame-19",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-19.png",
+        "sha256": "a0a9a0e66a5b5713ab4b6deb7fae23c067f64af7fa500e3c509d8c3677a9cf3f"
+      },
+      {
+        "frameId": "frame-20",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-20.png",
+        "sha256": "8b254313fafb7e754d3dbdc2e40b834a8337c036090d4858d6725a32233e2c7d"
+      },
+      {
+        "frameId": "frame-21",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-21.png",
+        "sha256": "dbed99fbb6f797da1c7563abc2dffeea8991b39b92512131f3aae1bbe8f572cd"
+      },
+      {
+        "frameId": "frame-22",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-22.png",
+        "sha256": "81a1649583ec77e7a33617fe15a3b1cb948b71870dbc8bbfcfcb064e2acf4cd4"
+      },
+      {
+        "frameId": "frame-23",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-23.png",
+        "sha256": "060301808df0669303385cf6cd7e53d28ef75ff9f32527d75852ece453b5dd77"
+      },
+      {
+        "frameId": "frame-24",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-24.png",
+        "sha256": "982be0a0a7c29a82fac333f5b0d66119525d644fb39201438b526bceca929cc2"
+      },
+      {
+        "frameId": "frame-25",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-25.png",
+        "sha256": "982be0a0a7c29a82fac333f5b0d66119525d644fb39201438b526bceca929cc2"
+      },
+      {
+        "frameId": "frame-26",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-26.png",
+        "sha256": "37dcdb15b4f1a2063f35a02b34754cf3a89febc92144fc42dd9805e265ea4eaa"
+      },
+      {
+        "frameId": "frame-27",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-27.png",
+        "sha256": "ae2e83f421d07a63f8f9ee8aa845d0fa09bd493766cab5475ab977c99743500e"
+      },
+      {
+        "frameId": "frame-28",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-28.png",
+        "sha256": "eb65e5d6f7bbb651ba9fde2debecb06f32ae7e0445676eb891922aa21820e9f0"
+      },
+      {
+        "frameId": "frame-29",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-29.png",
+        "sha256": "604f7016ec4f3433a13b03371bff531b98ac5f1013bb2145509b208af5b19d28"
+      },
+      {
+        "frameId": "frame-30",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-30.png",
+        "sha256": "19d7c8fc7bd0acb28c8d0d9aeebb6816369a05546616eda7d954acf252a6714d"
+      },
+      {
+        "frameId": "frame-31",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\right\\frames\\frame-31.png",
+        "sha256": "eb65e5d6f7bbb651ba9fde2debecb06f32ae7e0445676eb891922aa21820e9f0"
+      }
+    ]
+  },
+  "postProcess": [
+    "create transparent 160x144 canvas",
+    "alpha composite source at offset (4,19)",
+    "no resize",
+    "no filtering",
+    "no color/palette edit",
+    "no smoothing",
+    "no frame reordering"
+  ],
+  "output": {
+    "directory": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames",
+    "hashes": [
+      {
+        "frameId": "frame-000",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-000.png",
+        "sha256": "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      },
+      {
+        "frameId": "frame-001",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-001.png",
+        "sha256": "ae01bee0793149836675f0fe2ff0eff936059fd5775ffd25a726dfa35b07f628"
+      },
+      {
+        "frameId": "frame-002",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-002.png",
+        "sha256": "ddc933688501a1eab3db391fcb9aca8f660c09b89a55b891c38d152f4bceb191"
+      },
+      {
+        "frameId": "frame-003",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-003.png",
+        "sha256": "566d4a0b0c0f41e1b9f77e7cabf1f97c69be799fdbc14411ce659fab4e61a5b5"
+      },
+      {
+        "frameId": "frame-004",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-004.png",
+        "sha256": "c546b36c58419b513743bc7a498358e54d40cd79304cc7dd2c2e10ba595cb8f3"
+      },
+      {
+        "frameId": "frame-005",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-005.png",
+        "sha256": "5464608841f615098d2dacc62d308f666a9505718243f38709860970f50b4a21"
+      },
+      {
+        "frameId": "frame-006",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-006.png",
+        "sha256": "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      },
+      {
+        "frameId": "frame-007",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-007.png",
+        "sha256": "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      },
+      {
+        "frameId": "frame-008",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-008.png",
+        "sha256": "2df29e7e22430cacc50044102645234b4b25caf8c0bda135e8673a368912b84d"
+      },
+      {
+        "frameId": "frame-009",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-009.png",
+        "sha256": "0a7eb6bcaa54fb7fe585ecc1ee4d87987dbe9592b1e3c0190b1d635b39d858b1"
+      },
+      {
+        "frameId": "frame-010",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-010.png",
+        "sha256": "70970e6e67dcf6fb8cfb918687a6c981bb2eadb9a0569aeb4d375eacbf0443f4"
+      },
+      {
+        "frameId": "frame-011",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-011.png",
+        "sha256": "2f0d6deb22fd97303b49b49a223cb551083ca6643887adeb2101993fd09f599b"
+      },
+      {
+        "frameId": "frame-012",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-012.png",
+        "sha256": "878e5d584f92ae2c6f6ed7b754010b93bff2a59b0f249df7b77ede7c7de8d858"
+      },
+      {
+        "frameId": "frame-013",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-013.png",
+        "sha256": "6cf81da2aee4778a721d769f1cab14f129e6ac96361415c194b8643a1f529967"
+      },
+      {
+        "frameId": "frame-014",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-014.png",
+        "sha256": "1e75076438e2727052472759e02d9391dfc9de7ba048e1062edfd85f99885a3c"
+      },
+      {
+        "frameId": "frame-015",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-015.png",
+        "sha256": "d6dec5675cbc7968f3b288b6a1a5d18b0db331b903a87b7b1434ff34adefbdd9"
+      },
+      {
+        "frameId": "frame-016",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-016.png",
+        "sha256": "de9e3fe9aa504002c5379c7d01cb26f150461fee3a21c8da021da2efa1743907"
+      },
+      {
+        "frameId": "frame-017",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-017.png",
+        "sha256": "8ab63b22984c1ee05e4a2bf3775cd26115e543b668720e8bc54dbac542e37a7f"
+      },
+      {
+        "frameId": "frame-018",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-018.png",
+        "sha256": "5d5f636279051b52be1448efb404446ded4a1d1523fd677ac39767a412f0fc08"
+      },
+      {
+        "frameId": "frame-019",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-019.png",
+        "sha256": "fdce7eac1681622765a36b2b6cb3a6f889eac1b8c52c0df93c8dc2eab27e5bb2"
+      },
+      {
+        "frameId": "frame-020",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-020.png",
+        "sha256": "bf9ca5a852a1d861d43972023605c1b645ac75237b63a7606c9bcc90473cf34e"
+      },
+      {
+        "frameId": "frame-021",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-021.png",
+        "sha256": "5c32c3f75b7943e28064c870bdb63817a8fb9149c561902b5f61ea5abab8ec7f"
+      },
+      {
+        "frameId": "frame-022",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-022.png",
+        "sha256": "9534f53d44d06e9305fba65834017a39c3d6074a6d440ba5767245fee6d624ae"
+      },
+      {
+        "frameId": "frame-023",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-023.png",
+        "sha256": "e399e1c4475d0596db8e74a75b200dbb3beacb6dd5ffb7758586bf6cb5b521ca"
+      },
+      {
+        "frameId": "frame-024",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-024.png",
+        "sha256": "33184b28f494fc4bbfe47840d4d57e4c1173fb28924195c22f6565d416ae8c1d"
+      },
+      {
+        "frameId": "frame-025",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-025.png",
+        "sha256": "33184b28f494fc4bbfe47840d4d57e4c1173fb28924195c22f6565d416ae8c1d"
+      },
+      {
+        "frameId": "frame-026",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-026.png",
+        "sha256": "db7d7e4fd9d928c0e052d9a1cdefd4702c0e0c09696ce5fdaf3a5ed3b940bbde"
+      },
+      {
+        "frameId": "frame-027",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-027.png",
+        "sha256": "418678564c59e4fdf5e98f96e092505a0b9f3a3e133c584f94e6dd657125a869"
+      },
+      {
+        "frameId": "frame-028",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-028.png",
+        "sha256": "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      },
+      {
+        "frameId": "frame-029",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-029.png",
+        "sha256": "eab73012dd90589052e7f40aa05c80fbdaac2b2a4596770db2d5862499276b78"
+      },
+      {
+        "frameId": "frame-030",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-030.png",
+        "sha256": "66942f2c589e940ef6cbec01877e16bacf5687a343ee1dfceb239abd7b76b1b5"
+      },
+      {
+        "frameId": "frame-031",
+        "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\spirit_tail\\right\\frames\\frame-031.png",
+        "sha256": "4f9427ee6a8ad2e391f52d6a52e0de6d59c214bc71cd2db1c9124e1a9514d279"
+      }
+    ]
+  },
+  "approvalStatus": "PENDING"
+}

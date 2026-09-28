@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "tick_fps": 16,
+  "review_status": "v1_unpacked_strips",
+  "target_cell": {
+    "height": 128,
+    "width": 128
+  },
+  "planned_sheet": {
+    "width": 768,
+    "columns": 6,
+    "rows": 4,
+    "height": 512,
+    "row_order": [
+      "idle",
+      "walk-right",
+      "sleep",
+      "eat"
+    ]
+  },
+  "states": {
+    "idle": {
+      "unique_frames": 4,
+      "schedule": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      "loop": true
+    },
+    "walk-right": {
+      "unique_frames": 6,
+      "schedule": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "loop": true
+    },
+    "sleep": {
+      "unique_frames": 4,
+      "pose": "lying_down_curled",
+      "schedule": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop": true
+    },
+    "eat": {
+      "unique_frames": 4,
+      "schedule": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop": false
+    }
+  },
+  "runtime_notes": {
+    "walk-left": "horizontal flip of walk-right",
+    "filtering": "nearest-neighbor only",
+    "tick_note": "16 FPS playback clock; unique art frames are held across multiple ticks"
+  }
+}

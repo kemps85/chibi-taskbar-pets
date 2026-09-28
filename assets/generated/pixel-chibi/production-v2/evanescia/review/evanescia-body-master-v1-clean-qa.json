@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\source\\evanescia-body-imagegen-source-v1.png",
+  "output": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\review\\evanescia-body-master-v1-clean.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_alpha_bounds_after_background_cleanup": [
+    366,
+    71,
+    910,
+    1179
+  ],
+  "output_size": [
+    128,
+    128
+  ],
+  "output_alpha_bounds": [
+    35,
+    5,
+    93,
+    124
+  ],
+  "placement": {
+    "max_width": 120,
+    "max_height": 119,
+    "center_x": 64,
+    "bottom": 124,
+    "position": [
+      35,
+      5
+    ],
+    "resized_subject": [
+      58,
+      119
+    ]
+  },
+  "cleanup": {
+    "passes": 4,
+    "fringe_pixels_recolored": 243,
+    "stable": true
+  },
+  "transparent_corners": true,
+  "alpha_value_count": 2
+}

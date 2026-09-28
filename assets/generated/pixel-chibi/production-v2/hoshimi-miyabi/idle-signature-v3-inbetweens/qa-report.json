@@ -1,0 +1,281 @@
+{
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\source\\idle-signature-inbetweens-v3.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 4
+  },
+  "frame_count": 16,
+  "cell_size": [
+    128,
+    128
+  ],
+  "fps": 16,
+  "all_corners_transparent": true,
+  "outputs": {
+    "sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\sheet-4x4.png",
+    "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\strip-16x1.png",
+    "preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\preview-16fps.gif"
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-00.png",
+      "alpha_bounds": [
+        25,
+        7,
+        117,
+        124
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 1,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-01.png",
+      "alpha_bounds": [
+        26,
+        7,
+        116,
+        124
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-02.png",
+      "alpha_bounds": [
+        17,
+        7,
+        109,
+        124
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-03.png",
+      "alpha_bounds": [
+        12,
+        8,
+        108,
+        124
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-04.png",
+      "alpha_bounds": [
+        27,
+        5,
+        124,
+        122
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-05.png",
+      "alpha_bounds": [
+        23,
+        4,
+        122,
+        122
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-06.png",
+      "alpha_bounds": [
+        16,
+        5,
+        113,
+        122
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-07.png",
+      "alpha_bounds": [
+        8,
+        5,
+        103,
+        122
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 8,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-08.png",
+      "alpha_bounds": [
+        24,
+        3,
+        125,
+        121
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 9,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-09.png",
+      "alpha_bounds": [
+        21,
+        3,
+        121,
+        120
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 10,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-10.png",
+      "alpha_bounds": [
+        15,
+        3,
+        119,
+        121
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 11,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-11.png",
+      "alpha_bounds": [
+        7,
+        3,
+        99,
+        121
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 12,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-12.png",
+      "alpha_bounds": [
+        25,
+        1,
+        121,
+        119
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 13,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-13.png",
+      "alpha_bounds": [
+        23,
+        1,
+        120,
+        119
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 14,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-14.png",
+      "alpha_bounds": [
+        17,
+        1,
+        107,
+        119
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 15,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-inbetweens\\frames\\frame-15.png",
+      "alpha_bounds": [
+        10,
+        1,
+        92,
+        119
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

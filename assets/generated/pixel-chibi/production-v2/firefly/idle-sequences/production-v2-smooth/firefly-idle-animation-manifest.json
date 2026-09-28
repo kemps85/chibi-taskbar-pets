@@ -1,0 +1,380 @@
+{
+  "status": "PASS",
+  "character": "firefly",
+  "directions": {
+    "right": "authored master",
+    "left": "exact horizontal mirror of right"
+  },
+  "human_module_sword_idle": {
+    "duration_seconds": 10.95,
+    "canvas_size": [
+      160,
+      144
+    ],
+    "directional_anchors": {
+      "right": [
+        64,
+        120
+      ],
+      "left": [
+        96,
+        120
+      ]
+    },
+    "overscan_policy": "visual canvas is wider than collision box so slash effects are never clipped",
+    "logical_frame_policy": "dense crisp authored frames; no crossfade between distant poses",
+    "logical_frame_count": 164,
+    "logical_fps": 15,
+    "frame_durations_ms": [
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      66,
+      66,
+      66,
+      66,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      80,
+      80,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      66,
+      66,
+      66,
+      66,
+      64,
+      64,
+      63,
+      63,
+      63,
+      63,
+      65,
+      65,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      64,
+      64,
+      64,
+      64,
+      64,
+      69,
+      69,
+      69,
+      69,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      66,
+      66,
+      66,
+      69,
+      69,
+      69,
+      69,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      68,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      67,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66
+    ],
+    "render_fps": 60,
+    "phases": [
+      {
+        "name": "module-ready",
+        "start": 0.0,
+        "end": 0.8,
+        "keypose": 1
+      },
+      {
+        "name": "module-burnout",
+        "start": 0.8,
+        "end": 2.0,
+        "keypose": 2
+      },
+      {
+        "name": "module-gone-gap",
+        "start": 2.0,
+        "end": 2.16,
+        "keypose": 3
+      },
+      {
+        "name": "half-sword-forming",
+        "start": 2.16,
+        "end": 3.1,
+        "keypose": 3
+      },
+      {
+        "name": "full-sword-windup",
+        "start": 3.1,
+        "end": 3.9,
+        "keypose": 4
+      },
+      {
+        "name": "single-forward-slash",
+        "start": 3.9,
+        "end": 4.28,
+        "keypose": 5
+      },
+      {
+        "name": "return-to-guard",
+        "start": 4.28,
+        "end": 5.05,
+        "keypose": 6
+      },
+      {
+        "name": "mote-approach",
+        "start": 5.05,
+        "end": 6.15,
+        "keypose": 6
+      },
+      {
+        "name": "mote-inspection",
+        "start": 6.15,
+        "end": 7.65,
+        "keypose": 6
+      },
+      {
+        "name": "mote-fade-before-retraction",
+        "start": 7.65,
+        "end": 8.25,
+        "keypose": 6
+      },
+      {
+        "name": "tip-to-hilt-retraction",
+        "start": 8.25,
+        "end": 9.75,
+        "keypose": 7
+      },
+      {
+        "name": "module-restored",
+        "start": 9.75,
+        "end": 10.95,
+        "keypose": 8
+      }
+    ],
+    "requirements": {
+      "module_burns_before_sword": true,
+      "half_sword_before_full_sword": true,
+      "one_forward_slash": true,
+      "return_to_guard_before_mote": true,
+      "mote_moves_far_to_near": true,
+      "inspection_pause_before_mote_fade": true,
+      "mote_fully_gone_before_retraction": true,
+      "retraction_direction": "tip-to-hilt",
+      "mote_shape": "abstract green light dot, no insect silhouette"
+    },
+    "video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v2-smooth\\human-module-sword\\video\\firefly-module-sword-idle-review-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 10.95,
+      "frame_count": 657,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "module-restored"
+    }
+  },
+  "sam_transform_hover": {
+    "activation_seconds": 1.2,
+    "assembly_seconds": 2.4,
+    "assembly_direction": "feet-to-head",
+    "assembly_vfx": "teal-green flame rises with armor",
+    "shoulder_cape_fire_deploy_seconds": 0.9,
+    "cape_deploy_order": "only after full armor, emitted from both shoulders",
+    "hover_state_seconds": 60.0,
+    "hover_loop": {
+      "logical_frames": 32,
+      "logical_fps": 16,
+      "loop_seconds": 2.0,
+      "repeat_count_for_60s": 30
+    },
+    "transform_enter_frames": 32,
+    "cape_animation": "32-frame closed flutter loop with anchored shoulder roots",
+    "shoulder_fire_animation": "animated outward teal-green jets from both shoulders",
+    "landing_frames": 32,
+    "landing_seconds": 1.8,
+    "landing_motion": "runtime vertical translation of 28 logical pixels to taskbar top",
+    "shutdown_order": [
+      "cape retracts",
+      "shoulder fire shuts off",
+      "dual swords retract",
+      "armor burns away from head to feet",
+      "Firefly restored"
+    ],
+    "shutdown_timing_seconds": {
+      "cape": 0.9,
+      "shoulder_fire": 0.6,
+      "swords": 0.8,
+      "armor_head_to_feet": 2.5,
+      "restored_hold": 0.8
+    },
+    "transform_exit_frames": 84,
+    "transform_exit_logical_fps": 15,
+    "post_hover_action": "SAM lands, shuts accessories down in order, then burns head-to-feet back into Firefly",
+    "dual_sword_master": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\sam-dual-swords-master-right-v2-short-grips.png",
+    "short_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v2-smooth\\sam-transform-hover\\video\\firefly-sam-transform-short-review-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 17.9,
+      "frame_count": 1074,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "firefly-restored"
+    },
+    "full_60s_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\idle-sequences\\production-v2-smooth\\sam-transform-hover\\video\\firefly-sam-transform-hover-60s-60fps.mp4",
+      "fps": 60,
+      "duration_seconds": 71.89999999999999,
+      "frame_count": 4314,
+      "resolution": [
+        960,
+        360
+      ],
+      "last_phase": "firefly-restored"
+    }
+  },
+  "qa": {
+    "mirror_failures": [],
+    "transparent_corner_failures": [],
+    "video_probe": {
+      "human": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 657,
+        "duration": 10.95
+      },
+      "sam_short": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 1074,
+        "duration": 17.9
+      },
+      "sam_60s": {
+        "width": 960,
+        "height": 360,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": 4314,
+        "duration": 71.9
+      }
+    }
+  }
+}

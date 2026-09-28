@@ -1,0 +1,1176 @@
+{
+  "status": "PASS",
+  "animation_id": "miyabi-final-blow-slash-v1",
+  "reference_note": "Procedural homage to the supplied Miyabi final-blow cutscene; no source video frames are embedded.",
+  "canvas": {
+    "size": [
+      288,
+      160
+    ],
+    "format": "RGBA PNG",
+    "overscan_for_taskbar_pet": true,
+    "body_position": [
+      80,
+      20
+    ],
+    "body_anchor": [
+      140,
+      143
+    ]
+  },
+  "timeline": {
+    "logical_fps": 60,
+    "logical_frame_count": 132,
+    "duration_seconds": 2.2,
+    "beats": {
+      "hilt_glow": [
+        1,
+        16
+      ],
+      "charge": [
+        17,
+        35
+      ],
+      "swing_flash": [
+        36,
+        42
+      ],
+      "hit_stop": [
+        43,
+        50
+      ],
+      "crescent_shards": [
+        51,
+        83
+      ],
+      "residual_fade": [
+        84,
+        117
+      ],
+      "clean_idle": [
+        118,
+        132
+      ]
+    },
+    "hit_stop_seconds": 0.133333
+  },
+  "art_direction": {
+    "primary_slash": "cyan-teal crescent with white-hot core, lower-left to upper-right sweep",
+    "secondary_fx": [
+      "electric shards",
+      "sword charge bloom",
+      "delayed elliptical shockwave",
+      "cyan afterimages",
+      "short white hit flash"
+    ],
+    "filter": "nearest-neighbour for runtime and review sprite sampling"
+  },
+  "layer_lock": {
+    "body_sha256": "6d6bbf2a6cc76cb340591a3e2d74dcc68321d1f96c9ec8378e04bcf94fa62779",
+    "body_source_sha256": "6d6bbf2a6cc76cb340591a3e2d74dcc68321d1f96c9ec8378e04bcf94fa62779",
+    "body_pixel_drift": 0,
+    "body_scale_drift": 0,
+    "body_anchor_drift": 0,
+    "body_alpha_bounds": [
+      18,
+      5,
+      102,
+      124
+    ],
+    "character_art_modified": false,
+    "effects_are_procedural_layers": true
+  },
+  "mirror_validation": {
+    "left_is_exact_horizontal_mirror_per_frame": true,
+    "mismatch_count": 0,
+    "frame_order_preserved": true
+  },
+  "performance_budget": {
+    "logical_rgba_canvas_pixels": 46080,
+    "max_particle_streaks_per_frame": 32,
+    "blur_passes_per_frame": 3,
+    "runtime_shader_required": false
+  },
+  "outputs": {
+    "source_body": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\source\\miyabi-body-source.png",
+    "body_layer": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\layers\\miyabi-body-fixed.png",
+    "right_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\right\\frames",
+    "left_frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\left\\frames",
+    "right_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\right\\strip-132x1.png",
+    "left_strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\left\\strip-132x1.png",
+    "review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\video\\miyabi-final-blow-slash-review.mp4",
+      "fps": 60,
+      "duration_seconds": 2.2,
+      "frame_count": 132,
+      "resolution": [
+        1280,
+        520
+      ],
+      "sprite_canvas": [
+        288,
+        160
+      ],
+      "sampling": "nearest-neighbour logical-frame hold"
+    },
+    "contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\final-blow-slash-v1\\video\\miyabi-final-blow-contact-sheet.png"
+  },
+  "timeline_samples": [
+    {
+      "human_frame": 1,
+      "time_seconds": 0.0,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.14,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 2,
+      "time_seconds": 0.016667,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.1613,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 3,
+      "time_seconds": 0.033333,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.1825,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 4,
+      "time_seconds": 0.05,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.2038,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 5,
+      "time_seconds": 0.066667,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.225,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 6,
+      "time_seconds": 0.083333,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.2463,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 7,
+      "time_seconds": 0.1,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.2675,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 8,
+      "time_seconds": 0.116667,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.2888,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 9,
+      "time_seconds": 0.133333,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.31,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 10,
+      "time_seconds": 0.15,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.3313,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 11,
+      "time_seconds": 0.166667,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.3525,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 12,
+      "time_seconds": 0.183333,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.3738,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 13,
+      "time_seconds": 0.2,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.395,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 14,
+      "time_seconds": 0.216667,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.4163,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 15,
+      "time_seconds": 0.233333,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.4375,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 16,
+      "time_seconds": 0.25,
+      "phase": "hilt_glow",
+      "slash_progress": 0.0,
+      "intensity": 0.4588,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 17,
+      "time_seconds": 0.266667,
+      "phase": "charge",
+      "slash_progress": 0.0,
+      "intensity": 0.48,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 18,
+      "time_seconds": 0.283333,
+      "phase": "charge",
+      "slash_progress": 0.0053,
+      "intensity": 0.5074,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 19,
+      "time_seconds": 0.3,
+      "phase": "charge",
+      "slash_progress": 0.0105,
+      "intensity": 0.5347,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 20,
+      "time_seconds": 0.316667,
+      "phase": "charge",
+      "slash_progress": 0.0158,
+      "intensity": 0.5621,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 21,
+      "time_seconds": 0.333333,
+      "phase": "charge",
+      "slash_progress": 0.0211,
+      "intensity": 0.5895,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 22,
+      "time_seconds": 0.35,
+      "phase": "charge",
+      "slash_progress": 0.0263,
+      "intensity": 0.6168,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 23,
+      "time_seconds": 0.366667,
+      "phase": "charge",
+      "slash_progress": 0.0316,
+      "intensity": 0.6442,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 24,
+      "time_seconds": 0.383333,
+      "phase": "charge",
+      "slash_progress": 0.0368,
+      "intensity": 0.6716,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 25,
+      "time_seconds": 0.4,
+      "phase": "charge",
+      "slash_progress": 0.0421,
+      "intensity": 0.6989,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 26,
+      "time_seconds": 0.416667,
+      "phase": "charge",
+      "slash_progress": 0.0474,
+      "intensity": 0.7263,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 27,
+      "time_seconds": 0.433333,
+      "phase": "charge",
+      "slash_progress": 0.0526,
+      "intensity": 0.7537,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 28,
+      "time_seconds": 0.45,
+      "phase": "charge",
+      "slash_progress": 0.0579,
+      "intensity": 0.7811,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 29,
+      "time_seconds": 0.466667,
+      "phase": "charge",
+      "slash_progress": 0.0632,
+      "intensity": 0.8084,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 30,
+      "time_seconds": 0.483333,
+      "phase": "charge",
+      "slash_progress": 0.0684,
+      "intensity": 0.8358,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 31,
+      "time_seconds": 0.5,
+      "phase": "charge",
+      "slash_progress": 0.0737,
+      "intensity": 0.8632,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 32,
+      "time_seconds": 0.516667,
+      "phase": "charge",
+      "slash_progress": 0.0789,
+      "intensity": 0.8905,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 33,
+      "time_seconds": 0.533333,
+      "phase": "charge",
+      "slash_progress": 0.0842,
+      "intensity": 0.9179,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 34,
+      "time_seconds": 0.55,
+      "phase": "charge",
+      "slash_progress": 0.0895,
+      "intensity": 0.9453,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 35,
+      "time_seconds": 0.566667,
+      "phase": "charge",
+      "slash_progress": 0.0947,
+      "intensity": 0.9726,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 36,
+      "time_seconds": 0.583333,
+      "phase": "swing_flash",
+      "slash_progress": 0.1,
+      "intensity": 0.92,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 37,
+      "time_seconds": 0.6,
+      "phase": "swing_flash",
+      "slash_progress": 0.2286,
+      "intensity": 0.9314,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 38,
+      "time_seconds": 0.616667,
+      "phase": "swing_flash",
+      "slash_progress": 0.3571,
+      "intensity": 0.9429,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 39,
+      "time_seconds": 0.633333,
+      "phase": "swing_flash",
+      "slash_progress": 0.4857,
+      "intensity": 0.9543,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 40,
+      "time_seconds": 0.65,
+      "phase": "swing_flash",
+      "slash_progress": 0.6143,
+      "intensity": 0.9657,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 41,
+      "time_seconds": 0.666667,
+      "phase": "swing_flash",
+      "slash_progress": 0.7429,
+      "intensity": 0.9771,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 42,
+      "time_seconds": 0.683333,
+      "phase": "swing_flash",
+      "slash_progress": 0.8714,
+      "intensity": 0.9886,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 43,
+      "time_seconds": 0.7,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 44,
+      "time_seconds": 0.716667,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 45,
+      "time_seconds": 0.733333,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 46,
+      "time_seconds": 0.75,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 47,
+      "time_seconds": 0.766667,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 48,
+      "time_seconds": 0.783333,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 49,
+      "time_seconds": 0.8,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 50,
+      "time_seconds": 0.816667,
+      "phase": "hit_stop",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": true
+    },
+    {
+      "human_frame": 51,
+      "time_seconds": 0.833333,
+      "phase": "crescent_shards",
+      "slash_progress": 1.0,
+      "intensity": 1.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 52,
+      "time_seconds": 0.85,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9952,
+      "intensity": 0.9855,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 53,
+      "time_seconds": 0.866667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9903,
+      "intensity": 0.9709,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 54,
+      "time_seconds": 0.883333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9855,
+      "intensity": 0.9564,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 55,
+      "time_seconds": 0.9,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9806,
+      "intensity": 0.9418,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 56,
+      "time_seconds": 0.916667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9758,
+      "intensity": 0.9273,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 57,
+      "time_seconds": 0.933333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9709,
+      "intensity": 0.9127,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 58,
+      "time_seconds": 0.95,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9661,
+      "intensity": 0.8982,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 59,
+      "time_seconds": 0.966667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9612,
+      "intensity": 0.8836,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 60,
+      "time_seconds": 0.983333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9564,
+      "intensity": 0.8691,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 61,
+      "time_seconds": 1.0,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9515,
+      "intensity": 0.8545,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 62,
+      "time_seconds": 1.016667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9467,
+      "intensity": 0.84,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 63,
+      "time_seconds": 1.033333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9418,
+      "intensity": 0.8255,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 64,
+      "time_seconds": 1.05,
+      "phase": "crescent_shards",
+      "slash_progress": 0.937,
+      "intensity": 0.8109,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 65,
+      "time_seconds": 1.066667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9321,
+      "intensity": 0.7964,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 66,
+      "time_seconds": 1.083333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9273,
+      "intensity": 0.7818,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 67,
+      "time_seconds": 1.1,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9224,
+      "intensity": 0.7673,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 68,
+      "time_seconds": 1.116667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9176,
+      "intensity": 0.7527,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 69,
+      "time_seconds": 1.133333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9127,
+      "intensity": 0.7382,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 70,
+      "time_seconds": 1.15,
+      "phase": "crescent_shards",
+      "slash_progress": 0.9079,
+      "intensity": 0.7236,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 71,
+      "time_seconds": 1.166667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.903,
+      "intensity": 0.7091,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 72,
+      "time_seconds": 1.183333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8982,
+      "intensity": 0.6945,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 73,
+      "time_seconds": 1.2,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8933,
+      "intensity": 0.68,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 74,
+      "time_seconds": 1.216667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8885,
+      "intensity": 0.6655,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 75,
+      "time_seconds": 1.233333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8836,
+      "intensity": 0.6509,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 76,
+      "time_seconds": 1.25,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8788,
+      "intensity": 0.6364,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 77,
+      "time_seconds": 1.266667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8739,
+      "intensity": 0.6218,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 78,
+      "time_seconds": 1.283333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8691,
+      "intensity": 0.6073,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 79,
+      "time_seconds": 1.3,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8642,
+      "intensity": 0.5927,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 80,
+      "time_seconds": 1.316667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8594,
+      "intensity": 0.5782,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 81,
+      "time_seconds": 1.333333,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8545,
+      "intensity": 0.5636,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 82,
+      "time_seconds": 1.35,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8497,
+      "intensity": 0.5491,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 83,
+      "time_seconds": 1.366667,
+      "phase": "crescent_shards",
+      "slash_progress": 0.8448,
+      "intensity": 0.5345,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 84,
+      "time_seconds": 1.383333,
+      "phase": "residual_fade",
+      "slash_progress": 0.84,
+      "intensity": 0.52,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 85,
+      "time_seconds": 1.4,
+      "phase": "residual_fade",
+      "slash_progress": 0.8153,
+      "intensity": 0.5047,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 86,
+      "time_seconds": 1.416667,
+      "phase": "residual_fade",
+      "slash_progress": 0.7906,
+      "intensity": 0.4894,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 87,
+      "time_seconds": 1.433333,
+      "phase": "residual_fade",
+      "slash_progress": 0.7659,
+      "intensity": 0.4741,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 88,
+      "time_seconds": 1.45,
+      "phase": "residual_fade",
+      "slash_progress": 0.7412,
+      "intensity": 0.4588,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 89,
+      "time_seconds": 1.466667,
+      "phase": "residual_fade",
+      "slash_progress": 0.7165,
+      "intensity": 0.4435,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 90,
+      "time_seconds": 1.483333,
+      "phase": "residual_fade",
+      "slash_progress": 0.6918,
+      "intensity": 0.4282,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 91,
+      "time_seconds": 1.5,
+      "phase": "residual_fade",
+      "slash_progress": 0.6671,
+      "intensity": 0.4129,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 92,
+      "time_seconds": 1.516667,
+      "phase": "residual_fade",
+      "slash_progress": 0.6424,
+      "intensity": 0.3976,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 93,
+      "time_seconds": 1.533333,
+      "phase": "residual_fade",
+      "slash_progress": 0.6176,
+      "intensity": 0.3824,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 94,
+      "time_seconds": 1.55,
+      "phase": "residual_fade",
+      "slash_progress": 0.5929,
+      "intensity": 0.3671,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 95,
+      "time_seconds": 1.566667,
+      "phase": "residual_fade",
+      "slash_progress": 0.5682,
+      "intensity": 0.3518,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 96,
+      "time_seconds": 1.583333,
+      "phase": "residual_fade",
+      "slash_progress": 0.5435,
+      "intensity": 0.3365,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 97,
+      "time_seconds": 1.6,
+      "phase": "residual_fade",
+      "slash_progress": 0.5188,
+      "intensity": 0.3212,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 98,
+      "time_seconds": 1.616667,
+      "phase": "residual_fade",
+      "slash_progress": 0.4941,
+      "intensity": 0.3059,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 99,
+      "time_seconds": 1.633333,
+      "phase": "residual_fade",
+      "slash_progress": 0.4694,
+      "intensity": 0.2906,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 100,
+      "time_seconds": 1.65,
+      "phase": "residual_fade",
+      "slash_progress": 0.4447,
+      "intensity": 0.2753,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 101,
+      "time_seconds": 1.666667,
+      "phase": "residual_fade",
+      "slash_progress": 0.42,
+      "intensity": 0.26,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 102,
+      "time_seconds": 1.683333,
+      "phase": "residual_fade",
+      "slash_progress": 0.3953,
+      "intensity": 0.2447,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 103,
+      "time_seconds": 1.7,
+      "phase": "residual_fade",
+      "slash_progress": 0.3706,
+      "intensity": 0.2294,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 104,
+      "time_seconds": 1.716667,
+      "phase": "residual_fade",
+      "slash_progress": 0.3459,
+      "intensity": 0.2141,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 105,
+      "time_seconds": 1.733333,
+      "phase": "residual_fade",
+      "slash_progress": 0.3212,
+      "intensity": 0.1988,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 106,
+      "time_seconds": 1.75,
+      "phase": "residual_fade",
+      "slash_progress": 0.2965,
+      "intensity": 0.1835,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 107,
+      "time_seconds": 1.766667,
+      "phase": "residual_fade",
+      "slash_progress": 0.2718,
+      "intensity": 0.1682,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 108,
+      "time_seconds": 1.783333,
+      "phase": "residual_fade",
+      "slash_progress": 0.2471,
+      "intensity": 0.1529,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 109,
+      "time_seconds": 1.8,
+      "phase": "residual_fade",
+      "slash_progress": 0.2224,
+      "intensity": 0.1376,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 110,
+      "time_seconds": 1.816667,
+      "phase": "residual_fade",
+      "slash_progress": 0.1976,
+      "intensity": 0.1224,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 111,
+      "time_seconds": 1.833333,
+      "phase": "residual_fade",
+      "slash_progress": 0.1729,
+      "intensity": 0.1071,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 112,
+      "time_seconds": 1.85,
+      "phase": "residual_fade",
+      "slash_progress": 0.1482,
+      "intensity": 0.0918,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 113,
+      "time_seconds": 1.866667,
+      "phase": "residual_fade",
+      "slash_progress": 0.1235,
+      "intensity": 0.0765,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 114,
+      "time_seconds": 1.883333,
+      "phase": "residual_fade",
+      "slash_progress": 0.0988,
+      "intensity": 0.0612,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 115,
+      "time_seconds": 1.9,
+      "phase": "residual_fade",
+      "slash_progress": 0.0741,
+      "intensity": 0.0459,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 116,
+      "time_seconds": 1.916667,
+      "phase": "residual_fade",
+      "slash_progress": 0.0494,
+      "intensity": 0.0306,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 117,
+      "time_seconds": 1.933333,
+      "phase": "residual_fade",
+      "slash_progress": 0.0247,
+      "intensity": 0.0153,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 118,
+      "time_seconds": 1.95,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 119,
+      "time_seconds": 1.966667,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 120,
+      "time_seconds": 1.983333,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 121,
+      "time_seconds": 2.0,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 122,
+      "time_seconds": 2.016667,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 123,
+      "time_seconds": 2.033333,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 124,
+      "time_seconds": 2.05,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 125,
+      "time_seconds": 2.066667,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 126,
+      "time_seconds": 2.083333,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 127,
+      "time_seconds": 2.1,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 128,
+      "time_seconds": 2.116667,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 129,
+      "time_seconds": 2.133333,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 130,
+      "time_seconds": 2.15,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 131,
+      "time_seconds": 2.166667,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    },
+    {
+      "human_frame": 132,
+      "time_seconds": 2.183333,
+      "phase": "clean_idle",
+      "slash_progress": 0.0,
+      "intensity": 0.0,
+      "hit_stop": false
+    }
+  ]
+}

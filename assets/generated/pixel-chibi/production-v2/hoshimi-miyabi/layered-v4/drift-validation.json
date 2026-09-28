@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "logical_frames": 32,
+  "body_master_bbox": [
+    18,
+    5,
+    102,
+    124
+  ],
+  "body_composite_opaque_pixel_max_channel_diff": 0,
+  "body_anchor_drift_pixels": 0,
+  "body_scale_drift_pixels": 0,
+  "weapon_drift_pixels": 0,
+  "hover_loop": {
+    "human_frames": [
+      14,
+      25
+    ],
+    "consecutive_step_min": 1.0777773424970487,
+    "consecutive_step_max": 1.5237532608660762,
+    "wrap_step_25_to_14": 1.5237532608660762,
+    "wrap_within_normal_step_range": true,
+    "duration_seconds": 60
+  },
+  "videos": {
+    "miyabi-tailless-short-review.mp4": {
+      "width": 960,
+      "height": 360,
+      "r_frame_rate": "60/1",
+      "duration": "11.500000",
+      "nb_read_frames": "690"
+    },
+    "miyabi-tailless-60s-state-demo.mp4": {
+      "width": 960,
+      "height": 360,
+      "r_frame_rate": "60/1",
+      "duration": "63.500000",
+      "nb_read_frames": "3810"
+    }
+  }
+}

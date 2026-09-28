@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "not_cropped_by_canvas",
+      "ok": true,
+      "severity": "fail",
+      "detail": "inside canvas"
+    },
+    {
+      "check": "only_allowed_regions_changed",
+      "ok": true,
+      "severity": "fail",
+      "detail": "96 px in 13 drift clusters outside allowed regions (3.1% of kept area, limit 4%; largest cluster 12 px; 222 scattered px ignored)"
+    },
+    {
+      "check": "no_colour_group_lost",
+      "ok": true,
+      "severity": "fail",
+      "detail": "all colour groups kept"
+    },
+    {
+      "check": "area_stable",
+      "ok": true,
+      "severity": "fail",
+      "detail": "opaque area ratio 0.98 (limit \u00b115%)"
+    },
+    {
+      "check": "style_close_to_palette",
+      "ok": true,
+      "severity": "warn",
+      "detail": "mean OKLab error 0.015 (limit 0.05)"
+    },
+    {
+      "check": "no_stray_pixels",
+      "ok": true,
+      "severity": "warn",
+      "detail": "0 stray px removed"
+    },
+    {
+      "check": "scale_preserved",
+      "ok": true,
+      "severity": "warn",
+      "detail": "art pixel = 5.97 raw px (expected 6.00 for a 1024px output); if imagegen resized the character, verify proportions by eye"
+    }
+  ],
+  "raw": "assets/generated/pixel-chibi/imagegen-v1/firefly/sleep/raw/sc1.png",
+  "reference": "assets/references/imagegen-inputs/firefly/master_locked.png",
+  "composited": true,
+  "registration": {
+    "scale": 5.97,
+    "origin": [
+      34.6,
+      82.9
+    ],
+    "shift_x": 0,
+    "overlap": 0.728,
+    "snap": [
+      0,
+      -1
+    ]
+  },
+  "allowed_regions": [
+    "56,40,92,66"
+  ]
+}

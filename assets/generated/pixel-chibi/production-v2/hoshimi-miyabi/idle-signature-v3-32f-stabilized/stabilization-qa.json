@@ -1,0 +1,386 @@
+{
+  "frame_count": 32,
+  "pivot": {
+    "foot_center_x": 54.0,
+    "bottom_y": 123
+  },
+  "preview_fps": [
+    16,
+    20,
+    24
+  ],
+  "outputs": {
+    "right": {
+      "frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\right\\frames",
+      "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\right\\strip-32x1.png",
+      "previews": {
+        "16": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\right\\preview-32frames-16fps.gif",
+        "20": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\right\\preview-32frames-20fps.gif",
+        "24": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\right\\preview-32frames-24fps.gif"
+      }
+    },
+    "left": {
+      "frames": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\left\\frames",
+      "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\left\\strip-32x1.png",
+      "previews": {
+        "16": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\left\\preview-32frames-16fps.gif",
+        "20": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\left\\preview-32frames-20fps.gif",
+        "24": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-stabilized\\left\\preview-32frames-24fps.gif"
+      }
+    }
+  },
+  "offsets": [
+    {
+      "frame": 0,
+      "source_anchor": [
+        67.5,
+        123
+      ],
+      "offset": [
+        -14,
+        0
+      ]
+    },
+    {
+      "frame": 1,
+      "source_anchor": [
+        64.0,
+        123
+      ],
+      "offset": [
+        -10,
+        0
+      ]
+    },
+    {
+      "frame": 2,
+      "source_anchor": [
+        57.5,
+        123
+      ],
+      "offset": [
+        -4,
+        0
+      ]
+    },
+    {
+      "frame": 3,
+      "source_anchor": [
+        63.5,
+        123
+      ],
+      "offset": [
+        -10,
+        0
+      ]
+    },
+    {
+      "frame": 4,
+      "source_anchor": [
+        52.0,
+        123
+      ],
+      "offset": [
+        2,
+        0
+      ]
+    },
+    {
+      "frame": 5,
+      "source_anchor": [
+        54.0,
+        123
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 6,
+      "source_anchor": [
+        46.5,
+        123
+      ],
+      "offset": [
+        8,
+        0
+      ]
+    },
+    {
+      "frame": 7,
+      "source_anchor": [
+        46.0,
+        123
+      ],
+      "offset": [
+        8,
+        0
+      ]
+    },
+    {
+      "frame": 8,
+      "source_anchor": [
+        78.0,
+        122
+      ],
+      "offset": [
+        -24,
+        1
+      ]
+    },
+    {
+      "frame": 9,
+      "source_anchor": [
+        63.0,
+        121
+      ],
+      "offset": [
+        -9,
+        2
+      ]
+    },
+    {
+      "frame": 10,
+      "source_anchor": [
+        69.5,
+        122
+      ],
+      "offset": [
+        -16,
+        1
+      ]
+    },
+    {
+      "frame": 11,
+      "source_anchor": [
+        60.0,
+        121
+      ],
+      "offset": [
+        -6,
+        2
+      ]
+    },
+    {
+      "frame": 12,
+      "source_anchor": [
+        62.0,
+        122
+      ],
+      "offset": [
+        -8,
+        1
+      ]
+    },
+    {
+      "frame": 13,
+      "source_anchor": [
+        53.0,
+        121
+      ],
+      "offset": [
+        1,
+        2
+      ]
+    },
+    {
+      "frame": 14,
+      "source_anchor": [
+        46.5,
+        122
+      ],
+      "offset": [
+        8,
+        1
+      ]
+    },
+    {
+      "frame": 15,
+      "source_anchor": [
+        45.5,
+        121
+      ],
+      "offset": [
+        8,
+        2
+      ]
+    },
+    {
+      "frame": 16,
+      "source_anchor": [
+        67.0,
+        123
+      ],
+      "offset": [
+        -13,
+        0
+      ]
+    },
+    {
+      "frame": 17,
+      "source_anchor": [
+        62.0,
+        120
+      ],
+      "offset": [
+        -8,
+        3
+      ]
+    },
+    {
+      "frame": 18,
+      "source_anchor": [
+        57.5,
+        123
+      ],
+      "offset": [
+        -4,
+        0
+      ]
+    },
+    {
+      "frame": 19,
+      "source_anchor": [
+        58.5,
+        119
+      ],
+      "offset": [
+        -4,
+        4
+      ]
+    },
+    {
+      "frame": 20,
+      "source_anchor": [
+        52.0,
+        123
+      ],
+      "offset": [
+        2,
+        0
+      ]
+    },
+    {
+      "frame": 21,
+      "source_anchor": [
+        59.0,
+        120
+      ],
+      "offset": [
+        -5,
+        3
+      ]
+    },
+    {
+      "frame": 22,
+      "source_anchor": [
+        46.5,
+        123
+      ],
+      "offset": [
+        8,
+        0
+      ]
+    },
+    {
+      "frame": 23,
+      "source_anchor": [
+        50.0,
+        120
+      ],
+      "offset": [
+        4,
+        3
+      ]
+    },
+    {
+      "frame": 24,
+      "source_anchor": [
+        67.0,
+        122
+      ],
+      "offset": [
+        -13,
+        1
+      ]
+    },
+    {
+      "frame": 25,
+      "source_anchor": [
+        60.0,
+        118
+      ],
+      "offset": [
+        -6,
+        5
+      ]
+    },
+    {
+      "frame": 26,
+      "source_anchor": [
+        57.5,
+        122
+      ],
+      "offset": [
+        -4,
+        1
+      ]
+    },
+    {
+      "frame": 27,
+      "source_anchor": [
+        58.0,
+        118
+      ],
+      "offset": [
+        -4,
+        5
+      ]
+    },
+    {
+      "frame": 28,
+      "source_anchor": [
+        52.0,
+        122
+      ],
+      "offset": [
+        2,
+        1
+      ]
+    },
+    {
+      "frame": 29,
+      "source_anchor": [
+        51.0,
+        118
+      ],
+      "offset": [
+        3,
+        5
+      ]
+    },
+    {
+      "frame": 30,
+      "source_anchor": [
+        46.5,
+        122
+      ],
+      "offset": [
+        8,
+        1
+      ]
+    },
+    {
+      "frame": 31,
+      "source_anchor": [
+        44.0,
+        118
+      ],
+      "offset": [
+        10,
+        5
+      ]
+    }
+  ]
+}

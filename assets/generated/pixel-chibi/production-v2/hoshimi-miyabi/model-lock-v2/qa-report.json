@@ -1,0 +1,57 @@
+{
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\approval-source-v2.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "grid": {
+    "columns": 2,
+    "rows": 1
+  },
+  "frame_count": 2,
+  "cell_size": [
+    128,
+    128
+  ],
+  "fps": 16,
+  "all_corners_transparent": true,
+  "outputs": {
+    "sheet": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\sheet-4x4.png",
+    "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\strip-16x1.png",
+    "preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\preview-16fps.gif"
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\frames\\frame-00.png",
+      "alpha_bounds": [
+        36,
+        3,
+        95,
+        120
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "frame": 1,
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\model-lock-v2\\frames\\frame-01.png",
+      "alpha_bounds": [
+        31,
+        4,
+        86,
+        120
+      ],
+      "transparent_corners": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

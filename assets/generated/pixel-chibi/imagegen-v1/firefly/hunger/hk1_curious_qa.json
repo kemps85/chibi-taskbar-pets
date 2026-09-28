@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "not_cropped_by_canvas",
+      "ok": true,
+      "severity": "fail",
+      "detail": "inside canvas"
+    },
+    {
+      "check": "only_allowed_regions_changed",
+      "ok": true,
+      "severity": "fail",
+      "detail": "53 px in 5 drift clusters outside allowed regions (1.5% of kept area, limit 4%; largest cluster 21 px; 159 scattered px ignored)"
+    },
+    {
+      "check": "no_colour_group_lost",
+      "ok": true,
+      "severity": "fail",
+      "detail": "all colour groups kept"
+    },
+    {
+      "check": "area_stable",
+      "ok": true,
+      "severity": "fail",
+      "detail": "opaque area ratio 1.00 (limit \u00b115%)"
+    },
+    {
+      "check": "style_close_to_palette",
+      "ok": true,
+      "severity": "warn",
+      "detail": "mean OKLab error 0.014 (limit 0.05)"
+    },
+    {
+      "check": "no_stray_pixels",
+      "ok": true,
+      "severity": "warn",
+      "detail": "0 stray px removed"
+    },
+    {
+      "check": "pixel_grid_preserved",
+      "ok": true,
+      "severity": "warn",
+      "detail": "sampled at 5.99 raw px per art pixel (input 6.00); grid kept"
+    }
+  ],
+  "raw": "assets/generated/pixel-chibi/imagegen-v1/firefly/hunger/raw/hk1_curious.png",
+  "reference": "assets/generated/pixel-chibi/imagegen-v1/firefly/hunger/hk1.png",
+  "composited": true,
+  "registration": {
+    "scale": 5.99,
+    "origin": [
+      31.9,
+      79.3
+    ],
+    "shift_x": 0,
+    "overlap": 0.872,
+    "snap": [
+      0,
+      -1
+    ]
+  },
+  "allowed_regions": [
+    "60,46,86,60",
+    "66,58,78,64"
+  ]
+}

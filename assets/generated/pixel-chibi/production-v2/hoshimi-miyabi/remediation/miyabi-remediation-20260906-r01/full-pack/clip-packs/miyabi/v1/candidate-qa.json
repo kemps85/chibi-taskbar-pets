@@ -1,0 +1,10 @@
+{
+  "status": "CANDIDATE_USER_APPROVAL_PENDING",
+  "sources": [
+    "../spirit_tail/qa.json",
+    "../sleep_cue/qa.json",
+    "../walk/qa.json",
+    "../hunger_cue/qa.json"
+  ],
+  "note": "Technical candidate only; not an approval or stable-pack manifest."
+}

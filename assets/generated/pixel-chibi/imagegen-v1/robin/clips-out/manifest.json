@@ -1,0 +1,153 @@
+{
+  "clips": {
+    "idle": {
+      "frame_count": 7,
+      "frame_durations_ms": [
+        400,
+        120,
+        580,
+        500,
+        700,
+        500,
+        1200
+      ],
+      "loop_policy": "loop",
+      "frames": "idle/frame-{index:000}.png"
+    },
+    "hunger_cue": {
+      "frame_count": 6,
+      "frame_durations_ms": [
+        200,
+        160,
+        200,
+        520,
+        140,
+        120
+      ],
+      "loop_policy": "once",
+      "frames": "hunger_cue/frame-{index:000}.png"
+    },
+    "eat": {
+      "frame_count": 9,
+      "frame_durations_ms": [
+        120,
+        380,
+        300,
+        200,
+        300,
+        250,
+        150,
+        140,
+        160
+      ],
+      "loop_policy": "once",
+      "frames": "eat/frame-{index:000}.png"
+    },
+    "sleep_cue": {
+      "frame_count": 5,
+      "frame_durations_ms": [
+        200,
+        140,
+        360,
+        400,
+        500
+      ],
+      "loop_policy": "once",
+      "frames": "sleep_cue/frame-{index:000}.png"
+    },
+    "sleep_enter": {
+      "frame_count": 5,
+      "frame_durations_ms": [
+        150,
+        300,
+        150,
+        300,
+        300
+      ],
+      "loop_policy": "once",
+      "frames": "sleep_enter/frame-{index:000}.png"
+    },
+    "sleep_loop": {
+      "frame_count": 4,
+      "frame_durations_ms": [
+        500,
+        1000,
+        500,
+        1000
+      ],
+      "loop_policy": "loop",
+      "frames": "sleep_loop/frame-{index:000}.png"
+    },
+    "wake": {
+      "frame_count": 6,
+      "frame_durations_ms": [
+        80,
+        150,
+        200,
+        150,
+        150,
+        120
+      ],
+      "loop_policy": "once",
+      "frames": "wake/frame-{index:000}.png"
+    },
+    "signature": {
+      "frame_count": 30,
+      "frame_durations_ms": [
+        300,
+        120,
+        200,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        200,
+        120,
+        400
+      ],
+      "loop_policy": "once",
+      "frames": "signature/frame-{index:000}.png"
+    },
+    "walk": {
+      "frame_count": 8,
+      "frame_durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop_policy": "loop",
+      "frames": "walk/frame-{index:000}.png"
+    }
+  },
+  "character": "robin",
+  "canvas": [
+    160,
+    144
+  ],
+  "master_direction": "right"
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "generation_mode": "built-in image_gen; generated sources normalized locally into production sprites",
+  "style_master": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+  "prompt_set": "assets\\generated\\pixel-chibi\\production-v2\\remaining-generation-prompts-v1.md",
+  "playback": {
+    "logical_frames": 32,
+    "enter_once": [
+      1,
+      13
+    ],
+    "hover_loop": [
+      14,
+      25
+    ],
+    "hover_seconds": 60,
+    "exit_once": [
+      26,
+      32
+    ],
+    "render_fps": 60,
+    "filter": "nearest-neighbor"
+  },
+  "combined_short_review": "assets\\generated\\pixel-chibi\\production-v2\\remaining-signature-short-review-v1.mp4",
+  "combined_review_frame_3s": "assets\\generated\\pixel-chibi\\production-v2\\remaining-signature-short-review-v1-frame-3s.png",
+  "characters": {
+    "evanescia": {
+      "status": "PASS",
+      "body_master": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\review\\evanescia-body-master-v1-clean.png",
+      "body_source": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\source\\evanescia-body-imagegen-source-v1.png",
+      "effect_id": "sakura-breeze",
+      "effect_source": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\source\\sakura-breeze-imagegen-source-v1.png",
+      "production_root": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean",
+      "short_review_video": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean\\video\\evanescia-sakura-breeze-short-review.mp4",
+      "exact_60s_video": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean\\video\\evanescia-sakura-breeze-60s-state-demo.mp4",
+      "logical_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean\\video\\evanescia-sakura-breeze-logical-contact-sheet.png",
+      "qa_report": "assets\\generated\\pixel-chibi\\production-v2\\evanescia\\signature-v1-clean\\cleanup-and-drift-validation.json"
+    },
+    "robin": {
+      "status": "PASS",
+      "body_master": "assets\\generated\\pixel-chibi\\production-v2\\robin\\review\\robin-body-master-v1-clean.png",
+      "body_source": "assets\\generated\\pixel-chibi\\production-v2\\robin\\source\\robin-body-imagegen-source-v1.png",
+      "effect_id": "feather-note",
+      "effect_source": "assets\\generated\\pixel-chibi\\production-v2\\robin\\source\\feather-note-imagegen-source-v1.png",
+      "production_root": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean",
+      "short_review_video": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\video\\robin-feather-note-short-review.mp4",
+      "exact_60s_video": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\video\\robin-feather-note-60s-state-demo.mp4",
+      "logical_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\video\\robin-feather-note-logical-contact-sheet.png",
+      "qa_report": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\cleanup-and-drift-validation.json"
+    },
+    "remielle-dan": {
+      "status": "PASS",
+      "body_master": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\review\\remielle-dan-body-master-v1-clean.png",
+      "body_source": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\source\\remielle-dan-body-imagegen-source-v1.png",
+      "effect_id": "floating-radiance",
+      "effect_source": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\source\\floating-radiance-imagegen-source-v1.png",
+      "production_root": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\signature-v1-clean",
+      "short_review_video": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\signature-v1-clean\\video\\remielle-dan-floating-radiance-short-review.mp4",
+      "exact_60s_video": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\signature-v1-clean\\video\\remielle-dan-floating-radiance-60s-state-demo.mp4",
+      "logical_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\signature-v1-clean\\video\\remielle-dan-floating-radiance-logical-contact-sheet.png",
+      "qa_report": "assets\\generated\\pixel-chibi\\production-v2\\remielle-dan\\signature-v1-clean\\cleanup-and-drift-validation.json"
+    },
+    "ye-shunguang": {
+      "status": "PASS",
+      "body_master": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\review\\ye-shunguang-body-master-v1-clean.png",
+      "body_source": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\source\\ye-shunguang-body-imagegen-source-v1.png",
+      "effect_id": "qingming-afterimages",
+      "effect_source": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\source\\qingming-afterimages-imagegen-source-v1.png",
+      "production_root": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean",
+      "short_review_video": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\video\\ye-shunguang-qingming-afterimages-short-review.mp4",
+      "exact_60s_video": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\video\\ye-shunguang-qingming-afterimages-60s-state-demo.mp4",
+      "logical_contact_sheet": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\video\\ye-shunguang-qingming-afterimages-logical-contact-sheet.png",
+      "qa_report": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\cleanup-and-drift-validation.json"
+    }
+  }
+}

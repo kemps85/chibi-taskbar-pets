@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "character_id": "robin",
+  "effect_id": "feather-note",
+  "logical_frame_count": 32,
+  "human_timeline": {
+    "enter_once": [
+      1,
+      13
+    ],
+    "hover_loop": [
+      14,
+      25
+    ],
+    "hover_state_seconds": 60,
+    "exit_once": [
+      26,
+      32
+    ]
+  },
+  "layer_lock": {
+    "body_sha256": "80d719ef9460142d8ddd0679b36935b5a4256e57f76555f0bbefeb40e8032d9d",
+    "body_pixel_drift": 0,
+    "body_scale_drift": 0,
+    "body_anchor_drift": 0,
+    "weapon_drift": 0,
+    "effect_is_separate_layer": true
+  },
+  "cleanup": {
+    "effect_edge_matte_pixels_recolored": 27,
+    "body_transparent_corners": true
+  },
+  "video_renderer": {
+    "fps": 60,
+    "sprite_sampling": "continuous transform at render FPS",
+    "filter": "nearest-neighbour"
+  },
+  "outputs": {
+    "body_layer": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\layers\\robin-body-fixed.png",
+    "effect_layer": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\layers\\feather-note-fixed.png",
+    "short_review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\video\\robin-feather-note-short-review.mp4",
+      "fps": 60,
+      "duration_seconds": 11.5,
+      "hover_seconds": 8.0,
+      "frame_count": 690,
+      "resolution": [
+        960,
+        360
+      ]
+    },
+    "exact_60_second_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\robin\\signature-v1-clean\\video\\robin-feather-note-60s-state-demo.mp4",
+      "fps": 60,
+      "duration_seconds": 63.5,
+      "hover_seconds": 60.0,
+      "frame_count": 3810,
+      "resolution": [
+        960,
+        360
+      ]
+    }
+  },
+  "poses": [
+    {
+      "human_frame": 1,
+      "effect_center": [
+        34.0,
+        34.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    },
+    {
+      "human_frame": 2,
+      "effect_center": [
+        33.803,
+        33.882
+      ],
+      "scale": 0.2353,
+      "opacity": 0.2083
+    },
+    {
+      "human_frame": 3,
+      "effect_center": [
+        33.259,
+        33.556
+      ],
+      "scale": 0.2778,
+      "opacity": 0.4167
+    },
+    {
+      "human_frame": 4,
+      "effect_center": [
+        32.438,
+        33.062
+      ],
+      "scale": 0.3419,
+      "opacity": 0.625
+    },
+    {
+      "human_frame": 5,
+      "effect_center": [
+        31.407,
+        32.444
+      ],
+      "scale": 0.4222,
+      "opacity": 0.8333
+    },
+    {
+      "human_frame": 6,
+      "effect_center": [
+        30.238,
+        31.743
+      ],
+      "scale": 0.5134,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 7,
+      "effect_center": [
+        29.0,
+        31.0
+      ],
+      "scale": 0.61,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 8,
+      "effect_center": [
+        27.762,
+        30.257
+      ],
+      "scale": 0.7066,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 9,
+      "effect_center": [
+        26.593,
+        29.556
+      ],
+      "scale": 0.7978,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 10,
+      "effect_center": [
+        25.562,
+        28.938
+      ],
+      "scale": 0.8781,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 11,
+      "effect_center": [
+        24.741,
+        28.444
+      ],
+      "scale": 0.9422,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 12,
+      "effect_center": [
+        24.197,
+        28.118
+      ],
+      "scale": 0.9847,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 13,
+      "effect_center": [
+        24.0,
+        28.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 14,
+      "effect_center": [
+        26.0,
+        28.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 15,
+      "effect_center": [
+        25.732,
+        29.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 16,
+      "effect_center": [
+        25.0,
+        30.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 17,
+      "effect_center": [
+        24.0,
+        31.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 18,
+      "effect_center": [
+        23.0,
+        30.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 19,
+      "effect_center": [
+        22.268,
+        29.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 20,
+      "effect_center": [
+        22.0,
+        28.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 21,
+      "effect_center": [
+        22.268,
+        26.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 22,
+      "effect_center": [
+        23.0,
+        25.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 23,
+      "effect_center": [
+        24.0,
+        25.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 24,
+      "effect_center": [
+        25.0,
+        25.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 25,
+      "effect_center": [
+        25.732,
+        26.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 26,
+      "effect_center": [
+        25.732,
+        26.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 27,
+      "effect_center": [
+        26.344,
+        27.056
+      ],
+      "scale": 0.9422,
+      "opacity": 0.9259
+    },
+    {
+      "human_frame": 28,
+      "effect_center": [
+        27.876,
+        28.444
+      ],
+      "scale": 0.7978,
+      "opacity": 0.7407
+    },
+    {
+      "human_frame": 29,
+      "effect_center": [
+        29.866,
+        30.25
+      ],
+      "scale": 0.61,
+      "opacity": 0.5
+    },
+    {
+      "human_frame": 30,
+      "effect_center": [
+        31.856,
+        32.056
+      ],
+      "scale": 0.4222,
+      "opacity": 0.2593
+    },
+    {
+      "human_frame": 31,
+      "effect_center": [
+        33.388,
+        33.444
+      ],
+      "scale": 0.2778,
+      "opacity": 0.0741
+    },
+    {
+      "human_frame": 32,
+      "effect_center": [
+        34.0,
+        34.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    }
+  ]
+}

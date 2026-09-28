@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\source\\sam-dual-swords-v2-short-grips.png",
+  "output": "assets\\generated\\pixel-chibi\\production-v2\\firefly\\sam-complete-combustion\\sam-dual-swords-master-right-v2-short-grips.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_alpha_bounds_after_background_cleanup": [
+    158,
+    158,
+    1137,
+    1129
+  ],
+  "output_size": [
+    128,
+    128
+  ],
+  "output_alpha_bounds": [
+    4,
+    5,
+    123,
+    123
+  ],
+  "placement": {
+    "max_width": 122,
+    "max_height": 118,
+    "center_x": 64,
+    "bottom": 123,
+    "position": [
+      4,
+      5
+    ],
+    "resized_subject": [
+      119,
+      118
+    ]
+  },
+  "cleanup": {
+    "passes": 4,
+    "fringe_pixels_recolored": 531,
+    "stable": true
+  },
+  "transparent_corners": true,
+  "alpha_value_count": 2
+}

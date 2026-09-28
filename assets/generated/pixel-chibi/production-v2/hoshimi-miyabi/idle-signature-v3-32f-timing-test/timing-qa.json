@@ -1,0 +1,19 @@
+{
+  "purpose": "timing prototype before drawing final in-between frames",
+  "source_unique_keyframes": 16,
+  "prototype_frame_count": 32,
+  "fps": 16,
+  "clip_duration_seconds": 2.0,
+  "direction_strategy": "horizontal mirror requested by user",
+  "final_art_requirement": "replace held duplicate ticks with 16 drawn in-between frames after timing approval",
+  "outputs": {
+    "right": {
+      "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-timing-test\\right\\strip-32x1.png",
+      "preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-timing-test\\right\\preview-32frames-16fps.gif"
+    },
+    "left": {
+      "strip": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-timing-test\\left\\strip-32x1.png",
+      "preview": "assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\idle-signature-v3-32f-timing-test\\left\\preview-32frames-16fps.gif"
+    }
+  }
+}

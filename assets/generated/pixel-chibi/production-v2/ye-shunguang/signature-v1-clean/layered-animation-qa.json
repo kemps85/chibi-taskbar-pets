@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "character_id": "ye-shunguang",
+  "effect_id": "qingming-afterimages",
+  "logical_frame_count": 32,
+  "human_timeline": {
+    "enter_once": [
+      1,
+      13
+    ],
+    "hover_loop": [
+      14,
+      25
+    ],
+    "hover_state_seconds": 60,
+    "exit_once": [
+      26,
+      32
+    ]
+  },
+  "layer_lock": {
+    "body_sha256": "3d1294f54d32cc0df73df2c010d4b7bdaacea276acf76712a85d1f5cc5a89dc9",
+    "body_pixel_drift": 0,
+    "body_scale_drift": 0,
+    "body_anchor_drift": 0,
+    "weapon_drift": 0,
+    "effect_is_separate_layer": true
+  },
+  "cleanup": {
+    "effect_edge_matte_pixels_recolored": 8,
+    "body_transparent_corners": true
+  },
+  "video_renderer": {
+    "fps": 60,
+    "sprite_sampling": "continuous transform at render FPS",
+    "filter": "nearest-neighbour"
+  },
+  "outputs": {
+    "body_layer": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\layers\\ye-shunguang-body-fixed.png",
+    "effect_layer": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\layers\\qingming-afterimages-fixed.png",
+    "short_review_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\video\\ye-shunguang-qingming-afterimages-short-review.mp4",
+      "fps": 60,
+      "duration_seconds": 11.5,
+      "hover_seconds": 8.0,
+      "frame_count": 690,
+      "resolution": [
+        960,
+        360
+      ]
+    },
+    "exact_60_second_video": {
+      "path": "assets\\generated\\pixel-chibi\\production-v2\\ye-shunguang\\signature-v1-clean\\video\\ye-shunguang-qingming-afterimages-60s-state-demo.mp4",
+      "fps": 60,
+      "duration_seconds": 63.5,
+      "hover_seconds": 60.0,
+      "frame_count": 3810,
+      "resolution": [
+        960,
+        360
+      ]
+    }
+  },
+  "poses": [
+    {
+      "human_frame": 1,
+      "effect_center": [
+        101.0,
+        69.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    },
+    {
+      "human_frame": 2,
+      "effect_center": [
+        100.961,
+        68.213
+      ],
+      "scale": 0.2353,
+      "opacity": 0.2083
+    },
+    {
+      "human_frame": 3,
+      "effect_center": [
+        100.852,
+        66.037
+      ],
+      "scale": 0.2778,
+      "opacity": 0.4167
+    },
+    {
+      "human_frame": 4,
+      "effect_center": [
+        100.688,
+        62.75
+      ],
+      "scale": 0.3419,
+      "opacity": 0.625
+    },
+    {
+      "human_frame": 5,
+      "effect_center": [
+        100.481,
+        58.63
+      ],
+      "scale": 0.4222,
+      "opacity": 0.8333
+    },
+    {
+      "human_frame": 6,
+      "effect_center": [
+        100.248,
+        53.954
+      ],
+      "scale": 0.5134,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 7,
+      "effect_center": [
+        100.0,
+        49.0
+      ],
+      "scale": 0.61,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 8,
+      "effect_center": [
+        99.752,
+        44.046
+      ],
+      "scale": 0.7066,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 9,
+      "effect_center": [
+        99.519,
+        39.37
+      ],
+      "scale": 0.7978,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 10,
+      "effect_center": [
+        99.312,
+        35.25
+      ],
+      "scale": 0.8781,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 11,
+      "effect_center": [
+        99.148,
+        31.963
+      ],
+      "scale": 0.9422,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 12,
+      "effect_center": [
+        99.039,
+        29.787
+      ],
+      "scale": 0.9847,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 13,
+      "effect_center": [
+        99.0,
+        29.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 14,
+      "effect_center": [
+        101.0,
+        29.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 15,
+      "effect_center": [
+        100.732,
+        30.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 16,
+      "effect_center": [
+        100.0,
+        31.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 17,
+      "effect_center": [
+        99.0,
+        32.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 18,
+      "effect_center": [
+        98.0,
+        31.598
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 19,
+      "effect_center": [
+        97.268,
+        30.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 20,
+      "effect_center": [
+        97.0,
+        29.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 21,
+      "effect_center": [
+        97.268,
+        27.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 22,
+      "effect_center": [
+        98.0,
+        26.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 23,
+      "effect_center": [
+        99.0,
+        26.0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 24,
+      "effect_center": [
+        100.0,
+        26.402
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 25,
+      "effect_center": [
+        100.732,
+        27.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 26,
+      "effect_center": [
+        100.732,
+        27.5
+      ],
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    {
+      "human_frame": 27,
+      "effect_center": [
+        100.752,
+        30.574
+      ],
+      "scale": 0.9422,
+      "opacity": 0.9259
+    },
+    {
+      "human_frame": 28,
+      "effect_center": [
+        100.802,
+        38.259
+      ],
+      "scale": 0.7978,
+      "opacity": 0.7407
+    },
+    {
+      "human_frame": 29,
+      "effect_center": [
+        100.866,
+        48.25
+      ],
+      "scale": 0.61,
+      "opacity": 0.5
+    },
+    {
+      "human_frame": 30,
+      "effect_center": [
+        100.931,
+        58.241
+      ],
+      "scale": 0.4222,
+      "opacity": 0.2593
+    },
+    {
+      "human_frame": 31,
+      "effect_center": [
+        100.98,
+        65.926
+      ],
+      "scale": 0.2778,
+      "opacity": 0.0741
+    },
+    {
+      "human_frame": 32,
+      "effect_center": [
+        101.0,
+        69.0
+      ],
+      "scale": 0.22,
+      "opacity": 0.0
+    }
+  ]
+}

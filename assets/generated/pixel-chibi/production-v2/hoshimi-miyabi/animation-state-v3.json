@@ -1,0 +1,30 @@
+{
+  "character": "hoshimi-miyabi",
+  "renderer": {
+    "fps": 16,
+    "cell_size": [128, 128],
+    "direction_strategy": "mirror_right_source_for_left"
+  },
+  "signature_sequence": {
+    "single_sheet_timeline": {
+      "frame_numbering": "one_based",
+      "enter_once": [1, 13],
+      "idle_loop": {
+        "frames": [14, 25],
+        "repeat_until_seconds": 60
+      },
+      "exit_once": [26, 32]
+    },
+    "next_state": {
+      "after_exit": ["idle", "walk", "eat", "sleep"],
+      "rule": "choose_from_current_pet_needs_and_random_idle_weights"
+    }
+  },
+  "production_note": "Play frames 1-13 once, loop frames 14-25 until the 60-second idle timer expires, then play frames 26-32 once and select the next animation. Do not create a minute-long frame sequence.",
+  "fps_decision": {
+    "render_loop_fps": 60,
+    "sprite_animation_fps": "pending comparison between 20 and 24",
+    "note": "Movement across the taskbar uses delta-time at 60 FPS and is independent from sprite-frame playback."
+  },
+  "approval_status": "stabilized_fps_comparison_pending_user_review"
+}

@@ -1,0 +1,375 @@
+{
+  "character": "miyabi",
+  "rig": {
+    "pivot_y": 122,
+    "trailing": {
+      "attach_x": 52,
+      "reach_x": 30,
+      "start_y": 60,
+      "reach_y": 50,
+      "end_y": 126
+    }
+  },
+  "clips": {
+    "idle": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 580
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "bob": -1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 700,
+          "bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "trail_bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 1200
+        }
+      ]
+    },
+    "hunger_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        },
+        {
+          "pose": "hunger/hk0_look.png",
+          "ms": 200
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 160,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 200,
+          "trail_bob": 1
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 400
+        },
+        {
+          "pose": "hunger/hk0_look.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "eat": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 180
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 380
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 220,
+          "bob": 1
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 320
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        }
+      ]
+    },
+    "sleep_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 360
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 400,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 500,
+          "bob": 1
+        }
+      ]
+    },
+    "sleep_enter": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 300
+        }
+      ]
+    },
+    "sleep_loop": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "bob": 1,
+          "pivot_y": 117
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "bob": 1,
+          "pivot_y": 117
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "pivot_y": 117
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "pivot_y": 117
+        }
+      ],
+      "rig": {
+        "carried": []
+      }
+    },
+    "wake": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 80
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 120,
+          "pivot_y": 46,
+          "bob": -1
+        },
+        {
+          "pose": "wake/sw1.png",
+          "ms": 150
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 160,
+          "pivot_y": 46,
+          "bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 130,
+          "bob": 1,
+          "trail_bob": 1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 130,
+          "trail_bob": 1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 80
+        }
+      ]
+    },
+    "signature": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 60
+        },
+        {
+          "pose": "signature/sig1.png",
+          "ms": 240
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 60,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "progress": 0.55
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 60,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "progress": 1.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 200,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "progress": 1.0
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 140,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "decay": 0.3
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 140,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "decay": 0.6
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig2.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "crescent",
+              "cx": 96,
+              "cy": 83,
+              "r": 56,
+              "a0": 70,
+              "a1": 0,
+              "thickness": 7,
+              "shard_at": 0.45,
+              "decay": 0.9
+            }
+          ]
+        },
+        {
+          "pose": "signature/sig1.png",
+          "ms": 130
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    }
+  },
+  "_walk": "walk is built by scripts/build_painted_walk.py (painted IK legs, feet world-locked at 48 px/s)"
+}

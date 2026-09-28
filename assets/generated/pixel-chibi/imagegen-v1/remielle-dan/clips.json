@@ -1,0 +1,826 @@
+{
+  "character": "remielle-dan",
+  "rig": {
+    "pivot_y": 110,
+    "trailing": {
+      "attach_x": 58,
+      "reach_x": 15,
+      "start_y": 60,
+      "reach_y": 20,
+      "end_y": 104
+    },
+    "carried": []
+  },
+  "_walk": "walk is built by scripts/build_painted_walk.py",
+  "clips": {
+    "idle": {
+      "loop_policy": "loop",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 400
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 580
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "bob": -1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 700,
+          "bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 500,
+          "trail_bob": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 1200
+        }
+      ]
+    },
+    "hunger_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 160,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 200,
+          "trail_bob": 1
+        },
+        {
+          "pose": "hunger/hk1.png",
+          "ms": 520
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "eat": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 380
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 200,
+          "bob": 1
+        },
+        {
+          "pose": "eat/ek1.png",
+          "ms": 300
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 250
+        },
+        {
+          "pose": "eat/ek2.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 160
+        }
+      ]
+    },
+    "sleep_cue": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 140
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 360
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 400,
+          "bob": 1,
+          "trail_bob": 0
+        },
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 500,
+          "bob": 1
+        }
+      ]
+    },
+    "sleep_enter": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sc1.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 150,
+          "bob": 1
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 300
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 300
+        }
+      ]
+    },
+    "sleep_loop": {
+      "loop_policy": "loop",
+      "rig": {
+        "carried": []
+      },
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "bob": 1,
+          "pivot_y": 110
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "bob": 1,
+          "pivot_y": 110
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 500,
+          "pivot_y": 110
+        },
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 1000,
+          "pivot_y": 110
+        }
+      ]
+    },
+    "wake": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "sleep/sk2.png",
+          "ms": 80
+        },
+        {
+          "pose": "sleep/sk1.png",
+          "ms": 150
+        },
+        {
+          "pose": "sleep/sk0.png",
+          "ms": 200
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "bob": 1,
+          "trail_bob": 1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "trail_bob": 1,
+          "trail_dx": -1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 120
+        }
+      ]
+    },
+    "signature": {
+      "loop_policy": "once",
+      "frames": [
+        {
+          "pose": "idle/k1.png",
+          "ms": 300
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 250
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 70,
+              "y": 105,
+              "r": 16,
+              "t": 0.1,
+              "color": "white",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.0,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.0,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.12,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.08,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.24,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.16,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.36,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.24,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.48,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.32,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.6,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.4,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.72,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.48,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.84,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.56,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg1.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 110,
+              "r": 22,
+              "t": 0.96,
+              "color": "white",
+              "count": 4
+            },
+            {
+              "type": "feathers",
+              "x0": 50,
+              "x1": 110,
+              "y0": 95,
+              "t": 0.64,
+              "count": 3,
+              "fall": 40
+            }
+          ]
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 150,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 70,
+              "y": 60,
+              "r": 20,
+              "t": 0.4,
+              "color": "white",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.0,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.0,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.1,
+              "color": "white",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.07,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.2,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.14,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.30000000000000004,
+              "color": "white",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.21000000000000002,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.4,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.28,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.5,
+              "color": "white",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.35000000000000003,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.6000000000000001,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.42000000000000004,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.7000000000000001,
+              "color": "white",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.49000000000000005,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.8,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.56,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": -1,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 0.9,
+              "color": "white",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.6300000000000001,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg2.png",
+          "ms": 240,
+          "bob": 0,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 80,
+              "y": 45,
+              "r": 26,
+              "t": 1.0,
+              "color": "pink",
+              "count": 5
+            },
+            {
+              "type": "feathers",
+              "x0": 40,
+              "x1": 120,
+              "y0": 35,
+              "t": 0.7000000000000001,
+              "count": 4,
+              "fall": 70
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 900,
+          "fx": [
+            {
+              "type": "sparkle",
+              "x": 76,
+              "y": 88,
+              "r": 10,
+              "t": 0.3,
+              "color": "pink",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "pose": "signature/sg3.png",
+          "ms": 400,
+          "bob": 1
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 300
+        },
+        {
+          "pose": "idle/k2_blink.png",
+          "ms": 120
+        },
+        {
+          "pose": "idle/k1.png",
+          "ms": 300
+        }
+      ]
+    }
+  }
+}

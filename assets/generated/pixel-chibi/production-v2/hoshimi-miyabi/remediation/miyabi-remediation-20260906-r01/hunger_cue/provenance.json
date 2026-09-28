@@ -1,0 +1,63 @@
+{
+  "candidateId": "miyabi-remediation-20260906-r01-hunger-cue-v1",
+  "createdUtc": "2026-09-05T21:34:04.986813+00:00",
+  "tool": "deterministic-Pillow-compositor",
+  "imagegen": {
+    "used": false
+  },
+  "sourceIdentity": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\layered-v6-clean\\layers\\miyabi-body-fixed.png",
+  "sourceIdentitySha256": "9be92312af1b4d43858548bc16f8e444b4a6e2c4ec28cd8c4e85f4a9b5217e6a",
+  "sourceFoodFrames": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\runtime\\taskbar-pet\\clip-packs\\miyabi\\v1\\clips\\hunger_cue\\right\\frames",
+  "operations": [
+    "place unchanged identity master at (4,19)",
+    "copy only existing hunger food-area pixels with x>=110 from each stable source frame",
+    "preserve original candidate timing 8x150ms",
+    "no scaling",
+    "no rotation",
+    "no palette-wide edit",
+    "no behavior or stable-pack modification"
+  ],
+  "outputHashes": [
+    {
+      "frameId": "frame-000",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-000.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-001",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-001.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-002",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-002.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-003",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-003.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-004",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-004.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-005",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-005.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-006",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-006.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    },
+    {
+      "frameId": "frame-007",
+      "path": "C:\\Users\\ASUS\\Documents\\ChatGPT\\Game\\assets\\generated\\pixel-chibi\\production-v2\\hoshimi-miyabi\\remediation\\miyabi-remediation-20260906-r01\\hunger_cue\\right\\frames\\frame-007.png",
+      "sha256": "db149f9a9d2ed8c74b450e98c9e450e7e6de8f743deb2d3bd9c4359266a83a40"
+    }
+  ],
+  "approvalStatus": "PENDING"
+}
