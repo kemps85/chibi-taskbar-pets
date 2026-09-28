@@ -335,6 +335,46 @@ def auto_ramp(master: np.ndarray, y: int, x0: int, x1: int) -> dict:
     return {"L": hexc(row[0][1]), "R": hexc(row[-1][1]), "fill": fill}
 
 
+def rebuild_behind_legs(cfg: dict, master: np.ndarray) -> np.ndarray:
+    """Reconstruct what the master shows *behind* its legs inside the erase box (e.g. wings).
+
+    The master's own legs (neutral IK pose + shoe boxes, grown by 1 px) are removed and every
+    removed run that is bounded on both sides by kept pixels is filled from those neighbours,
+    so the walking legs never leave a hole in the background.
+    """
+    legs = np.zeros((H, W), bool)
+    for lc in cfg["legs"].values():
+        knee, l1, l2 = ik(lc["hip"], lc["ankle"], cfg["len"])
+        mask, _, _ = paint_leg(cfg, lc["hip"], knee, lc["ankle"], l1, l2, 0)
+        legs |= mask
+        x0, y0, x1, y1 = lc["shoe_box"]
+        legs[y0:y1, x0:x1] |= master[y0:y1, x0:x1, 3] > 0
+    grown = legs.copy()
+    grown[1:] |= legs[:-1]; grown[:-1] |= legs[1:]; grown[:, 1:] |= legs[:, :-1]; grown[:, :-1] |= legs[:, 1:]
+    out = np.zeros_like(master)
+    for x0, y0, x1, y1 in cfg["erase"]:
+        for y in range(y0, min(y1, H)):
+            row = master[y].copy()
+            hole = grown[y] & (np.arange(W) >= x0) & (np.arange(W) < x1)
+            row[hole] = 0
+            x = x0
+            while x < x1:
+                if hole[x]:
+                    e = x
+                    while e < x1 and hole[e]:
+                        e += 1
+                    left, right = x - 1, e
+                    if left >= 0 and right < W and row[left, 3] and master[y, right, 3] and not grown[y, right]:
+                        for k in range(x, e):   # nearest-neighbour stretch from both sides
+                            row[k] = row[left] if (k - x) < (e - x) / 2 else master[y, right]
+                    x = e
+                else:
+                    x += 1
+            out[y, x0:x1] = row[x0:x1]
+    return out
+
+
+
 def over(dst: np.ndarray, src: np.ndarray, ox: int = 0, oy: int = 0) -> None:
     h, w = src.shape[:2]
     for yy in range(h):
@@ -367,6 +407,8 @@ def build_char(name: str) -> dict:
     behind_src = np.zeros_like(master)
     for x0, y0, x1, y1 in cfg.get("behind", []):
         behind_src[y0:y1, x0:x1] = master[y0:y1, x0:x1]
+    if cfg.get("behind_fill"):
+        behind_src = np.maximum(behind_src, rebuild_behind_legs(cfg, master))
 
     out_dir = HERE / name
     out_dir.mkdir(parents=True, exist_ok=True)
