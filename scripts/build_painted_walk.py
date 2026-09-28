@@ -155,6 +155,7 @@ CHARS = {
     },
     "ye-shunguang": {
         "erase": [(52, 128, 90, 144)], "clip_top": 128, "clip_bobs": False,
+        "shear": {"box": (58, 110, 92, 128), "split_x": 69},
         "ground": {"L": 142, "R": 142}, "len": 23.0,
         "profile": [(0.0, 9), (1.0, 8), (1.2, 8)],
         "legs": {"R": {"hip": (79.0, 108.0), "ankle": (79.0, 131.0), "neutral_dx": -3.0, "shoe_box": (72, 130, 88, 143), "near": False},
@@ -166,6 +167,7 @@ CHARS = {
     # long skirt: only the ankles and heels below the hem move
     "ye-shunguang-red": {
         "erase": [(50, 134, 90, 144)], "clip_top": 134, "clip_bobs": False,
+        "shear": {"box": (58, 112, 94, 134), "split_x": 69},
         "ground": {"L": 142, "R": 142}, "len": 23.0,
         "profile": [(0.0, 5), (1.0, 5), (1.2, 5)],
         "legs": {"R": {"hip": (78.0, 112.0), "ankle": (77.0, 135.0), "neutral_dx": -3.0, "shoe_box": (71, 135, 85, 143), "near": False},
@@ -403,6 +405,12 @@ def build_char(name: str) -> dict:
     upper_src = master.copy()
     for x0, y0, x1, y1 in cfg["erase"]:
         upper_src[y0:y1, x0:x1] = 0
+    shear = cfg.get("shear")
+    if shear:   # lower legs / long hem that follow each foot (drawn per frame below)
+        sx0, sy0, sx1, sy1 = shear["box"]
+        shear_src = np.zeros_like(master)
+        shear_src[sy0:sy1, sx0:sx1] = master[sy0:sy1, sx0:sx1]
+        upper_src[sy0:sy1, sx0:sx1] = 0
     # master pixels that sit behind the legs inside the erased box (e.g. wing strands) are kept as a back layer
     behind_src = np.zeros_like(master)
     for x0, y0, x1, y1 in cfg.get("behind", []):
@@ -444,6 +452,26 @@ def build_char(name: str) -> dict:
             flog[leg] = {"shoe_dx": ox, "ankle_x": round(ax, 2), "ankle_y": round(ay, 2),
                          "shoe_left_x": sx0 + ox, "lift": st["lift"], "heel": st["heel"],
                          "planted": st["planted"], "phase_k": st["k"], "knee": [round(knee[0], 1), round(knee[1], 1)]}
+        if shear:
+            band = bpc.warp(shear_src, *bpc.displacement(rig_frame, rig))
+            sx0, sy0, sx1, sy1 = shear["box"]
+            # static underlay (garment only, no skin) so the seam between the two legs never opens
+            r, g, b = (band[..., k].astype(int) for k in range(3))
+            skin = (r > 200) & (g > 170) & (b > 140) & (r - b > 25)
+            under = (band[..., 3] > 0) & ~skin & (canvas[..., 3] == 0)
+            canvas[under] = band[under]
+            for leg in ("R", "L"):   # far leg first
+                ox = flog[leg]["shoe_dx"]
+                cols = np.arange(W) >= shear["split_x"] if leg == "R" else np.arange(W) < shear["split_x"]
+                for y in range(sy0, sy1):
+                    t = (y - sy0) / max(1, sy1 - 1 - sy0)          # 0 at the knee band, 1 at the ankle
+                    dx, ty = int(round(ox * t)), y
+                    if not 0 <= ty < H:
+                        continue
+                    for x in np.nonzero(cols & (band[y, :, 3] > 0))[0]:
+                        tx = x + dx
+                        if 0 <= tx < W:
+                            canvas[ty, tx] = band[y, x]
         a = upper[..., 3] > 0
         canvas[a] = upper[a]
         frames.append(canvas)
