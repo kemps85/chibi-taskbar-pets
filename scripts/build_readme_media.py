@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,21 +34,29 @@ def clip(character: str, clip_id: str) -> tuple[list[Image.Image], list[int], in
 
 
 def to_gif_frame(img: Image.Image) -> Image.Image:
-    """Flatten RGBA onto a key colour and quantise with that colour as the transparent index."""
-    flat = Image.new("RGB", img.size, KEY)
-    flat.paste(img, mask=img.split()[3].point(lambda a: 255 if a > 127 else 0))
-    pal = flat.quantize(colors=255, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
-    return pal
+    """Quantise the opaque pixels to 255 colours and reserve index 255 for transparency.
+
+    Transparency is decided from alpha, never by colour, so pink/violet art cannot be merged into it.
+    """
+    alpha = np.asarray(img.split()[3]) > 127
+    rgb = np.asarray(img.convert("RGB")).copy()
+    if alpha.any():
+        rgb[~alpha] = rgb[alpha][0]           # fill the background with an existing art colour
+    pal = Image.fromarray(rgb).quantize(colors=255, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    idx = np.asarray(pal).copy()
+    idx[~alpha] = 255
+    out = Image.fromarray(idx, "P")
+    palette = (pal.getpalette() or [])[:255 * 3]
+    palette += [0, 0, 0] * (255 - len(palette) // 3) + list(KEY)
+    out.putpalette(palette)
+    out.info["transparency"] = 255
+    return out
 
 
 def save_gif(frames: list[Image.Image], durations: list[int], path: Path) -> None:
     gif = [to_gif_frame(f) for f in frames]
-    for g in gif:
-        palette = g.getpalette()
-        key_index = next((i for i in range(len(palette) // 3) if tuple(palette[i * 3:i * 3 + 3]) == KEY), None)
-        g.info["transparency"] = key_index if key_index is not None else 0
     gif[0].save(path, save_all=True, append_images=gif[1:], duration=durations, loop=0,
-                disposal=2, transparency=gif[0].info["transparency"], optimize=False)
+                disposal=2, transparency=255, optimize=False)
     print(path.relative_to(ROOT), f"{path.stat().st_size // 1024} KB")
 
 
