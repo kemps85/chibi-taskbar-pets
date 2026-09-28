@@ -141,3 +141,19 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+
+# === Taskbar pet: local-only material (game-derived references, raw imagegen, scratch) ===
+OriginalAssestCharacter/
+assets/references/character-equipment/
+assets/generated/pixel-chibi/**/raw/
+assets/generated/pixel-chibi/**/inputs/ref_*
+assets/generated/pixel-chibi/**/ref_*
+tmp/*
+!tmp/new_char_clips.py
+!tmp/make_keypose_batch.py
+!tmp/install_walk.py
+!tmp/firefly_sig_v3.py
+!tmp/firefly_clips_v2_backup.json
+!tmp/new_char_inventory.json
+!tmp/process_char2.sh
+!tmp/check_packs.mjs
