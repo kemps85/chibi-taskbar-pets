@@ -609,6 +609,11 @@ ipcMain.on("taskbar-pet:first-frame", (event) => {
   if (Number.isFinite(qaExitAfterMs) && qaExitAfterMs > 0) setTimeout(shutdown, qaExitAfterMs);
 });
 
+// A 160x144 sprite canvas does not need the GPU process; software compositing keeps the pet's
+// memory footprint small. The renderer only holds decoded frames, so a small V8 heap is enough.
+app.disableHardwareAcceleration();
+app.commandLine.appendSwitch("js-flags", "--max-old-space-size=96");
+
 const hasSingleInstanceLock = app.requestSingleInstanceLock();
 if (!hasSingleInstanceLock) {
   app.quit();
