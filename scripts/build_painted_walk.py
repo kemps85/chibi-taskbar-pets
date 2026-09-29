@@ -123,6 +123,7 @@ CHARS = {
         "stance_heel": [0, 0, 0, 1, 2],
     },
     "evanescia": {
+        "cutout": True, "cut_top": 109,
         "erase": [(50, 105, 86, 144)], "clip_top": 105, "clip_bobs": True,
         "ground": {"L": 142, "R": 142}, "len": 27.0,
         "profile": [(0.0, 8), (0.6, 7), (1.0, 6), (1.2, 6)],
@@ -133,6 +134,7 @@ CHARS = {
         "swing": {"x": [-5.5, 0.5, 6.5], "lift": [2, 3, 1], "heel": [2, 0, -1]}, "stance_heel": [0, 0, 0, 1, 2],
     },
     "robin": {
+        "cutout": True, "cut_top": 121,
         "erase": [(52, 117, 86, 144)], "clip_top": 117, "clip_bobs": True,
         "ground": {"L": 142, "R": 142}, "len": 22.0,
         "profile": [(0.0, 8), (0.5, 7), (1.0, 5), (1.2, 5)],
@@ -143,6 +145,7 @@ CHARS = {
         "swing": {"x": [-5.5, 0.5, 6.5], "lift": [2, 3, 1], "heel": [2, 0, -1]}, "stance_heel": [0, 0, 0, 1, 2],
     },
     "remielle-dan": {
+        "cutout": True,
         "erase": [(53, 111, 85, 144)], "clip_top": 111, "clip_bobs": True,
         "behind": [(44, 108, 57, 121), (44, 121, 54, 134), (81, 104, 92, 134)],
         "ground": {"L": 142, "R": 142}, "len": 29.0,
@@ -154,8 +157,7 @@ CHARS = {
         "swing": {"x": [-5.5, 0.5, 6.5], "lift": [2, 3, 1], "heel": [2, 0, -1]}, "stance_heel": [0, 0, 0, 1, 2],
     },
     "ye-shunguang": {
-        "erase": [(52, 128, 90, 144)], "clip_top": 128, "clip_bobs": False,
-        "shear": {"box": (58, 110, 92, 128), "split_x": 69},
+        "erase": [(58, 110, 92, 144)], "clip_top": 110, "clip_bobs": False, "cutout": True, "cut_skin_only": True,
         "ground": {"L": 142, "R": 142}, "len": 23.0,
         "profile": [(0.0, 9), (1.0, 8), (1.2, 8)],
         "legs": {"R": {"hip": (79.0, 108.0), "ankle": (79.0, 131.0), "neutral_dx": -3.0, "shoe_box": (72, 130, 88, 143), "near": False},
@@ -377,6 +379,96 @@ def rebuild_behind_legs(cfg: dict, master: np.ndarray) -> np.ndarray:
 
 
 
+def _seg_dist(px, py, a, b):
+    ax, ay = a
+    bx, by = b
+    vx, vy = bx - ax, by - ay
+    t = np.clip(((px - ax) * vx + (py - ay) * vy) / max(1e-9, vx * vx + vy * vy), 0, 1)
+    return np.hypot(px - (ax + t * vx), py - (ay + t * vy))
+
+
+def cutout_pieces(cfg: dict, master: np.ndarray):
+    """Split the master's own leg pixels into thigh/shin pieces per leg (cut-out rig).
+
+    Pixels inside the erase boxes (minus shoe boxes) are assigned to the nearest leg bone within
+    `cut_reach` px; anything farther away stays as a static back layer so nothing is lost.
+    Returns ({leg: {"thigh": mask, "shin": mask, "hip0", "knee0", "ankle0"}}, static_layer).
+    """
+    region = np.zeros((H, W), bool)
+    for x0, y0, x1, y1 in cfg["erase"]:
+        region[y0:y1, x0:x1] = True
+    for lc in cfg["legs"].values():
+        x0, y0, x1, y1 = lc["shoe_box"]
+        region[y0:y1, x0:x1] = False
+    region &= master[..., 3] > 0
+    hem = np.zeros((H, W), bool)             # skirt hem rows inside the box stay put
+    hem[:cfg.get("cut_top", 0)] = True
+    hem &= region
+    region &= ~hem
+    front = np.zeros_like(master)
+    if cfg.get("cut_skin_only"):              # garment panels in front of the legs stay put, on top
+        r, g, b = (master[..., k].astype(int) for k in range(3))
+        skin = (r > 190) & (g > 150) & (b > 120) & (r - b > 25) & (r - g < 70)
+        dark = (r + g + b) < 200
+        grow = skin.copy()
+        grow[1:] |= skin[:-1]; grow[:-1] |= skin[1:]; grow[:, 1:] |= skin[:, :-1]; grow[:, :-1] |= skin[:, 1:]
+        leg_px = skin | (dark & grow)
+        panel = region & ~leg_px
+        front[panel] = master[panel]
+        region &= leg_px
+    ys, xs = np.mgrid[0:H, 0:W].astype(np.float64)
+    px, py = xs + 0.5, ys + 0.5
+    reach = cfg.get("cut_reach", 7.0)
+    geo, dists = {}, {}
+    for leg, lc in cfg["legs"].items():
+        knee0, _, _ = ik(lc["hip"], lc["ankle"], cfg["len"])
+        dt = _seg_dist(px, py, lc["hip"], knee0)
+        ds = _seg_dist(px, py, knee0, lc["ankle"])
+        geo[leg] = {"hip0": lc["hip"], "knee0": knee0, "ankle0": lc["ankle"], "dt": dt, "ds": ds}
+        dists[leg] = np.minimum(dt, ds)
+    legs = list(cfg["legs"])
+    nearest = np.where(dists[legs[0]] <= dists[legs[1]], legs[0], legs[1])
+    pieces = {}
+    taken = np.zeros((H, W), bool)
+    for leg in legs:
+        g = geo[leg]
+        own = region & (nearest == leg) & (dists[leg] <= reach)
+        taken |= own
+        near_knee = np.hypot(px - g["knee0"][0], py - g["knee0"][1]) <= 1.5
+        pieces[leg] = {"thigh": own & ((g["dt"] <= g["ds"]) | near_knee),
+                       "shin": own & ((g["ds"] < g["dt"]) | near_knee),
+                       "hip0": g["hip0"], "knee0": g["knee0"], "ankle0": g["ankle0"]}
+    static = np.zeros_like(master)
+    top = max(cfg.get("cut_top", 0), min(b[1] for b in cfg["erase"]))
+    seam = np.zeros((H, W), bool)             # a few original rows under the hip seam, behind the legs
+    seam[top:top + 4] = True
+    keep = (region & ~taken) | hem | (region & seam)
+    static[keep] = master[keep]
+    return pieces, static, front
+
+
+def draw_piece(dst: np.ndarray, master: np.ndarray, mask: np.ndarray, pivot0, pivot1, angle: float) -> None:
+    """Rotate the masked master pixels by `angle` (radians) about pivot0 and place pivot0 at pivot1.
+    Inverse nearest-neighbour mapping, so the piece never tears."""
+    ys, xs = np.nonzero(mask)
+    if not len(ys):
+        return
+    ca, sa = math.cos(angle), math.sin(angle)
+    cx, cy = xs + 0.5 - pivot0[0], ys + 0.5 - pivot0[1]
+    fx, fy = cx * ca - cy * sa + pivot1[0], cx * sa + cy * ca + pivot1[1]
+    x0, x1 = max(0, int(fx.min()) - 2), min(W, int(fx.max()) + 3)
+    y0, y1 = max(0, int(fy.min()) - 2), min(H, int(fy.max()) + 3)
+    gy, gx = np.mgrid[y0:y1, x0:x1].astype(np.float64)
+    dx, dy = gx + 0.5 - pivot1[0], gy + 0.5 - pivot1[1]
+    sx = np.floor(dx * ca + dy * sa + pivot0[0]).astype(int)
+    sy = np.floor(-dx * sa + dy * ca + pivot0[1]).astype(int)
+    ok = (sx >= 0) & (sx < W) & (sy >= 0) & (sy < H)
+    hit = np.zeros_like(ok)
+    hit[ok] = mask[sy[ok], sx[ok]]
+    dst[gy[hit].astype(int), gx[hit].astype(int)] = master[sy[hit], sx[hit]]
+
+
+
 def over(dst: np.ndarray, src: np.ndarray, ox: int = 0, oy: int = 0) -> None:
     h, w = src.shape[:2]
     for yy in range(h):
@@ -405,6 +497,8 @@ def build_char(name: str) -> dict:
     upper_src = master.copy()
     for x0, y0, x1, y1 in cfg["erase"]:
         upper_src[y0:y1, x0:x1] = 0
+    if cfg.get("cutout"):
+        pieces, cut_static, cut_front = cutout_pieces(cfg, master)
     shear = cfg.get("shear")
     if shear:   # lower legs / long hem that follow each foot (drawn per frame below)
         sx0, sy0, sx1, sy1 = shear["box"]
@@ -427,6 +521,10 @@ def build_char(name: str) -> dict:
         rig_frame = {"bob": bob, "trail_bob": fr.get("trail_bob", bob), "trail_dx": fr.get("trail_dx", 0)}
         upper = bpc.warp(upper_src, *bpc.displacement(rig_frame, rig))
         canvas = bpc.warp(behind_src, *bpc.displacement(rig_frame, rig)).copy()
+        if cfg.get("cutout"):
+            st_layer = bpc.warp(cut_static, *bpc.displacement(rig_frame, rig))
+            a = st_layer[..., 3] > 0
+            canvas[a] = st_layer[a]
         clip_top = cfg["clip_top"] + (bob if cfg["clip_bobs"] else 0)
         flog = {}
         for leg in ("R", "L"):  # far leg first, near leg on top
@@ -445,13 +543,26 @@ def build_char(name: str) -> dict:
             # bend = distance of the knee from the straight hip-ankle line
             mx, my = (hip[0] + ax) / 2, (hip[1] + ay) / 2
             bend = math.hypot(knee[0] - mx, knee[1] - my)
-            mask, s_map, outline = paint_leg(cfg, hip, knee, (ax, ay), l1, l2, bob)
-            leg_rgba = colour_leg(cfg, mask, s_map, outline, clip_top, knee, l1, bend)
+            if cfg.get("cutout"):
+                pc = pieces[leg]
+                ang = lambda a, b: math.atan2(b[1] - a[1], b[0] - a[0])
+                t_rot = ang(hip, knee) - ang(pc["hip0"], pc["knee0"])
+                s_rot = ang(knee, (ax, ay)) - ang(pc["knee0"], pc["ankle0"])
+                leg_rgba = np.zeros((H, W, 4), np.uint8)
+                draw_piece(leg_rgba, master, pc["thigh"], pc["hip0"], hip, t_rot)
+                draw_piece(leg_rgba, master, pc["shin"], pc["knee0"], knee, s_rot)
+            else:
+                mask, s_map, outline = paint_leg(cfg, hip, knee, (ax, ay), l1, l2, bob)
+                leg_rgba = colour_leg(cfg, mask, s_map, outline, clip_top, knee, l1, bend)
             over(canvas, leg_rgba)
             over(canvas, sheared, sx0 + ox, sy0 - pad - st["lift"])
             flog[leg] = {"shoe_dx": ox, "ankle_x": round(ax, 2), "ankle_y": round(ay, 2),
                          "shoe_left_x": sx0 + ox, "lift": st["lift"], "heel": st["heel"],
                          "planted": st["planted"], "phase_k": st["k"], "knee": [round(knee[0], 1), round(knee[1], 1)]}
+        if cfg.get("cutout"):
+            fr_layer = bpc.warp(cut_front, *bpc.displacement(rig_frame, rig))
+            a = fr_layer[..., 3] > 0
+            canvas[a] = fr_layer[a]
         if shear:
             band = bpc.warp(shear_src, *bpc.displacement(rig_frame, rig))
             sx0, sy0, sx1, sy1 = shear["box"]
