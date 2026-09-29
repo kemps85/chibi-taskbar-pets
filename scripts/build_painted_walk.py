@@ -38,16 +38,19 @@ bpc = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(bpc)
 
 W, H = 160, 144
-N_FRAMES = 8
-# Body bob / trailing-hair lag per walk pose (low at contact, high at passing).
+N_FRAMES = 16
+STANCE = N_FRAMES // 2             # stance intervals; the foot is planted for frames k = 0..STANCE
+# Body bob / trailing-hair lag per walk pose: lowest at each heel strike, highest at passing;
+# hair and tail lag a quarter-step behind.
 WALK_RIG_FRAMES = [
-    {"bob": 0, "trail_bob": -1, "trail_dx": -1}, {"bob": 0, "trail_bob": 0, "trail_dx": -2},
-    {"bob": -1, "trail_bob": 0, "trail_dx": -1}, {"bob": -1, "trail_bob": -1, "trail_dx": -1},
-] * 2
-FRAME_MS = 100
+    {"bob": b, "trail_bob": tb, "trail_dx": td}
+    for b, tb, td in [(0, -1, -1), (0, 0, -1), (-1, 0, -2), (-1, 0, -2),
+                      (-1, -1, -1), (-1, -1, -1), (0, -1, -1), (0, 0, -1)] * 2
+]
+FRAME_MS = 50
 SPEED = 48.0                       # runtime translation, px/s
-STEP = SPEED * FRAME_MS / 1000.0   # 4.8 px per frame
-HALF = STEP * N_FRAMES / 2         # 19.2 px stance travel (= step length)
+STEP = SPEED * FRAME_MS / 1000.0   # 2.4 px per frame
+HALF = STEP * STANCE               # 19.2 px stance travel (= step length)
 APPROACH = "painted-legs"
 
 
@@ -181,19 +184,26 @@ CHARS = {
 }
 CHARS["ye-shunguang-white"] = CHARS["ye-shunguang"]
 CHARS["ye-shunguang-red-white"] = CHARS["ye-shunguang-red"]
-CONTACT_FRAME = {"R": 0, "L": 4}   # far leg (viewer-right) strikes first
+CONTACT_FRAME = {"R": 0, "L": N_FRAMES // 2}   # far leg (viewer-right) strikes first
 
 
 # ------------------------------------------------------------------ gait
 def foot_state(cfg: dict, leg: str, i: int) -> dict:
+    """Planted foot slides back at exactly the walk speed; the swing foot travels forward on an
+    eased arc (slow lift-off, fast mid-swing, soft landing) with a heel-to-toe roll."""
     k = (i - CONTACT_FRAME[leg]) % N_FRAMES
     base = cfg["legs"][leg]["neutral_dx"]
-    if k <= 4:  # stance: contact (k=0) .. toe-off (k=4); foot fixed in world
+    lift_max = max(cfg["swing"]["lift"])
+    if k <= STANCE:  # stance: heel strike (k=0) .. toe-off (k=STANCE); foot fixed in world
         off = HALF / 2 - STEP * k
-        return {"k": k, "planted": True, "dx": base + off, "lift": 0, "heel": cfg["stance_heel"][k]}
-    j = k - 5
-    sw = cfg["swing"]
-    return {"k": k, "planted": False, "dx": base + sw["x"][j], "lift": sw["lift"][j], "heel": sw["heel"][j]}
+        heel = 2 if k == STANCE else 1 if k == STANCE - 1 else 0          # heel rises for toe-off
+        return {"k": k, "planted": True, "dx": base + off, "lift": 0, "heel": heel}
+    u = (k - STANCE) / (N_FRAMES - STANCE)                               # 0..1 through the swing
+    ease = u * u * (3 - 2 * u)
+    off = -HALF / 2 + HALF * ease
+    lift = rnd(lift_max * math.sin(math.pi * min(1.0, u * 1.15)))         # peak a little before mid-swing
+    heel = 2 if u < 0.2 else 1 if u < 0.4 else 0 if u < 0.75 else -1     # toe points up before the strike
+    return {"k": k, "planted": False, "dx": base + off, "lift": lift, "heel": heel}
 
 
 # ------------------------------------------------------------------ shoe sprite

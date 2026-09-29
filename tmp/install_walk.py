@@ -14,7 +14,7 @@ for c in sys.argv[1:]:
         shutil.copy(f, dst / f.name)
     mp = out / 'manifest.json'
     m = json.loads(mp.read_text(encoding='utf-8')) if mp.exists() else {'clips': {}}
-    m['clips']['walk'] = {'frame_count': len(frames), 'frame_durations_ms': [100] * len(frames),
+    m['clips']['walk'] = {'frame_count': len(frames), 'frame_durations_ms': [50] * len(frames),
                           'loop_policy': 'loop', 'frames': 'walk/frame-{index:000}.png'}
     mp.write_text(json.dumps(m, indent=2) + '\n', encoding='utf-8')
     print(c, 'walk frames', len(frames))

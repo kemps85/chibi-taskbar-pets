@@ -48,20 +48,28 @@
     "walk": {
       "frames": "clips/walk/right/frames",
       "frame_name_pattern": "frame-{index:000}.png",
-      "frame_count": 8,
+      "frame_count": 16,
       "right_anchor": {
         "x": 64,
         "y": 130
       },
       "frame_durations_ms": [
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
       ],
       "loop_policy": "loop"
     },

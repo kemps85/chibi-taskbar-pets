@@ -129,16 +129,24 @@
       "frames": "signature/frame-{index:000}.png"
     },
     "walk": {
-      "frame_count": 8,
+      "frame_count": 16,
       "frame_durations_ms": [
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100,
-        100
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
       ],
       "loop_policy": "loop",
       "frames": "walk/frame-{index:000}.png"

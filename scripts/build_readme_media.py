@@ -66,7 +66,7 @@ def lineup(scale: int = 2, per_row: int = 5) -> None:
     top, bottom = 22, 144
     cell_w, cell_h = 116, bottom - top
     rows = (len(LINEUP) + per_row - 1) // per_row
-    n = 8
+    n = 16
     frames = []
     for i in range(n):
         sheet = Image.new("RGBA", (cell_w * per_row * scale, cell_h * rows * scale), (0, 0, 0, 0))
@@ -78,7 +78,7 @@ def lineup(scale: int = 2, per_row: int = 5) -> None:
             cell = cell.crop((18, top, 18 + cell_w, bottom)).resize((cell_w * scale, cell_h * scale), Image.NEAREST)
             sheet.alpha_composite(cell, ((k % per_row) * cell_w * scale, (k // per_row) * cell_h * scale))
         frames.append(sheet)
-    save_gif(frames, [110] * n, OUT / "lineup-walk.gif")
+    save_gif(frames, [60] * n, OUT / "lineup-walk.gif")
 
 
 def signatures(scale: int = 2) -> None:
